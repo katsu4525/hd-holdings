@@ -38,7 +38,7 @@ $str = make_token();
 <!--googlefont-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;700&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -68,20 +68,17 @@ $str = make_token();
   </div>
 </header>
 <main> <!-- InstanceBeginEditable name="mainArea" -->
+  <div class="logo-area inner">
+    <figure><img src="images/f-logo.svg" alt=""/></figure>
+    <div>
+      <figure><img src="images/group-1.svg" alt=""/></figure>
+      <figure><img src="images/group-2.svg" alt=""/></figure>
+    </div>
+  </div>
   <section class="title-area-news">
     <h2>お問い合わせ</h2>
   </section>
   <section id="contact">
-<!--
-    <div class="inner">
-      <p>HRホールディングスをご利用いただき、誠にありがとうございます。<br>
-        お問い合わせの際は、下記に必要事項をご記入の上、「入力内容を確認する」ボタンをクリックしてください。<br>
-        個人情報の重要性を認識しその保護の徹底を図るため、各種法令を順守しこれに従うことを宣言します。<br>
-      なお当サイトは、個人情報のみならず、法人その他団体のお客様に関する情報についても個人情報と同様に適正に取り扱ってまいります。</p>
-      <p class="tel"><a href="tel:"></a></p>
-        <p class="s-font">受付時間 / 10：00-18：00（土日、祝お休み）</p>
-    </div>
--->
 		<section id="form">
 			<form action="toiawase/design_toiawase.php" method="post" onsubmit="return Validator.submit(this)">
 				<!-- 添付がある場合は下記のタグ
@@ -93,11 +90,11 @@ $str = make_token();
 				<input name="need" type="hidden" id="need" value="お名前 email email2 電話番号 お問い合わせ内容" />
 
 				<!-- 修正画面を表示用設置 -->
-				<input type="hidden" name="disp[お名前]" value="text 50">
-				<input type="hidden" name="disp[貴社名]" value="text 50">
-				<input type="hidden" name="disp[email]" value="text 60">
-				<input type="hidden" name="disp[email2]" value="text 60">
-				<input type="hidden" name="disp[電話番号]" value="text 60">
+				<input type="hidden" name="disp[お名前]" value="text 100">
+				<input type="hidden" name="disp[貴社名]" value="text 100">
+				<input type="hidden" name="disp[email]" value="text 100">
+				<input type="hidden" name="disp[email2]" value="text 100">
+				<input type="hidden" name="disp[電話番号]" value="text 100">
 				<input type="hidden" name="disp[お問い合わせ内容]" value="textarea 5 55">
 				<input type="hidden" name="disp[プライバシーポリシー]" value="check 同意する">
 				<!-- 入力部分 -->
@@ -190,9 +187,11 @@ $str = make_token();
       </div>
     </div>
     <div class="bnr-area">
-      <p>グループ会社</p>
-      <figure><a href="" target="_blank"><img src="images/group-1.svg" width="560" height="160" alt="HRホールディングス"/></a></figure>
-      <figure><a href="" target="_blank"><img src="images/group-2.svg" width="560" height="160" alt="株式会社 HoriTech"/></a></figure>
+      <p>グループ<br class="spOnly">会社</p>
+      <div>
+        <figure><a href="" target="_blank"><img src="images/group-1.svg" width="560" height="160" alt="HRホールディングス"/></a></figure>
+        <figure><a href="" target="_blank"><img src="images/group-2.svg" width="560" height="160" alt="株式会社 HoriTech"/></a></figure>
+      </div>
     </div>
   </section>
   <p class="copy-r text-center">&copy; 2017 Hori Communication Corp All Rights Reserved.</p>

@@ -280,19 +280,9 @@ h3 {
         border-radius: 30px; }
     #index-news .index-news-list .text, #index-menu .index-news-list .text, #news-list .index-news-list .text {
       font-size: 1.6rem; }
-      #index-news .index-news-list .text a, #index-menu .index-news-list .text a, #news-list .index-news-list .text a {
-        display: flex;
-        flex-wrap: wrap; }
-        #index-news .index-news-list .text a:hover, #index-menu .index-news-list .text a:hover, #news-list .index-news-list .text a:hover {
-          color: #008db7;
-          border-bottom: 1px solid #008db7; }
-      @media screen and (max-width: 768px) {
-        #index-news .index-news-list .text, #index-menu .index-news-list .text, #news-list .index-news-list .text {
-          width: 100%;
-          display: block; } }
-    #index-news .index-news-list img, #index-menu .index-news-list img, #news-list .index-news-list img {
-      width: 15px;
-      margin-left: 5px; }
+      #index-news .index-news-list .text a:hover, #index-menu .index-news-list .text a:hover, #news-list .index-news-list .text a:hover {
+        color: #008db7;
+        border-bottom: 1px solid #008db7; }
   #index-news .news-btn, #index-menu .news-btn, #news-list .news-btn {
     text-align: right;
     /* 右寄せ */
@@ -300,9 +290,10 @@ h3 {
     #index-news .news-btn a, #index-menu .news-btn a, #news-list .news-btn a {
       display: inline-flex;
       align-items: center;
-      color: #111;
+      color: #008db7;
       /* 緑色 */
       text-decoration: none;
+      font-weight: bold;
       position: relative;
       padding-right: 1.2em;
       /* 矢印分の余白 */
@@ -311,9 +302,8 @@ h3 {
         content: "→";
         /* 右側に矢印 */
         margin-left: 0.4em;
-        font-size: 1.2em;
-        transition: transform 0.3s ease;
-        color: #008db7; }
+        font-size: 1em;
+        transition: transform 0.3s ease; }
       #index-news .news-btn a:hover::after, #index-menu .news-btn a:hover::after, #news-list .news-btn a:hover::after {
         transform: translateX(4px);
         /* ホバー時に矢印を右に動かす */ }
@@ -358,7 +348,7 @@ h3 {
     justify-content: space-between;
     margin-top: 30px; }
     #index-menu .index-menu-box .index-menu-box-info {
-      width: 42%;
+      width: 45%;
       text-align: center; }
       @media screen and (max-width: 768px) {
         #index-menu .index-menu-box .index-menu-box-info {
@@ -367,7 +357,7 @@ h3 {
       #index-menu .index-menu-box .index-menu-box-info figure {
         margin-bottom: 15px; }
         #index-menu .index-menu-box .index-menu-box-info figure img {
-          height: 40px; }
+          height: 35px; }
       #index-menu .index-menu-box .index-menu-box-info .horinet, #index-menu .index-menu-box .index-menu-box-info .horitech {
         padding: 15px;
         background-size: cover;
@@ -376,11 +366,11 @@ h3 {
         color: #FFF; }
         #index-menu .index-menu-box .index-menu-box-info .horinet div, #index-menu .index-menu-box .index-menu-box-info .horitech div {
           border: 1px solid #FFF;
-          padding: 30px 40px 150px 40px;
+          padding: 30px 40px 100px 40px;
           text-align: justify; }
           @media screen and (max-width: 768px) {
             #index-menu .index-menu-box .index-menu-box-info .horinet div, #index-menu .index-menu-box .index-menu-box-info .horitech div {
-              padding: 20px 30px 90px 30px; } }
+              padding: 20px 30px70px 30px; } }
           #index-menu .index-menu-box .index-menu-box-info .horinet div h3, #index-menu .index-menu-box .index-menu-box-info .horitech div h3 {
             text-align: center;
             font-weight: 700; }
@@ -702,7 +692,7 @@ h3 {
       padding: 5px 0; }
 
 #group {
-  width: 100%;
+  width: 90%;
   max-width: 900px;
   margin: 0 auto 100px; }
   @media screen and (max-width: 768px) {
@@ -714,23 +704,14 @@ h3 {
   #group .g-logo {
     margin-bottom: 10px;
     display: block; }
-    @media screen and (max-width: 768px) {
-      #group .g-logo {
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center; } }
     #group .g-logo img {
-      display: inline-block;
-      height: 40px;
+      height: 35px;
       width: auto; }
   #group .gp-box {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 35px; }
-    @media screen and (max-width: 480px) {
-      #group .gp-box {
-        padding: 25px; } }
+    padding: 25px; }
     #group .gp-box.bg-bl {
       background-color: #EAF2F5;
       margin-bottom: 80px; }
@@ -742,14 +723,14 @@ h3 {
           margin-bottom: 40px; } }
       #group .gp-box.bg-bl .menu-nav {
         font-family: "Roboto", sans-serif;
-        font-size: 1.0em; }
+        font-size: 1.2em; }
         #group .gp-box.bg-bl .menu-nav:hover {
           opacity: 1.0; }
     #group .gp-box.bg-gr {
       background-color: #E9F7ED; }
       #group .gp-box.bg-gr .menu-nav {
         font-family: "Roboto", sans-serif;
-        font-size: 1.0em;
+        font-size: 1.2em;
         color: #18943B;
         /* テキストはグリーン */ }
         #group .gp-box.bg-gr .menu-nav:hover {
@@ -762,30 +743,18 @@ h3 {
             transform: translateX(4px);
             /* 矢印を右に動かす */ }
     #group .gp-box .info-box {
-      width: 50%;
-      font-size: 2.0rem;
-      display: flex;
-      flex-direction: column;
-      /* 縦並び */ }
+      width: calc(100% - 310px); }
       @media screen and (max-width: 768px) {
         #group .gp-box .info-box {
-          width: 100%;
-          font-size: 1.8rem; } }
-      @media screen and (max-width: 480px) {
-        #group .gp-box .info-box {
-          font-size: 1.6rem; } }
-    #group .gp-box p:first-of-type {
-      margin-top: 0;
-      /* 念のため上に固定 */ }
+          width: 100%; } }
     #group .gp-box figure {
-      width: 45%; }
+      width: 280px; }
       @media screen and (max-width: 768px) {
         #group .gp-box figure {
           width: 100%;
-          margin-top: 20px;
-          margin-bottom: 20px; } }
+          margin-top: 20px; } }
     #group .gp-box .menu-nav {
-      margin-top: auto;
+      margin-top: 30px;
       width: 240px; }
       @media screen and (max-width: 768px) {
         #group .gp-box .menu-nav {
@@ -947,40 +916,3 @@ h3 {
   .space {
     padding-left: 5%;
     padding-right: 5%; } }
-
-.logo-area {
-  text-align: center;
-  padding-top: 80px;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #707070;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 50px; }
-  @media screen and (max-width: 768px) {
-    .logo-area {
-      padding-top: 50px;
-      gap: 30px; } }
-  @media screen and (max-width: 480px) {
-    .logo-area {
-      padding-top: 40px;
-      gap: 15px; } }
-  .logo-area div {
-    display: flex;
-    justify-content: center;
-    gap: 50px; }
-    @media screen and (max-width: 768px) {
-      .logo-area div {
-        gap: 30px; } }
-    @media screen and (max-width: 480px) {
-      .logo-area div {
-        gap: 15px; } }
-  .logo-area img {
-    height: 45px; }
-    @media screen and (max-width: 768px) {
-      .logo-area img {
-        height: 40px; } }
-    @media screen and (max-width: 480px) {
-      .logo-area img {
-        height: 30px; } }

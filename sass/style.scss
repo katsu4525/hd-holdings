@@ -1,7 +1,5 @@
-// Font
-$fontDS1:'Noto Sans JP', sans-serif; //基本フォント
 // Breakpoints.
-$breakpoint-tby: 1100px;
+$breakpoint-tby: 1200px;
 $breakpoint-tbt: 768px;
 $breakpoint-sp: 480px;
 
@@ -23,7 +21,22 @@ $breakpoint-sp: 480px;
 
 .inner{
   width: 90%;
-  max-width: 1024px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.inner1{
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.inner2{
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.inner3{
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .title-area,.title-area-news{
@@ -36,10 +49,11 @@ $breakpoint-sp: 480px;
   text-align: center;
   font-weight: 700;
   @include tbt {
-    padding: 50px 0;
+    background-image: url("../images/page-title-sp.webp");
+    padding: 25px 0;
   }
   @include sp {
-    padding: 40px 0;
+    padding: 15px 0;
   }
   h2{
     font-size: 3.0rem;
@@ -47,13 +61,30 @@ $breakpoint-sp: 480px;
     margin: 0;
     padding: 0;
     background-image: none;
+    @include tbt {
+      font-size: 2.6rem;
+    }
+    @include sp {
+      font-size: 2.4rem;
+    }
   }
 }
 .title-area-news{
-  background-image: url("../images/page-title-news.webp");
+  background-image: none;
+  h2{
+    color: #111;
+    text-shadow:none;
+  }
+}
+.title-area-sub{
+  margin: 1em auto;
+  h2{
+    font-size: 3.0rem;
+    line-height: 1.5em;
+  }
 }
 .pan{
-  width: 1024px;
+  width: 1200px;
   margin: 0 auto 40px;
   display: flex;
   align-items: center;
@@ -81,7 +112,7 @@ h2,h3{
 h3{
   font-weight: normal;
   font-size: 1.8rem;
-  margin-bottom: 1.0em;
+  margin-bottom: 0.5em;
   &.des{
     font-size: 2.4rem;
     margin-top: 50px;
@@ -134,14 +165,15 @@ h3{
       text-align: center;
       color: #fff;
       font-weight: 700;
-      font-size: 4.6rem;
+      font-size: 6.0rem;
       line-height: 1.4em;
       text-shadow: 0 2px 6px #06C8E4;
       @include tbt {
-        font-size: 3.0rem;
+        font-size: 5.0rem;
+        width: 100%;
       }
       @include sp {
-        font-size: 2.3rem;
+        font-size: 4.0rem;
       }
     }
   }
@@ -280,11 +312,21 @@ h3{
     .text{
       font-size: 1.6rem;
       a{
+        display: flex;
+        flex-wrap: wrap;
         &:hover{
           color: #008db7;
           border-bottom: 1px solid #008db7;
         }
       }
+      @include tbt {
+        width: 100%;
+        display: block;
+      }
+    }
+    img{
+      width: 15px;
+      margin-left: 5px;
     }
   }
   .news-btn {
@@ -293,17 +335,17 @@ h3{
     a {
       display: inline-flex;
       align-items: center;
-      color: #008db7;            /* 緑色 */
+      color: #111;            /* 緑色 */
       text-decoration: none;
-      font-weight: bold;
       position: relative;
       padding-right: 1.2em;      /* 矢印分の余白 */
       transition: all 0.3s ease;
       &::after {
         content: "→";               /* 右側に矢印 */
         margin-left: 0.4em;
-        font-size: 1em;
+        font-size: 1.2em;
         transition: transform 0.3s ease;
+        color: #008db7;
       }
       &:hover::after {
         transform: translateX(4px); /* ホバー時に矢印を右に動かす */
@@ -354,7 +396,7 @@ h3{
     justify-content: space-between;
     margin-top: 30px;
     .index-menu-box-info{
-      width: 45%;
+      width: 42%;
       text-align: center;
       @include tbt {
         width: 100%;
@@ -363,7 +405,7 @@ h3{
       figure{
         margin-bottom: 15px;
         img{
-          height: 35px;
+          height: 40px;
         }
       }
       .horinet,.horitech{
@@ -374,10 +416,10 @@ h3{
         color: #FFF;
         div{
           border: 1px solid #FFF;
-          padding: 30px 40px 100px 40px;
+          padding: 30px 40px 150px 40px;
           text-align: justify;
           @include tbt {
-            padding: 20px 30px70px 30px;
+            padding: 20px 30px 90px 30px;
           }
           h3{
             text-align: center;
@@ -397,7 +439,7 @@ h3{
 #registration{
   margin: 100px auto 0;
   width: 90%;
-  max-width: 1024px;
+  max-width: 1200px;
   text-align: center;
   @include tbt {
     margin-top: 80px;
@@ -651,37 +693,35 @@ h3{
         border-top: none;
       }
       @include tbt {
-        width: 100%;
-        padding: 0.5em 0 ;
-        position: relative;
-        border-top:none;
+        width: 10em;
+      }
+      @include sp {
+        width: 8em;
       }
     }
     dd{
       width: calc(100% - 12em);
-      padding: 2em 0 2em 1em;
+      padding: 1em 0 1em 1em;
       border-top: 1px dotted #CCC;
       box-sizing: border-box;
       &:nth-child(2){
         border-top: none;
       }
       @include tbt {
-        padding: 0.3em 0 1.5em;
-        width: 100%;
-        border-top: none;
+        width: calc(100% - 10em);
+      }
+      @include sp {
+        width: calc(100% - 8em);
       }
     }
   }
   #access{
     h3{
       color: #335B8B;
-      font-weight: 700;
       border-bottom: 1px solid #335B8B;
-      margin-bottom: 1em;
     }
     .map{
       width: 100%;
-      border: 1px solid #CCC;
       box-sizing: border-box;
       position: relative;
       z-index: 0;
@@ -731,7 +771,7 @@ h3{
   }
 }
 #group{
-  width: 90%;
+  width: 100%;
   max-width: 900px;
   margin: 0 auto 100px;
   @include tbt {
@@ -743,8 +783,14 @@ h3{
   .g-logo{
     margin-bottom: 10px;
     display: block;
+    @include tbt {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
     img{
-      height: 35px;
+      display: inline-block;
+      height: 40px;
       width: auto;
     }
   }
@@ -752,7 +798,10 @@ h3{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 25px;
+    padding: 35px;
+    @include sp {
+      padding: 25px;
+    }
     &.bg-bl{
       background-color: #EAF2F5;
       margin-bottom: 80px;
@@ -764,7 +813,7 @@ h3{
       }
       .menu-nav {
         font-family: "Roboto", sans-serif;
-        font-size: 1.2em;
+        font-size: 1.0em;
         &:hover {
           opacity: 1.0;
         }
@@ -774,7 +823,7 @@ h3{
       background-color: #E9F7ED;
       .menu-nav {
         font-family: "Roboto", sans-serif;
-        font-size: 1.2em;
+        font-size: 1.0em;
         color: #18943B;                   /* テキストはグリーン */
         &:hover {
           background-color: #18943B;        /* ホバー時に背景をグリーン */
@@ -787,20 +836,31 @@ h3{
       }
     }
     .info-box{
-      width: calc(100% - 310px);
+      width: 50%;
+      font-size: 2.0rem;
+      display: flex;
+      flex-direction: column;  /* 縦並び */
       @include tbt {
         width: 100%;
+        font-size: 1.8rem;
+      }
+      @include sp {
+        font-size: 1.6rem;
       }
     }
+    p:first-of-type {
+      margin-top: 0; /* 念のため上に固定 */
+    }
     figure{
-      width: 280px;
+      width: 45%;
       @include tbt {
         width: 100%;
         margin-top: 20px;
+        margin-bottom: 20px;
       }
     }
     .menu-nav{
-      margin-top: 30px;
+      margin-top: auto;
       width: 240px;
       @include tbt {
         margin: 20px auto 0;
@@ -909,33 +969,17 @@ h3{
 /*個人情報保護法*/
 #privacy{
   h3{
+    text-decoration: underline;
+    color: #111;
     font-size: 2.0rem;
-    border-bottom: 1px solid #DDD;
-    /*color: #008db7;*/
     margin-bottom: 15px;
     margin-top: 2em;
     position: relative;
-    &::before{
-      content: '';
-      position: absolute;
-      bottom: -1px;
-      width: 20%;
-      height: 1px;
-      background: #AAA;
-    }
   }
   ul{
     margin: 1em 0 0;
     li{
       list-style: disc;
-      margin-left: 2.0em;
-    }
-  }
-  ol{
-    margin: 3em 0 ;
-    li{
-      list-style: decimal;
-      margin-top: 2em;
       margin-left: 2.0em;
     }
   }
@@ -1002,6 +1046,51 @@ h3{
     }
     @include sp {
       margin: 40px auto 0;
+    }
+  }
+}
+.space{
+  @include tbt {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+.logo-area{
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #707070;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:50px;
+  @include tbt {
+    padding-top: 50px;
+    gap:30px;
+  }
+  @include sp {
+    padding-top: 40px;
+    gap:15px;
+  }
+  div{
+    display: flex;
+    justify-content: center;
+    gap:50px;
+    @include tbt {
+      gap:30px;
+    }
+    @include sp {
+      gap:15px;
+    }
+  }
+  img{
+    height: 45px;
+    @include tbt{
+      height: 40px;
+    }
+    @include sp{
+      height: 30px;
     }
   }
 }

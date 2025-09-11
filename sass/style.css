@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .inner {
   width: 90%;
-  max-width: 1024px;
+  max-width: 1200px;
   margin: 0 auto; }
 
 .title-area, .title-area-news {
@@ -35,7 +35,7 @@
   display: flex;
   align-items: center;
   font-size: 1.4rem; }
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 1200px) {
     .pan {
       width: 94%; } }
   @media screen and (max-width: 768px) {
@@ -350,7 +350,7 @@ h3 {
 #registration {
   margin: 100px auto 0;
   width: 90%;
-  max-width: 1024px;
+  max-width: 1200px;
   text-align: center; }
   @media screen and (max-width: 768px) {
     #registration {

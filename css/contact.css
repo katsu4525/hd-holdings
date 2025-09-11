@@ -1,12 +1,8 @@
 #form {
-  width: 1024px;
+  width: 1200px;
   margin: 30px auto 0;
 }
 #form dl {
-	box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.13);
-	border-radius:4px;
-	border: 1px solid #FEFEFE;
-	padding: 25px 25px 40px;
   display: flex;
   flex-wrap: wrap;
   border-top: none;
@@ -16,7 +12,7 @@
   /*text-justify: inter-ideograph;*/
 }
 #form dt {
-  width: 11.5em;
+  width: 15em;
   padding: 25px 0;
   /*border-top: solid 1px #DDD;*/
   box-sizing: border-box;
@@ -24,7 +20,7 @@
 }
 #form dd {
   padding: 25px 0 25px 20px;
-  width: calc(100% - 11.5em);
+  width: calc(100% - 15em);
   /*border-top: solid 1px #DDD;*/
   box-sizing: border-box;
   height: 100%;
@@ -155,7 +151,7 @@
 #form ::placeholder{
   color:#ccc
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
   #form {
     width: 90%;
     margin: 30px auto 0;
