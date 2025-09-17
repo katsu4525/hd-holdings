@@ -172,6 +172,8 @@ h3 {
       .index-text-area h2 {
         font-size: 1.8rem; } }
   .index-text-area .main-btn {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
     margin-top: 15px;
     display: inline-flex;
     /* ボタン全体がリンク判定になる */
@@ -185,7 +187,6 @@ h3 {
     /* リンク領域を広げる */
     border-radius: 30px;
     /* 四つ角を丸く */
-    font-weight: bold;
     text-decoration: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     /* ボタンの影 */
@@ -227,7 +228,9 @@ h3 {
       #index-news .text-center, #index-menu .text-center, #news-list .text-center {
         text-align: center; } }
   #index-news .news-title, #index-menu .news-title, #news-list .news-title {
-    font-size: 2.6rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 3.2rem;
     color: #51A9EA;
     display: flex;
     align-items: baseline;
@@ -239,6 +242,7 @@ h3 {
         text-align: center;
         line-height: 1.2em; } }
     #index-news .news-title span, #index-menu .news-title span, #news-list .news-title span {
+      font-family: "Zen Kaku Gothic New", sans-serif;
       font-size: 0.5em;
       /* フォントを小さくする */
       color: #000; }
@@ -480,8 +484,8 @@ h3 {
       #philosophy .ph-box1 figure {
         width: 240px; } }
   #philosophy .ph-box1 h3 {
+    font-family: "Poppins", sans-serif;
     color: #335B8B;
-    font-weight: 700;
     font-style: italic;
     margin-top: 1em;
     margin-bottom: 0;
@@ -512,6 +516,7 @@ h3 {
       #philosophy .ph-box2 .ph-box2-in {
         font-size: 1.8rem; } }
     #philosophy .ph-box2 .ph-box2-in h3 {
+      font-family: "Poppins", sans-serif;
       font-size: 2.6rem;
       line-height: 1.2em;
       margin-bottom: 10px;
@@ -524,6 +529,7 @@ h3 {
         #philosophy .ph-box2 .ph-box2-in h3 {
           font-size: 2.2rem; } }
       #philosophy .ph-box2 .ph-box2-in h3 span {
+        font-family: "Zen Kaku Gothic New", sans-serif;
         font-style: normal;
         font-size: 1.4rem; }
         @media screen and (max-width: 768px) {
@@ -741,17 +747,19 @@ h3 {
         #group .gp-box.bg-bl {
           margin-bottom: 40px; } }
       #group .gp-box.bg-bl .menu-nav {
-        font-family: "Roboto", sans-serif;
-        font-size: 1.0em; }
+        font-family: "Poppins", sans-serif;
+        font-size: 1.0em;
+        font-weight: normal; }
         #group .gp-box.bg-bl .menu-nav:hover {
           opacity: 1.0; }
     #group .gp-box.bg-gr {
       background-color: #E9F7ED; }
       #group .gp-box.bg-gr .menu-nav {
-        font-family: "Roboto", sans-serif;
+        font-family: "Poppins", sans-serif;
         font-size: 1.0em;
         color: #18943B;
-        /* テキストはグリーン */ }
+        /* テキストはグリーン */
+        font-weight: normal; }
         #group .gp-box.bg-gr .menu-nav:hover {
           background-color: #18943B;
           /* ホバー時に背景をグリーン */
@@ -806,6 +814,7 @@ h3 {
       #facility .facility-box {
         width: 100%; } }
     #facility .facility-box h3 {
+      font-family: "Poppins", sans-serif;
       color: #335B8B;
       font-size: 2.2rem;
       display: flex;
@@ -868,7 +877,7 @@ h3 {
 
 /*お問い合わせ*/
 #contact .tel {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 3.4rem;
   line-height: 1.4em;
   margin-top: 0.6em;
