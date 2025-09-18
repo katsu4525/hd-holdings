@@ -1,0 +1,37 @@
+[16-Sep-2025 16:03:27 Asia/Tokyo] 172.18.0.1 /var/www/html/admin/news_update.php(88) PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'nf_news_key' cannot be null in /var/www/html/admin/lib/Stdb.php:114
+Stack trace:
+#0 /var/www/html/admin/lib/Stdb.php(114): PDOStatement->execute()
+#1 /var/www/html/admin/news_update.php(70): Stdb\Stdb\Stdb->setSql('INSERT INTO new...', Array)
+#2 {main}
+[16-Sep-2025 16:17:09 Asia/Tokyo] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/admin/news_update.php on line 74
+[16-Sep-2025 16:17:09 Asia/Tokyo] PHP Stack trace:
+[16-Sep-2025 16:17:09 Asia/Tokyo] PHP   1. {main}() /var/www/html/admin/news_update.php:0
+[16-Sep-2025 16:17:30 Asia/Tokyo] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/admin/news_update.php on line 74
+[16-Sep-2025 16:17:30 Asia/Tokyo] PHP Stack trace:
+[16-Sep-2025 16:17:30 Asia/Tokyo] PHP   1. {main}() /var/www/html/admin/news_update.php:0
+[16-Sep-2025 16:18:01 Asia/Tokyo] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/admin/news_update.php on line 74
+[16-Sep-2025 16:18:01 Asia/Tokyo] PHP Stack trace:
+[16-Sep-2025 16:18:01 Asia/Tokyo] PHP   1. {main}() /var/www/html/admin/news_update.php:0
+[16-Sep-2025 16:38:01 Asia/Tokyo] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/admin/news_update.php on line 74
+[16-Sep-2025 16:38:01 Asia/Tokyo] PHP Stack trace:
+[16-Sep-2025 16:38:01 Asia/Tokyo] PHP   1. {main}() /var/www/html/admin/news_update.php:0
+[16-Sep-2025 16:39:05 Asia/Tokyo] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/admin/news_update.php on line 74
+[16-Sep-2025 16:39:05 Asia/Tokyo] PHP Stack trace:
+[16-Sep-2025 16:39:05 Asia/Tokyo] PHP   1. {main}() /var/www/html/admin/news_update.php:0
+[16-Sep-2025 17:16:50 Asia/Tokyo] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/admin/news_update.php on line 74
+[16-Sep-2025 17:16:50 Asia/Tokyo] PHP Stack trace:
+[16-Sep-2025 17:16:50 Asia/Tokyo] PHP   1. {main}() /var/www/html/admin/news_update.php:0
+[16-Sep-2025 17:17:05 Asia/Tokyo] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/admin/news_update.php on line 74
+[16-Sep-2025 17:17:05 Asia/Tokyo] PHP Stack trace:
+[16-Sep-2025 17:17:05 Asia/Tokyo] PHP   1. {main}() /var/www/html/admin/news_update.php:0
+[16-Sep-2025 17:41:46 Asia/Tokyo] PHP Warning:  Undefined array key "originalName" in /var/www/html/admin/news_add.php on line 67
+[16-Sep-2025 17:41:46 Asia/Tokyo] PHP Stack trace:
+[16-Sep-2025 17:41:46 Asia/Tokyo] PHP   1. {main}() /var/www/html/admin/news_add.php:0
+[16-Sep-2025 17:41:46 Asia/Tokyo] PHP Warning:  Undefined array key "size" in /var/www/html/admin/news_add.php on line 68
+[16-Sep-2025 17:41:46 Asia/Tokyo] PHP Stack trace:
+[16-Sep-2025 17:41:46 Asia/Tokyo] PHP   1. {main}() /var/www/html/admin/news_add.php:0
+[16-Sep-2025 17:41:46 Asia/Tokyo] 172.18.0.1 /var/www/html/admin/news_add.php(75) PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'nf_originalname' cannot be null in /var/www/html/admin/lib/Stdb.php:114
+Stack trace:
+#0 /var/www/html/admin/lib/Stdb.php(114): PDOStatement->execute()
+#1 /var/www/html/admin/news_add.php(69): Stdb\Stdb\Stdb->setSql('INSERT INTO new...', Array)
+#2 {main}

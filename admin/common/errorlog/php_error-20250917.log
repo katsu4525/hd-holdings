@@ -1,0 +1,18 @@
+[17-Sep-2025 10:03:27 Asia/Tokyo] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/admin/news_update.php on line 74
+[17-Sep-2025 10:03:27 Asia/Tokyo] PHP Stack trace:
+[17-Sep-2025 10:03:27 Asia/Tokyo] PHP   1. {main}() /var/www/html/admin/news_update.php:0
+[17-Sep-2025 10:11:28 Asia/Tokyo] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/admin/news_update.php on line 74
+[17-Sep-2025 10:11:28 Asia/Tokyo] PHP Stack trace:
+[17-Sep-2025 10:11:28 Asia/Tokyo] PHP   1. {main}() /var/www/html/admin/news_update.php:0
+[17-Sep-2025 10:14:55 Asia/Tokyo] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/admin/news_update.php on line 74
+[17-Sep-2025 10:14:55 Asia/Tokyo] PHP Stack trace:
+[17-Sep-2025 10:14:55 Asia/Tokyo] PHP   1. {main}() /var/www/html/admin/news_update.php:0
+[17-Sep-2025 10:18:31 Asia/Tokyo] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/admin/news_update.php on line 74
+[17-Sep-2025 10:18:31 Asia/Tokyo] PHP Stack trace:
+[17-Sep-2025 10:18:31 Asia/Tokyo] PHP   1. {main}() /var/www/html/admin/news_update.php:0
+[17-Sep-2025 10:26:06 Asia/Tokyo] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/admin/news_update.php on line 74
+[17-Sep-2025 10:26:06 Asia/Tokyo] PHP Stack trace:
+[17-Sep-2025 10:26:06 Asia/Tokyo] PHP   1. {main}() /var/www/html/admin/news_update.php:0
+[17-Sep-2025 11:05:31 Asia/Tokyo] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/admin/news_update.php on line 74
+[17-Sep-2025 11:05:31 Asia/Tokyo] PHP Stack trace:
+[17-Sep-2025 11:05:31 Asia/Tokyo] PHP   1. {main}() /var/www/html/admin/news_update.php:0
