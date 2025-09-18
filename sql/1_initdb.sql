@@ -1,8 +1,10 @@
-CREATE DATABASE IF NOT EXISTS init_db
-DEFAULT CHARACTER SET utf8mb4
+SET NAMES utf8mb4;
+SET CHARACTER SET utf8mb4;
+
+CREATE DATABASE IF NOT EXISTS hori_db
 DEFAULT COLLATE utf8mb4_general_ci;
 
-USE init_db;
+USE hori_db;
 SET GLOBAL time_zone = 'Asia/Tokyo';
 
 CREATE TABLE IF NOT EXISTS `admin_tb` (
