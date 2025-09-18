@@ -51,15 +51,14 @@ $str = make_token();
         <div class="global-nav-button-icon"></div>
       </div>
       <div class="global-nav-item-list"> 
-      <!-- SP用ロゴ -->
-        <div class="global-nav-logo spOnly">
-          <a href="../">
-            <img src="images/h-logo.svg" alt="HRホールディングス">
-          </a>
-        </div>
         <div class="global-nav-item"><a href="philosophy.html">Our Philosophy</a></div>
         <div class="global-nav-item"><a href="company.html">企業情報</a></div>
-        <div class="global-nav-item"><a href="group.html">グループ企業</a></div>
+        <div class="global-nav-item"><a href="group.html">グループ企業</a>
+          <div class="global-nav-sub-item-list">
+            <div class="global-nav-sub-item"><a href="#">株式会社堀通信</a></div>
+            <div class="global-nav-sub-item"><a href="#">株式会社 HoriTech</a></div>
+          </div>
+        </div>
         <div class="global-nav-item"><a href="facility.html">関連施設</a></div>
         <div class="global-nav-item"><a href="contact.php">お問い合わせ</a></div>
       </div>
