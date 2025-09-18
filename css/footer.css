@@ -1,15 +1,10 @@
 @charset "UTF-8";
 /* Footer */
 footer {
-  /*padding-top: 50px;*/
-  /*border-top: 5px solid #00B3EC;*/
+  padding-top: 50px;
+  border-top: 5px solid #18943b;
   line-height: 1.6em;
-  background-color: #FFF;
-  background-image: url("../images/f-line.webp");
-  background-size: 100% 5px;
-  background-repeat: none;
-  background-position: center top;
-  padding-top: 5px; }
+  background-color: #FFF; }
   footer .inner {
     width: 90%;
     max-width: 1200px;
@@ -23,67 +18,64 @@ footer {
   footer .logo-nav {
     display: flex;
     flex-wrap: wrap; }
-  footer .f-contact {
-    padding-top: 50px;
-    background-color: #FFF; }
-    footer .f-contact .f-log {
-      margin-bottom: 20px;
-      margin-right: 50px; }
-      @media screen and (max-width: 480px) {
-        footer .f-contact .f-log {
-          width: 280px;
-          margin: 0 auto 20px; } }
-    footer .f-contact ul li {
-      margin-bottom: 3px; }
-    footer .f-contact .f-nav a {
-      display: flex;
-      align-items: center;
-      color: #333;
-      text-decoration: none;
-      font-size: 1.8rem;
-      line-height: 1.2em;
-      margin-bottom: 10px; }
-    footer .f-contact .circle-icon {
-      width: 21px;
-      height: 21px;
-      border: 1px solid #333;
-      border-radius: 50%;
-      background-color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-right: 5px; }
-    footer .f-contact .f-pv {
-      font-size: 1.4rem; }
-    @media screen and (max-width: 768px) {
-      footer .f-contact .tel-form {
-        margin-top: 15px; } }
+  footer .f-contact .f-log {
+    margin-bottom: 20px;
+    margin-right: 50px; }
     @media screen and (max-width: 480px) {
-      footer .f-contact .tel-form {
-        width: 100%;
-        box-sizing: border-box; } }
-    footer .f-contact .tel-form .f-form {
-      text-align: center; }
-      footer .f-contact .tel-form .f-form a {
-        font-size: 1.8rem;
-        font-weight: 700;
-        display: inline-block;
-        width: 100%;
-        box-sizing: border-box;
-        padding: 15px 1em;
-        color: #FFF;
-        background-image: linear-gradient(90deg, #18943B, #00B3EC);
-        border-radius: 6px;
-        text-decoration: none;
-        position: relative; }
-        footer .f-contact .tel-form .f-form a::after {
-          content: "　▶";
-          /* 半角スペース + 三角 */
-          font-size: 1.4rem;
-          /* 矢印だけ少し調整しても良い */ }
-    footer .f-contact .tel-form .f-tel {
+      footer .f-contact .f-log {
+        width: 240px;
+        margin: 0 auto 20px; } }
+  footer .f-contact ul li {
+    margin-bottom: 3px; }
+  footer .f-contact .f-nav a {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    font-size: 1.8rem;
+    line-height: 1.2em;
+    margin-bottom: 10px; }
+  footer .f-contact .circle-icon {
+    width: 21px;
+    height: 21px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px; }
+  footer .f-contact .f-pv {
+    font-size: 1.4rem; }
+  @media screen and (max-width: 768px) {
+    footer .f-contact .tel-form {
+      margin-top: 15px; } }
+  @media screen and (max-width: 480px) {
+    footer .f-contact .tel-form {
       width: 100%;
-      margin-top: 10px; }
+      box-sizing: border-box; } }
+  footer .f-contact .tel-form .f-form {
+    text-align: center; }
+    footer .f-contact .tel-form .f-form a {
+      font-size: 1.8rem;
+      font-weight: 700;
+      display: inline-block;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 15px 1em;
+      color: #FFF;
+      background-image: linear-gradient(90deg, #18943b, #94d32f);
+      border-radius: 6px;
+      text-decoration: none;
+      position: relative; }
+      footer .f-contact .tel-form .f-form a::after {
+        content: "　▶";
+        /* 半角スペース + 三角 */
+        font-size: 1.4rem;
+        /* 矢印だけ少し調整しても良い */ }
+  footer .f-contact .tel-form .f-tel {
+    width: 100%;
+    margin-top: 10px; }
   footer .bnr-area {
     padding: 50px 0;
     border-top: 1px dotted #111;
@@ -121,11 +113,11 @@ footer {
           @media screen and (max-width: 768px) {
             footer .bnr-area div figure img {
               width: auto;
-              height: 45px; } }
+              height: 40px; } }
           @media screen and (max-width: 480px) {
             footer .bnr-area div figure img {
               width: auto;
-              height: 40px; } }
+              height: 34px; } }
   footer .copy-r {
     background-color: #000;
     font-size: 1.4rem;

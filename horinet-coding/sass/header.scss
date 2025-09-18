@@ -1,0 +1,124 @@
+// Breakpoints.
+$breakpoint-tby: 1200px;
+$breakpoint-tbt: 768px;
+$breakpoint-sp: 480px;
+
+@mixin tby {
+	@media screen and (max-width: ($breakpoint-tby)) {
+		@content;
+	}
+}
+@mixin tbt {
+	@media screen and (max-width: ($breakpoint-tbt)) {
+		@content;
+	}
+}
+@mixin sp {
+	@media screen and (max-width: ($breakpoint-sp)) {
+		@content;
+	}
+}
+/* Header */
+header{
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  left: 0;
+	width: 100%;
+  margin: 0 auto;
+  box-shadow: 0px 4px 5px -5px rgba(0, 0, 0, 0.3);
+  background-color: #008db7;
+  @include tbt {
+    margin: 0 auto;
+  }
+  #h-box{
+    width: 94%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include tbt {
+      padding: 15px 0 10px;
+    }
+    h1{
+      /*width: 300px;*/
+      @include tbt {
+        /*width: 220px;*/
+      }
+      img{
+        height: 50px;
+        @include tbt {
+          height: 40px;
+        }
+        @include sp {
+          height: 36px;
+        }
+      }
+    }
+    .remote-img{
+      width: 160px;
+      @include tbt {
+        margin-left: 30px;
+        margin-top: 10px;
+        width: 200px;
+      }
+    }
+  }
+}
+
+/*パンくずリスト*/
+/*
+.page-text{
+  width: 100%;
+  padding-left: 25%;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  @include tby {
+    padding-left: 28%;
+  }
+  @include tbt {
+    padding-left: 0;
+  }
+  .pan{
+    text-align: right;
+    a{
+      background-image: url("../images/pan.svg");
+      background-repeat: no-repeat;
+      background-size: 7px;
+      background-position: right 6px;
+      padding-right: 12px;
+      margin-right: 0.4em;
+    }
+    @include tby {
+    }
+    @include tbt {
+    }
+    @include sp {
+      display: none;
+    }
+    ul{
+      text-align: left;
+      display: flex;
+      justify-content: flex-end;
+      li{
+        list-style: none;
+        background-image: url("../images/pan.svg");
+        background-repeat: no-repeat;
+        background-size: 5px;
+        background-position: right center;
+        padding-right: 15px;
+        margin-right: 0.5em;
+        &:last-child{
+          background-image: none;
+          padding-right: 0;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+*/

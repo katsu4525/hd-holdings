@@ -4,7 +4,7 @@ $str = make_token();
 ?>
 
 <!doctype html>
-<html><!-- InstanceBegin template="/Templates/temp.dwt" codeOutsideHTMLIsLocked="false" -->
+<html><!-- InstanceBegin template="/Templates/tempHD.dwt" codeOutsideHTMLIsLocked="false" -->
 <head prefix="og: https://ogp.me/ns#">
 <meta charset="utf-8">
 <!-- InstanceBeginEditable name="doctitle" -->
