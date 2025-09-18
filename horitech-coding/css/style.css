@@ -24,18 +24,19 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  padding: 60px 0;
   margin-bottom: 10px;
   text-align: center;
-  font-weight: 700; }
+  height: 240px;
+  display: grid;
+  place-items: center;
+  /* 縦横中央をまとめて指定 */
+  box-sizing: border-box; }
   @media screen and (max-width: 768px) {
     .title-area, .title-area-news {
       background-image: url("../images/page-title-sp.webp");
-      padding: 25px 0; } }
-  @media screen and (max-width: 480px) {
-    .title-area, .title-area-news {
-      padding: 15px 0; } }
+      height: 120px; } }
   .title-area h2, .title-area-news h2 {
+    font-weight: 400;
     font-size: 3.0rem;
     line-height: 1.5em;
     margin: 0;
@@ -645,10 +646,12 @@ h3 {
   font-size: 2.2rem;
   margin: 0.5em 0; }
 #works .sub-title1, #works2 .sub-title1 {
-  font-size: 1.8rem; }
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 10px; }
 #works .table-area, #works2 .table-area {
-  border-top: 1px solid #18943b;
-  border-bottom: 1px solid #18943b; }
+  /*border-top: 2px solid #18943b;*/
+  border-bottom: 2px solid #18943b; }
   #works .table-area .souryou, #works2 .table-area .souryou {
     height: auto; }
     #works .table-area .souryou table, #works2 .table-area .souryou table {
@@ -657,18 +660,29 @@ h3 {
       @media screen and (max-width: 768px) {
         #works .table-area .souryou table, #works2 .table-area .souryou table {
           width: 1024px; } }
+      #works .table-area .souryou table .tb-title, #works2 .table-area .souryou table .tb-title {
+        font-weight: 500;
+        font-size: 1.8rem;
+        line-height: 1.4em;
+        color: #18943b; }
+      #works .table-area .souryou table .title, #works2 .table-area .souryou table .title {
+        font-weight: 500;
+        font-size: 2.2rem;
+        line-height: 1.4em;
+        color: #18943b;
+        text-align: left;
+        padding-left: 0.6em; }
       #works .table-area .souryou table th, #works2 .table-area .souryou table th {
-        border-bottom: 3px double #18943b;
+        border-bottom: 2px solid #18943b;
         text-align: center;
-        padding: 3px 3px;
+        padding: 12px 3px;
         box-sizing: border-box;
-        font-size: 14px; }
+        font-weight: normal; }
       #works .table-area .souryou table td, #works2 .table-area .souryou table td {
         border-bottom: 1px dotted #DDD;
         text-align: center;
-        padding: 3px 3px;
-        box-sizing: border-box;
-        font-size: 14px; }
+        padding: 12px 3px;
+        box-sizing: border-box; }
         #works .table-area .souryou table td.text-left, #works2 .table-area .souryou table td.text-left {
           text-align: left;
           padding-left: 1em; }
@@ -698,25 +712,31 @@ h3 {
         width: 100%; } }
 
 #works1 table {
-  border-top: 1px solid #18943b;
-  border-bottom: 1px solid #18943b;
+  border-bottom: 2px solid #18943b;
   width: 40%;
   box-sizing: border-box; }
   @media screen and (max-width: 768px) {
     #works1 table {
       width: 100%; } }
   #works1 table th {
-    border-bottom: 3px double #18943b;
+    border-bottom: 2px solid #18943b;
     text-align: center;
-    padding: 3px 3px;
+    padding: 12px 3px;
     box-sizing: border-box;
-    font-size: 14px; }
+    font-weight: normal;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.4em;
+    color: #18943b; }
+    #works1 table th.title {
+      font-size: 2.2rem;
+      text-align: left;
+      padding-left: 0.6em; }
   #works1 table td {
     border-bottom: 1px dotted #DDD;
     text-align: center;
-    padding: 3px 3px;
-    box-sizing: border-box;
-    font-size: 14px; }
+    padding: 12px 3px;
+    box-sizing: border-box; }
     #works1 table td.text-left {
       text-align: left;
       padding-left: 1em; }
@@ -747,8 +767,9 @@ h3 {
     #company dl {
       margin-bottom: 40px; } }
   #company dl dt {
+    font-weight: normal;
     width: 12em;
-    padding: 1em 0;
+    padding: 12px 0;
     border-top: 1px dotted #CCC;
     background-color: #e9f7ed;
     text-align: center; }
@@ -759,10 +780,10 @@ h3 {
         width: 10em; } }
     @media screen and (max-width: 480px) {
       #company dl dt {
-        width: 8em; } }
+        width: 7em; } }
   #company dl dd {
     width: calc(100% - 12em);
-    padding: 1em 0 1em 1em;
+    padding: 12px 0 12px 1em;
     border-top: 1px dotted #CCC;
     box-sizing: border-box; }
     #company dl dd:nth-child(2) {
@@ -772,7 +793,8 @@ h3 {
         width: calc(100% - 10em); } }
     @media screen and (max-width: 480px) {
       #company dl dd {
-        width: calc(100% - 8em); } }
+        width: calc(100% - 7em);
+        padding-right: 1em; } }
 #company #access h3 {
   border-bottom: 1px solid #18943B; }
 #company #access .map {
@@ -836,26 +858,6 @@ h3 {
         background-color: #18943b; }
       #news-cate-nav p a.bg-or {
         background-color: #ff9300; }
-
-/*お知らせ詳細*/
-#news-detail {
-  text-align: center; }
-  #news-detail .news-detail-info {
-    text-align: justify;
-    word-break: break-all; }
-    #news-detail .news-detail-info h3 {
-      font-weight: 700;
-      border-bottom: dotted 1px #DDD;
-      padding-bottom: 10px; }
-  #news-detail .menu-nav {
-    width: 260px;
-    margin: 80px auto 0; }
-    @media screen and (max-width: 768px) {
-      #news-detail .menu-nav {
-        margin: 60px auto 0; } }
-    @media screen and (max-width: 480px) {
-      #news-detail .menu-nav {
-        margin: 40px auto 0; } }
 
 @media screen and (max-width: 768px) {
   .space {

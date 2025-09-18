@@ -44,18 +44,20 @@ $breakpoint-sp: 480px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  padding: 60px 0;
   margin-bottom: 10px;
   text-align: center;
-  font-weight: 700;
+  height: 240px;
+  display: grid;
+  place-items: center; /* 縦横中央をまとめて指定 */
+  box-sizing: border-box;
   @include tbt {
     background-image: url("../images/page-title-sp.webp");
-    padding: 25px 0;
+    height: 120px;
   }
   @include sp {
-    padding: 15px 0;
   }
   h2{
+    font-weight: 400;
     font-size: 3.0rem;
     line-height: 1.5em;
     margin: 0;
@@ -712,10 +714,12 @@ h3{
   }
   .sub-title1{
     font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 10px;
   }
   .table-area {
-    border-top: 1px solid #18943b;
-    border-bottom: 1px solid #18943b;
+    /*border-top: 2px solid #18943b;*/
+    border-bottom: 2px solid #18943b;
     .souryou{
       height: auto;
       table{
@@ -724,19 +728,32 @@ h3{
         @include tbt {
           width: 1024px;
         }
+        .tb-title{
+          font-weight: 500;
+          font-size: 1.8rem;
+          line-height: 1.4em;
+          color: #18943b;
+        }
+        .title{
+          font-weight: 500;
+          font-size: 2.2rem;
+          line-height: 1.4em;
+          color: #18943b;
+          text-align: left;
+          padding-left: 0.6em;
+        }
         th{
-          border-bottom: 3px double #18943b;
+          border-bottom: 2px solid #18943b;
           text-align: center;
-          padding: 3px 3px;
+          padding: 12px 3px;
           box-sizing: border-box;
-          font-size: 14px;
+          font-weight: normal;
         }
         td{
           border-bottom: 1px dotted #DDD;
           text-align: center;
-          padding: 3px 3px;
+          padding: 12px 3px;
           box-sizing: border-box;
-          font-size: 14px;
           &.text-left{
             text-align: left;
             padding-left: 1em;
@@ -776,26 +793,33 @@ h3{
 }
 #works1{
   table{
-    border-top: 1px solid #18943b;
-    border-bottom: 1px solid #18943b;
+    border-bottom: 2px solid #18943b;
     width: 40%;
     box-sizing: border-box;
     @include tbt {
       width: 100%;
     }
     th{
-      border-bottom: 3px double #18943b;
+      border-bottom: 2px solid #18943b;
       text-align: center;
-      padding: 3px 3px;
+      padding: 12px 3px;
       box-sizing: border-box;
-      font-size: 14px;
+      font-weight: normal;
+      font-weight: 500;
+      font-size: 1.8rem;
+      line-height: 1.4em;
+      color: #18943b;
+      &.title{
+        font-size: 2.2rem;
+        text-align: left;
+        padding-left: 0.6em;
+      }
     }
     td{
       border-bottom: 1px dotted #DDD;
       text-align: center;
-      padding: 3px 3px;
+      padding: 12px 3px;
       box-sizing: border-box;
-      font-size: 14px;
       &.text-left{
         text-align: left;
         padding-left: 1em;
@@ -833,8 +857,9 @@ h3{
       margin-bottom: 40px;
     }
     dt{
+      font-weight: normal;
       width: 12em;
-      padding: 1em 0;
+      padding: 12px 0;
       border-top:1px dotted #CCC;
       background-color: #e9f7ed;
       text-align: center;
@@ -845,12 +870,12 @@ h3{
         width: 10em;
       }
       @include sp {
-        width: 8em;
+        width: 7em;
       }
     }
     dd{
       width: calc(100% - 12em);
-      padding: 1em 0 1em 1em;
+      padding: 12px 0 12px 1em;
       border-top: 1px dotted #CCC;
       box-sizing: border-box;
       &:nth-child(2){
@@ -860,7 +885,8 @@ h3{
         width: calc(100% - 10em);
       }
       @include sp {
-        width: calc(100% - 8em);
+        width: calc(100% - 7em);
+        padding-right: 1em;
       }
     }
   }
@@ -943,29 +969,6 @@ h3{
       &.bg-or{
         background-color: #ff9300;
       }
-    }
-  }
-}
-/*お知らせ詳細*/
-#news-detail{
-  text-align: center;
-  .news-detail-info{
-    text-align: justify;
-    word-break: break-all;
-    h3{
-      font-weight: 700;
-      border-bottom: dotted 1px #DDD;
-      padding-bottom: 10px;
-    }
-  }
-  .menu-nav{
-    width: 260px;
-    margin: 80px auto 0;
-    @include tbt {
-      margin: 60px auto 0;
-    }
-    @include sp {
-      margin: 40px auto 0;
     }
   }
 }

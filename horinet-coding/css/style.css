@@ -24,18 +24,19 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  padding: 60px 0;
   margin-bottom: 10px;
   text-align: center;
-  font-weight: 700; }
+  height: 240px;
+  display: grid;
+  place-items: center;
+  /* 縦横中央をまとめて指定 */
+  box-sizing: border-box; }
   @media screen and (max-width: 768px) {
     .title-area, .title-area-news {
       background-image: url("../images/page-title-sp.webp");
-      padding: 25px 0; } }
-  @media screen and (max-width: 480px) {
-    .title-area, .title-area-news {
-      padding: 15px 0; } }
+      height: 120px; } }
   .title-area h2, .title-area-news h2 {
+    font-weight: 400;
     font-size: 3.0rem;
     line-height: 1.5em;
     margin: 0;
@@ -481,7 +482,8 @@ h3 {
       margin-bottom: 30px; } }
   #service .btnArea .btn {
     width: 48%;
-    margin-bottom: 2%; }
+    margin-bottom: 2%;
+    text-align: left; }
     @media screen and (max-width: 768px) {
       #service .btnArea .btn {
         width: 100%;
@@ -490,7 +492,7 @@ h3 {
       width: 100%;
       display: inline-flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       padding: 10px 20px;
       background: #FFF;
       font-weight: 700;
@@ -955,8 +957,9 @@ h3 {
     #company dl {
       margin-bottom: 40px; } }
   #company dl dt {
+    font-weight: normal;
     width: 12em;
-    padding: 1em 0;
+    padding: 12px 0;
     border-top: 1px dotted #CCC;
     background-color: #e5f3f8;
     text-align: center; }
@@ -967,10 +970,10 @@ h3 {
         width: 10em; } }
     @media screen and (max-width: 480px) {
       #company dl dt {
-        width: 8em; } }
+        width: 7em; } }
   #company dl dd {
     width: calc(100% - 12em);
-    padding: 1em 0 1em 1em;
+    padding: 12px 0 12px 1em;
     border-top: 1px dotted #CCC;
     box-sizing: border-box; }
     #company dl dd:nth-child(2) {
@@ -980,7 +983,8 @@ h3 {
         width: calc(100% - 10em); } }
     @media screen and (max-width: 480px) {
       #company dl dd {
-        width: calc(100% - 8em); } }
+        width: calc(100% - 7em);
+        padding-right: 1em; } }
 #company #access h3 {
   border-bottom: 1px solid #008db7; }
 #company #access .map {
@@ -1053,26 +1057,6 @@ h3 {
         background-color: #18943b; }
       #news-cate-nav p a.bg-or {
         background-color: #ff9300; }
-
-/*お知らせ詳細*/
-#news-detail {
-  text-align: center; }
-  #news-detail .news-detail-info {
-    text-align: justify;
-    word-break: break-all; }
-    #news-detail .news-detail-info h3 {
-      font-weight: 700;
-      border-bottom: dotted 1px #DDD;
-      padding-bottom: 10px; }
-  #news-detail .menu-nav {
-    width: 260px;
-    margin: 80px auto 0; }
-    @media screen and (max-width: 768px) {
-      #news-detail .menu-nav {
-        margin: 60px auto 0; } }
-    @media screen and (max-width: 480px) {
-      #news-detail .menu-nav {
-        margin: 40px auto 0; } }
 
 @media screen and (max-width: 768px) {
   .space {
