@@ -1,20 +1,78 @@
+<?php
+
+/**
+ * @file index.php
+ * @brief 堀通信TOPページ
+ * @date 2025-09-18
+ *
+ * Copyright isis Co.,ltd.
+ */
+use Stlib\Stlib\Stlib;
+
+require_once(__DIR__ . "/../admin/common/common_setting.php");
+require_once(__DIR__ . "/../admin/lib/Stlib.php");
+
+$stlib = new Stlib();
+$news_list = '';
+
+try {
+  $sql = "SELECT * FROM news_tb WHERE ne_is_public = 1 AND (ne_cate = '堀通信' OR ne_cate = 'その他') ORDER BY ne_created DESC LIMIT 3";
+  $news_data = $db->setSql($sql);
+  $news_data = $stlib->xssEs($news_data);
+
+  foreach ((array)$news_data as $val) {
+    switch ($val['ne_cate']) {
+      // case 'HRホールディングス':
+      //   $cate = '<span class="bg-pl">HRホールディングス</span>';
+      //   break;
+      case '堀通信':
+        $cate = '<span class="bg-gr">堀通信</span>';
+        break;
+      // case 'HoriTech':
+      //   $cate = '<span class="bg-gr">HoriTech</span>';
+      //   break;
+      case 'その他':
+        $cate = '<span class="bg-or">その他</span>';
+        break;
+      default:
+        break;
+    }
+
+    $title = (empty($val['ne_url'])) ? $val['ne_title'] : "<a href='{$val['ne_url']}'>{$val['ne_title']}<img src='images/link-icon.svg' alt=''/></a>";
+
+    $news_list .= <<< "HTML"
+    <div class="index-news-list">
+      <p class="date">{$val['ne_created']}</p>
+      <p class="cate">{$cate}</p>
+      <p class="text">{$title}</p>
+    </div> 
+    HTML;
+  }
+} catch (Exception $e) {
+  recordLog($e);
+  header("Location: error.html");
+  exit;
+}
+
+?>
+
 <!doctype html>
 <html><!-- InstanceBegin template="/Templates/temp.dwt" codeOutsideHTMLIsLocked="false" -->
 <head prefix="og: https://ogp.me/ns#">
 <meta charset="utf-8">
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>お知らせ一覧｜京都・福知山の電気・通信・ITインフラ構築 【株式会社堀通信】</title>
+<title>京都・福知山の電気・通信・ITインフラ構築｜【株式会社堀通信】</title>
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="descdata" -->
-<meta name="description" content="お知らせ一覧のページです" />
+<meta name="description" content="京都・福知山の電気・通信・ITインフラ構築。【株式会社堀通信】" />
 <!-- InstanceEndEditable -->
 <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
 <meta name="format-detection" content="telephone=no">
 <!-- InstanceBeginEditable name="head" -->
-<meta property="og:url" content="https://horinet.co.jp/news-list.php" />
-<meta property="og:type" content="article" />
-<meta property="og:title" content="お知らせ一覧｜京都・福知山の電気・通信・ITインフラ構築 【株式会社堀通信】" />
-<meta property="og:description" content="お知らせ一覧のページです" />
+<meta property="og:url" content="https://horinet.co.jp/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="京都・福知山の電気・通信・ITインフラ構築｜【株式会社堀通信】" />
+<meta property="og:description" content="京都・福知山の株式会社堀通信は、電気工事・通信工事・ITサポートを行う専門会社。パソコン販売やネットワーク構築もお任せください。" />
 <meta property="og:site_name" content="株式会社堀通信" />
 <meta property="og:image" content="https://horinet.co.jp/images/ogp.jpg" />
 <!-- InstanceEndEditable -->
@@ -52,43 +110,69 @@
     <!-- .global-nav --> 
   </div>
 </header>
-<main> <!-- InstanceBeginEditable name="mainArea" -->
-  <section class="title-area">
-    <h2>お知らせ一覧</h2>
+<main> <!-- InstanceBeginEditable name="mainArea" --> 
+  <!--動画-->
+  <section id="movie">
+    <div class="fv">
+      <video autoplay muted playsinline loop preload="auto" class="pcOnly">
+        <source src="main-mv.mp4" type="video/mp4">
+        お使いのブラウザは動画に対応していません。
+      </video>
+      <video autoplay muted playsinline preload="auto" class="spOnly">
+        <source src="main-mv-sp.mp4" type="video/mp4">
+        お使いのブラウザは動画に対応していません。
+      </video>
+      <div class="text-overlay">
+        <p>通信と電気で描く</p>
+        <p>新しい時代</p>
+      </div>
+    </div>
   </section>
-  <div class="pan">
-    <a href="./">堀通信</a>
-    <p class="current-page">お知らせ一覧</p>
-  </div>
-  <div id="news-cate-nav">
-    <p><a href="#horinet" class="bg-bl">堀通信</a></p>
-    <p><a href="#other" class="bg-or">その他</a></p>
-  </div>
-    <section id="news-list" class="inner">
-      <div class="index-news-list">
+  <section class="index-text-area">
+    <h2>経験×技術×統合力で<br>プロジェクトを成功に導く</h2>
+  </section>
+    <section id="index-news" class="inner">
+      <h2 class="news-title">News <span>―お知らせ―</span></h2>
+      <!-- <div class="index-news-list">
         <p class="date">2025.10.01</p>
         <p class="cate"><span class="bg-or">その他</span></p>
-        <p class="text"><a href="#">ダミーテキスト：ホームページリニューアル<img src="images/link-icon.svg" alt=""/></a></p>
-      </div>
-      <div class="index-news-list">
-        <p class="date">2025.10.01</p>
-        <p class="cate"><span class="bg-gr">HoriTech</span></p>
         <p class="text"><a href="#">ダミーテキスト：ホームページリニューアル</a></p>
       </div>
-      <div class="index-news-list">
+      <div class="index-news-list pcOnly">
         <p class="date">2025.10.01</p>
-        <p class="cate"><span class="bg-gr">HoriTech</span></p>
-        <p class="text"><a href="#">ダミーテキスト：ホームページリニューアル<img src="images/link-icon.svg" alt=""/></a></p>
+        <p class="cate"><span class="bg-gr">堀通信</span></p>
+        <p class="text"><a href="#">ダミーテキスト：ホームページリニューアル</a></p>
       </div>
-      <ol class="pagination">
-        <li class="prev"><a href="#">＜</a></li>
-        <li class="current"><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li class="next"><a href="#">＞</a></li>
-      </ol>
+      <div class="index-news-list pcOnly">
+        <p class="date">2025.10.01</p>
+        <p class="cate"><span class="bg-gr">堀通信</span></p>
+        <p class="text"><a href="#">ダミーテキスト：ホームページリニューアル<img src="images/link-icon.svg" alt=""/></a></p>
+      </div> -->
+      <?= $news_list ?>
+      <p class="news-btn"><a href="news-list.php">一覧へ</a></p>
+    </section>
+    <section id="index-menu">
+      <div class="index-menu-box inner">
+        <div class="index-menu-box-info">
+          <figure><img src="images/index-img1.webp" width="800" height="800" class="pcOnly" alt="企業情報"/><img src="images/index-img1-sp.webp" width="800" height="800" class="spOnly" alt="企業情報"/></figure>
+          <p class="menu-nav"><a href="company.html">企業情報</a></p>
+        </div>
+        <div class="index-menu-box-info">
+          <figure><img src="images/index-img2.webp" width="800" height="800" class="pcOnly" alt="ICT事業"/><img src="images/index-img2-sp.webp" width="800" height="800" class="spOnly" alt="ICT事業"/></figure>
+          <p class="menu-nav"><a href="ict-business.html">ICT事業</a></p>
+        </div>
+        <div class="index-menu-box-info">
+          <figure><img src="images/index-img3.webp" width="800" height="800" class="pcOnly" alt="導入事例"/><img src="images/index-img3-sp.webp" width="800" height="800" class="spOnly" alt="導入事例"/></figure>
+          <p class="menu-nav"><a href="case.html">導入事例</a></p>
+        </div>
+      </div>
+    </section>
+    <section id="registration">
+      <figure><img src="images/registration.png" width="772" height="290" alt=""/></figure>
+      <p>【登録情報】</p>
+      <p>・登録事業者：株式会社堀通信 開発営業部<br>
+      ・適用規格：ISO/IEC 27001：2013（JIS Q 27001：2014）<br>
+      ・登録番号：IS 704449 / ISO27001</p>
     </section>
   <!-- InstanceEndEditable --> </main>
 <!--フッター-->

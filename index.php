@@ -1,3 +1,62 @@
+<?php
+
+/**
+ * @file index.php
+ * @brief ホールディングスTOPページ
+ * @date 2025-09-18
+ *
+ * Copyright isis Co.,ltd.
+ */
+
+use Stlib\Stlib\Stlib;
+
+require_once(__DIR__ . "/admin/common/common_setting.php");
+require_once(__DIR__ . "/admin/lib/Stlib.php");
+
+$stlib = new Stlib();
+$news_list = '';
+
+try {
+  $sql = "SELECT * FROM news_tb WHERE ne_is_public = 1 ORDER BY ne_created DESC LIMIT 3";
+  $news_data = $db->setSql($sql);
+  $news_data = $stlib->xssEs($news_data);
+
+  foreach ((array)$news_data as $val) {
+    switch ($val['ne_cate']) {
+      case 'HRホールディングス':
+        $cate = '<span class="bg-pl">HRホールディングス</span>';
+        break;
+      case '堀通信':
+        $cate = '<span class="bg-bl">堀通信</span>';
+        break;
+      case 'HoriTech':
+        $cate = '<span class="bg-gr">HoriTech</span>';
+        break;
+      case 'その他':
+        $cate = '<span class="bg-or">その他</span>';
+        break;
+      default:
+        break;
+    }
+
+    $title = (empty($val['ne_url'])) ? $val['ne_title'] : "<a href='{$val['ne_url']}'>{$val['ne_title']}<img src='images/link-icon.svg' alt=''/></a>";
+
+    $news_list .= <<< "HTML"
+    <div class="index-news-list">
+      <p class="date">{$val['ne_created']}</p>
+      <p class="cate">{$cate}</p>
+      <p class="text">{$title}</p>
+    </div> 
+    HTML;
+  }
+} catch (Exception $e) {
+  recordLog($e);
+  header("Location: error.html");
+  exit;
+}
+
+?>
+
 <!doctype html>
 <html><!-- InstanceBegin template="/Templates/tempHD.dwt" codeOutsideHTMLIsLocked="false" -->
 <head prefix="og: https://ogp.me/ns#">
@@ -81,7 +140,7 @@
   
   <section id="index-news" class="inner">
     <h2 class="news-title">News <span>―お知らせ―</span></h2>
-    <div class="index-news-list">
+    <!-- <div class="index-news-list">
       <p class="date">2025.10.01</p>
       <p class="cate"><span class="bg-or">その他</span></p>
       <p class="text"><a href="#">ダミーテキスト：ホームページリニューアル<img src="images/link-icon.svg" alt=""/></a></p>
@@ -95,8 +154,9 @@
       <p class="date">2025.10.01</p>
       <p class="cate"><span class="bg-bl">堀通信</span></p>
       <p class="text"><a href="#">日本電通株式会社様のホームページにて弊社の「抗ウイルス・除菌用紫外線照射装置」の導入事例が紹介されました<img src="images/link-icon.svg" alt=""/></a></p>
-    </div>
-    <p class="news-btn"><a href="#">一覧へ</a></p>
+    </div> -->
+    <?= $news_list ?>
+    <p class="news-btn"><a href="news-list.php">一覧へ</a></p>
   </section>
   <section id="index-menu">
     <div class="inner text-center">

@@ -49,8 +49,12 @@ $(function(){
       },
       title: {
         required: true,
-        maxlength: 200,
+        maxlength: 255,
       },
+      url: {
+        url: true,
+        maxlength: 255,
+      }
     },
 
     //エラーメッセージ設定
