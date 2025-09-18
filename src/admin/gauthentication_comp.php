@@ -1,0 +1,149 @@
+<?php
+
+/**
+ * @file gauthentication_comp.php
+ * @brief QRコード発行メール送信完了画面
+ * @date 2023-07-21
+ *
+ * Copyright isis Co.,ltd.
+ */
+
+require_once(__DIR__ . "/common/common_setting.php");
+require_once(__DIR__ . "/lib/md_session.php");
+
+session_start();
+
+if (empty($_SESSION['logkey'])){
+  header("Location: login.php?ER=99");
+  exit;
+}
+
+// try{
+//   // ユーザー情報
+//   $sql = "SELECT * FROM admin_tb WHERE am_key = ?";
+//   $bind = [];
+//   $bind[] = $_SESSION['logkey'];
+//   $res_user = $db->setSql($sql, $bind, PDO::FETCH_ASSOC, 'fetch');
+
+//   if (empty($res_user)){
+//     header("Location: login.php?ER=95");
+//     exit;
+//   }
+// } catch (Exception $e) {
+//   recordLog($e);
+//   header("Location: login.php?ER=99");
+//   exit;
+// }
+$err_str = "";
+$err_code = filter_input(INPUT_GET, 'ER', FILTER_SANITIZE_SPECIAL_CHARS);
+if (is_null($err_code)) {
+  $err_code  = 100;
+}
+switch ($err_code) {
+  case 0:
+    $err_str = <<< "HTML"
+      <h2>QRコード発行用メールを送信しました。</h2>
+      <p>入力いただいたメールアドレス宛にQRコード発行用URLを送信しました。</p>
+      <p>QRコード発行用URLにアクセスして、QRコードを専用アプリで読み取ってください。</p>
+    HTML;
+    break;
+  case 97:
+  case 98:
+  case 99:
+  case 100:
+    $err_str = <<< "HTML"
+      <h2 class="red">エラーが発生しました。</h2>
+      <p>お手数ですが、ログイン画面から操作をやり直してください。</p>
+      <div class="center"><a href="login.php">ログイン画面はこちら</a></div>
+    HTML;
+    break;
+  case 110:
+    $err_str = <<< "HTML"
+      <h2 class="red">管理者にお問い合わせください。</h2>
+    HTML;
+    break;
+  default:
+    $err_str = <<< "HTML"
+      <h2 class="red">エラーが発生しました。</h2>
+      <p>お手数ですが、ログイン画面から操作をやり直してください。</p>
+      <div class="center"><a href="login.php">ログイン画面はこちら</a></div>
+    HTML;
+    break;
+}
+
+?>
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="robots" content="noindex" />
+  <title>管理サイト</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Cache-Control" content="no-store">
+  <meta http-equiv="Expires" content="0">
+  <!--ファビコン-->
+  <link rel="icon" type="image/png" href="../img/favicon.png">
+  <link href="css/base.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <!-- <link rel="icon" href="favicon.ico" /> -->
+  <meta name="robots" content="noindex">
+  <style>
+      #LoginID,
+      #PassWord {
+          width: 98%;
+      }
+      body {
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(1.00, #F7F7F7), color-stop(0.00, rgb(213, 214, 235)));
+      background:-webkit-linear-gradient(#F7F7F7, rgb(213, 214, 235));
+      background:-moz-linear-gradient(#F7F7F7, rgb(213, 214, 235));
+      background:linear-gradient(#F7F7F7, rgb(213, 214, 235));
+        /* background: linear-gradient(#F7F7F7, rgb(210, 211, 243)); */
+        /* background: linear-gradient(#F7F7F7, rgb(192, 192, 192)); */
+      }
+      h2, p {
+        text-align: center;
+      }
+      h2 {
+        font-size: 120%;
+        margin-bottom: 10px;
+      }
+      #login .red {
+        margin-top: 0;
+      }
+      .center {
+        text-align: center;
+        margin-top: 20px;
+      }
+  </style>
+  <script>
+    $(function() {
+      //画面初期表示時に遷移先nullの履歴を追加する
+      history.pushState(null, null, null);
+
+      //ブラウザの戻る／すすむボタンで発火するイベント
+      window.onpopstate = function(event) {
+        //戻るボタンを押して戻った時に再度nullの履歴を追加する。
+        //※この処理はalertの前に書いておく必要あり。alertの後ろだと戻るボタンを連打したときに戻れてしまう。
+        history.pushState(null, null, null);
+        alert("戻るボタンは禁止されています。");
+      };
+    });
+  </script>
+</head>
+<body>
+  <div id="container">
+    <p id="loginLogo"><img src="img/logo.png" width="173"></p><br>
+    <p id="loginTitle">QRコード発行受付画面</p>
+    <form method="post">
+      <section id="login">
+        <?= $err_str ?>
+      </section>
+    </form>
+
+    <div id="footer_l"><?= $DF_COPYRIGHT ?></div>
+  </div>
+</body>
+
+</html>

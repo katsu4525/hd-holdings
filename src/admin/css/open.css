@@ -1,0 +1,81 @@
+#mainArea #mainContents{
+  margin-left: 240px;
+}
+.slideIn #mainArea #mainContents{
+  animation: slideInMargin 0.5s forwards;
+}
+.slideOut #mainArea #mainContents{
+  animation: slideOutMargin 0.5s forwards;
+}
+@keyframes slideOutMargin {
+  from {
+    margin-left: 240px;
+  }
+  to {
+    margin-left: 90px;
+  }
+}
+@keyframes slideInMargin {
+  from {
+    margin-left: 90px;
+  }
+  to {
+    margin-left: 240px;
+  }
+}
+
+.slideIn #mainArea .reg{
+  animation: slideInRegMargin 0.5s forwards;
+}
+.slideOut #mainArea .reg{
+  animation: slideOutRegMargin 0.5s forwards;
+}
+@keyframes slideOutRegMargin {
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: -60px;
+  }
+}
+@keyframes slideInRegMargin {
+  from {
+    margin-left: -60px;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+.slideOut nav {
+  animation: slideOut 0.5s forwards;
+}
+.slideIn nav {
+  animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200px);
+  }
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+/* 元のアニメーション無効 */
+.open nav {
+  /* animation: none; */
+}
+.open .toggle_btn {
+  animation: none;
+}

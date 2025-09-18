@@ -1,0 +1,14 @@
+.dropzone {
+  border: 2px dashed #bbb !important;
+}
+.dropzone .dz-preview .dz-error-message {
+  top: 150px;
+  left: -10px;
+  width: 150px;
+}
+.dz-progress {
+  display: none;
+}
+.dz-cancel {
+  display: none !important;
+}
