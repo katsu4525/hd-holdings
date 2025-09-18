@@ -39,7 +39,7 @@
     background-color: #FFF;
   }
 
-  .global-nav-item:nth-child(2) > a::before {
+  .global-nav-item:first-child > a::before {
     display: none;
   }
 

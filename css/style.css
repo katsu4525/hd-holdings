@@ -24,18 +24,19 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  padding: 60px 0;
   margin-bottom: 10px;
   text-align: center;
-  font-weight: 700; }
+  height: 240px;
+  display: grid;
+  place-items: center;
+  /* 縦横中央をまとめて指定 */
+  box-sizing: border-box; }
   @media screen and (max-width: 768px) {
     .title-area, .title-area-news {
       background-image: url("../images/page-title-sp.webp");
-      padding: 25px 0; } }
-  @media screen and (max-width: 480px) {
-    .title-area, .title-area-news {
-      padding: 15px 0; } }
+      height: 120px; } }
   .title-area h2, .title-area-news h2 {
+    font-weight: 400;
     font-size: 3.0rem;
     line-height: 1.5em;
     margin: 0;
@@ -579,10 +580,10 @@ h3 {
       display: inline-block;
       width: 100%;
       box-sizing: border-box;
-      color: #008DB7;
-      border: 1px solid #008DB7;
+      color: #335B8B;
+      border: 1px solid #335B8B;
       padding: 5px 1em;
-      background-image: url("../images/arrow.svg");
+      background-image: url("../images/arrow1.svg");
       background-size: 12px;
       background-repeat: no-repeat;
       background-position: left 15px center;
@@ -636,10 +637,11 @@ h3 {
       margin-bottom: 40px; } }
   #company dl dt {
     width: 12em;
-    padding: 2em 0;
+    padding: 12px 0;
     border-top: 1px dotted #CCC;
     background-color: rgba(51, 91, 139, 0.1);
-    text-align: center; }
+    text-align: center;
+    font-weight: normal; }
     #company dl dt:first-child {
       border-top: none; }
     @media screen and (max-width: 768px) {
@@ -647,10 +649,10 @@ h3 {
         width: 10em; } }
     @media screen and (max-width: 480px) {
       #company dl dt {
-        width: 8em; } }
+        width: 7em; } }
   #company dl dd {
     width: calc(100% - 12em);
-    padding: 1em 0 1em 1em;
+    padding: 12px 0 12px 1em;
     border-top: 1px dotted #CCC;
     box-sizing: border-box; }
     #company dl dd:nth-child(2) {
@@ -660,7 +662,8 @@ h3 {
         width: calc(100% - 10em); } }
     @media screen and (max-width: 480px) {
       #company dl dd {
-        width: calc(100% - 8em); } }
+        width: calc(100% - 7em);
+        padding-right: 1em; } }
 #company #access h3 {
   color: #335B8B;
   border-bottom: 1px solid #335B8B; }
@@ -702,7 +705,8 @@ h3 {
     flex-wrap: wrap; }
     #history dl dt {
       width: 7em;
-      padding: 5px 0; }
+      padding: 5px 0;
+      font-weight: normal; }
     #history dl dd {
       width: calc(100% - 7em);
       padding: 5px 0; }
@@ -860,7 +864,8 @@ h3 {
         padding: 5px 0;
         border-top: 1px dotted #777777; }
       #facility .facility-box dl dt {
-        width: calc(100% - 8em); }
+        width: calc(100% - 8em);
+        font-weight: normal; }
         #facility .facility-box dl dt:first-child {
           border-top: none; }
       #facility .facility-box dl dd {
