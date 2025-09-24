@@ -3,9 +3,13 @@ body, input, select, textarea {
   color: #111;
   font-family: "Zen Kaku Gothic New", sans-serif;
   text-align: justify;
-  line-height: 1.8; }
+  line-height: 1.6; }
+  @media screen and (max-width: 768px) {
+    body, input, select, textarea {
+      line-height: 1.5em; } }
   @media screen and (max-width: 480px) {
     body, input, select, textarea {
+      line-height: 1.4em;
       font-size: 1.6rem; } }
 
 img {

@@ -184,7 +184,7 @@ try {
 <!--ヘッドナビ-->
 <header id="header">
   <div id="h-box">
-    <h1><a href="../"><img src="images/h-logo.svg" width="271" height="53" alt="株式会社 HoriTech"/></a></h1>
+    <h1><a href="index.php"><img src="images/h-logo.svg" width="271" height="53" alt="株式会社 HoriTech"/></a></h1>
     <div class="global-nav">
       <div class="global-nav-button">
         <div class="global-nav-button-icon"></div>
@@ -193,9 +193,9 @@ try {
         <div class="global-nav-item"><a href="company.html">企業情報</a></div>
         <div class="global-nav-item"><a href="communication-service.html">通信工事部</a></div>
         <div class="global-nav-item"><a href="electrical-service.html">電気工事部</a></div>
-        <div class="global-nav-item"><a href="works.html">実績一覧</a></div>
+        <div class="global-nav-item"><a href="works.html">導入事例</a></div>
         <div class="global-nav-item"><a href="qualification.html">保有資格</a></div>
-        <div class="global-nav-item"><a href="contact.php">お問い合わせ</a></div>
+        <div class="global-nav-item"><a href="https://www.horinet.co.jp/contact.php">お問い合わせ</a></div>
       </div>
     </div>
     <!-- .global-nav --> 
@@ -249,7 +249,7 @@ try {
   <section class="f-contact">
     <div class="inner">
       <div class="logo-nav">
-        <figure class="f-log"><img src="images/f-logo.svg" width="271" height="53" alt="株式会社 HoriTech"/></figure>
+        <figure class="f-log"><a href="index.php"><img src="images/f-logo.svg" width="271" height="53" alt="株式会社 HoriTech"/></a></figure>
         <ul>
           <li class="f-nav"><a href="company.html"><span class="circle-icon">
           <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
@@ -270,30 +270,29 @@ try {
           <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
             <path d="M3 2L7 5L3 8" stroke="#333" stroke-width="1" fill="none"/>
           </svg>
-          </span>実績一覧</a></li>
+          </span>導入事例</a></li>
           <li class="f-nav"><a href="qualification.html"><span class="circle-icon">
           <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
             <path d="M3 2L7 5L3 8" stroke="#333" stroke-width="1" fill="none"/>
           </svg>
           </span>保有資格</a></li>
-          <li class="f-pv"><a href="privacy.html">プライバシーポリシー</a></li>
+          <li class="f-pv"><a href="https://www.horinet.co.jp/privacy.html" target="_blank">プライバシーポリシー</a></li>
         </ul>
       </div>
       <div class="tel-form">
-        <p class="f-form"><a href="contact.php">お問い合わせ</a></p>
+        <p class="f-form"><a href="https://www.horinet.co.jp/contact.php">お問い合わせ</a></p>
         <figure class="f-tel"><a href="tel:0773-22-1120"><img src="images/tel1.svg" alt="通信工事部電話番号"/></a></figure>
-        <figure class="f-tel"><a href="tel:0773-25-3748"><img src="images/tel2.svg" alt="電気工事部電話番号"/></a></figure>
       </div>
     </div>
     <div class="bnr-area">
       <p>グループ<br class="spOnly">会社</p>
       <div>
-        <figure><a href="" target="_blank"><img src="images/group-1.svg" width="560" height="160" alt="HRホールディングス"/></a></figure>
-        <figure><a href="http://www.horinet.co.jp/" target="_blank"><img src="images/group-2.svg" width="560" height="160" alt="株式会社堀通信"/></a></figure>
+        <figure><a href="https://www.horinet.co.jp/" target="_blank"><img src="images/group-1.svg" width="560" height="160" alt="HRホールディングス"/></a></figure>
+        <figure><a href="https://www.horinet.co.jp/hori-tsushin/" target="_blank"><img src="images/group-2.svg" width="560" height="160" alt="株式会社堀通信"/></a></figure>
       </div>
     </div>
   </section>
-  <p class="copy-r text-center">&copy; 2017 Hori Communication Corp All Rights Reserved.</p>
+  <p class="copy-r text-center">Copyright &copy; HoriTech All Rights Reserved.</p>
 </footer>
 <!-- jQuery --> 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script> 

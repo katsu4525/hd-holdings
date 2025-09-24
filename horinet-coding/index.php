@@ -93,7 +93,7 @@ try {
 <!--ヘッドナビ-->
 <header id="header">
   <div id="h-box">
-    <h1><a href="../"><img src="images/h-logo.svg" width="271" height="53" alt="株式会社堀通信"/></a></h1>
+    <h1><a href="index.php"><img src="images/h-logo.svg" width="271" height="53" alt="株式会社堀通信"/></a></h1>
     <div class="global-nav">
       <div class="global-nav-button">
         <div class="global-nav-button-icon"></div>
@@ -103,7 +103,7 @@ try {
         <div class="global-nav-item"><a href="company.html">企業情報</a></div>
         <div class="global-nav-item"><a href="ict-business.html">ICT事業</a></div>
         <div class="global-nav-item"><a href="case.html">導入事例</a></div>
-        <div class="global-nav-item"><a href="contact.php">お問い合わせ</a></div>
+        <div class="global-nav-item"><a href="https://www.horinet.co.jp/contact.php">お問い合わせ</a></div>
         <figure class="remote-img"><a href="remote-maintenance.html"><img src="images/remote-h.svg" alt="リモートメンテナンス"/></a></figure>
       </div>
     </div>
@@ -123,7 +123,7 @@ try {
         お使いのブラウザは動画に対応していません。
       </video>
       <div class="text-overlay">
-        <p>通信と電気で描く</p>
+        <p>通信と<br class="spOnly">電気で描く</p>
         <p>新しい時代</p>
       </div>
     </div>
@@ -149,21 +149,21 @@ try {
         <p class="text"><a href="#">ダミーテキスト：ホームページリニューアル<img src="images/link-icon.svg" alt=""/></a></p>
       </div> -->
       <?= $news_list ?>
-      <p class="news-btn"><a href="news-list.php">一覧へ</a></p>
+      <div class="news-btn"><p><a href="news-list.php">一覧へ<img src="images/arrow1.svg" alt=""/></a></p></div>
     </section>
     <section id="index-menu">
       <div class="index-menu-box inner">
         <div class="index-menu-box-info">
           <figure><img src="images/index-img1.webp" width="800" height="800" class="pcOnly" alt="企業情報"/><img src="images/index-img1-sp.webp" width="800" height="800" class="spOnly" alt="企業情報"/></figure>
-          <p class="menu-nav"><a href="company.html">企業情報</a></p>
+          <p><a href="company.html" class="menu-nav">企業情報<img src="images/arrow2.svg" alt=""/></a></p>
         </div>
         <div class="index-menu-box-info">
           <figure><img src="images/index-img2.webp" width="800" height="800" class="pcOnly" alt="ICT事業"/><img src="images/index-img2-sp.webp" width="800" height="800" class="spOnly" alt="ICT事業"/></figure>
-          <p class="menu-nav"><a href="ict-business.html">ICT事業</a></p>
+          <p><a href="ict-business.html" class="menu-nav">ICT事業<img src="images/arrow2.svg" alt=""/></a></p>
         </div>
         <div class="index-menu-box-info">
           <figure><img src="images/index-img3.webp" width="800" height="800" class="pcOnly" alt="導入事例"/><img src="images/index-img3-sp.webp" width="800" height="800" class="spOnly" alt="導入事例"/></figure>
-          <p class="menu-nav"><a href="case.html">導入事例</a></p>
+          <p><a href="case.html" class="menu-nav">導入事例<img src="images/arrow2.svg" alt=""/></a></p>
         </div>
       </div>
     </section>
@@ -171,7 +171,7 @@ try {
       <figure><img src="images/registration.png" width="772" height="290" alt=""/></figure>
       <p>【登録情報】</p>
       <p>・登録事業者：株式会社堀通信 開発営業部<br>
-      ・適用規格：ISO/IEC 27001：2013（JIS Q 27001：2014）<br>
+      ・適用規格：ISO/IEC 27001：2013<br class="spOnly">（JIS Q 27001：2014）<br>
       ・登録番号：IS 704449 / ISO27001</p>
     </section>
   <!-- InstanceEndEditable --> </main>
@@ -180,7 +180,7 @@ try {
   <section class="f-contact">
     <div class="inner">
       <div class="logo-nav">
-        <figure class="f-log"><img src="images/f-logo.svg" width="271" height="53" alt="株式会社堀通信"/></figure>
+        <figure class="f-log"><a href="index.php"><img src="images/f-logo.svg" width="271" height="53" alt="株式会社堀通信"/></a></figure>
         <ul>
           <li class="f-nav"><a href="company.html"><span class="circle-icon">
           <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
@@ -203,23 +203,23 @@ try {
           </svg>
           </span>リモートメンテナンス</a></li>
           <li class="f-pv"><a href="security.html">情報セキュリティ方針</a></li>
-          <li class="f-pv"><a href="privacy.html">プライバシーポリシー</a></li>
+          <li class="f-pv"><a href="https://www.horinet.co.jp/privacy.html">プライバシーポリシー</a></li>
         </ul>
       </div>
       <div class="tel-form">
-        <p class="f-form"><a href="contact.php">お問い合わせ</a></p>
+        <p class="f-form"><a href="https://www.horinet.co.jp/contact.php">お問い合わせ</a></p>
         <figure class="f-tel"><a href="tel:0773-22-1120"><img src="images/tel1.svg" alt="お問い合わせ電話番号"/></a></figure>
       </div>
     </div>
     <div class="bnr-area">
       <p>グループ<br class="spOnly">会社</p>
       <div>
-        <figure><a href="" target="_blank"><img src="images/group-1.svg" width="560" height="160" alt="HRホールディングス"/></a></figure>
-        <figure><a href="" target="_blank"><img src="images/group-2.svg" width="560" height="160" alt="株式会社 HoriTech"/></a></figure>
+        <figure><a href="https://www.horinet.co.jp/" target="_blank"><img src="images/group-1.svg" width="560" height="160" alt="HRホールディングス"/></a></figure>
+        <figure><a href="https://www.horinet.co.jp/hori-tech/" target="_blank"><img src="images/group-2.svg" width="560" height="160" alt="株式会社 HoriTech"/></a></figure>
       </div>
     </div>
   </section>
-  <p class="copy-r text-center">&copy; 2017 Hori Communication Corp All Rights Reserved.</p>
+  <p class="copy-r text-center">Copyright &copy; Hori Communication Corp All Rights Reserved.</p>
 </footer>
 <!-- jQuery --> 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script> 

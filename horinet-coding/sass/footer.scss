@@ -42,17 +42,26 @@ footer {
   .logo-nav{
     display: flex;
     flex-wrap: wrap;
+    @include tbt {
+      width: 100%;
+    }
   }
   .f-contact{
     .f-log{
       margin-bottom: 20px;
       margin-right: 50px;
+      @include tbt {
+        width: 360px;
+        margin: 0 auto 20px;
+      }
       @include sp {
         width: 240px;
-        margin: 0 auto 20px;
       }
     }
     ul{
+      @include tbt {
+        width: 100%;
+      }
       li{
         margin-bottom: 3px;
       }
@@ -62,7 +71,7 @@ footer {
       align-items: center;
       color: #333;
       text-decoration: none;
-      font-size: 1.8rem;
+      font-size: 2.0rem;
       line-height: 1.2em;
       margin-bottom: 10px;
     }
@@ -82,10 +91,10 @@ footer {
     }
     .tel-form{
       @include tbt {
+        width: 100%;
         margin-top: 15px;
       }
       @include sp {
-        width: 100%;
         box-sizing: border-box;
       }
       .f-form{

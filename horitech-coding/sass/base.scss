@@ -24,8 +24,12 @@ body, input, select, textarea {
   color: #111;
   font-family: "Zen Kaku Gothic New", sans-serif;
   text-align: justify;
-  line-height: 1.8;
+  line-height: 1.6;
+  @include tbt {
+    line-height: 1.5em;
+  }
   @include sp {
+    line-height: 1.4em;
     font-size: 1.6rem;
   }
 }
@@ -42,7 +46,7 @@ a {
     /*color: #0067E4;*/
     text-decoration: none;
     transition: all .5s;
-    opacity: 0.55;
+    /*opacity: 0.55;*/
   }
 }
 main{

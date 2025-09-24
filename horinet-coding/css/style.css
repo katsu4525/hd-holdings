@@ -26,7 +26,7 @@
   background-position: center center;
   margin-bottom: 10px;
   text-align: center;
-  height: 240px;
+  height: 160px;
   display: grid;
   place-items: center;
   /* 縦横中央をまとめて指定 */
@@ -35,6 +35,9 @@
     .title-area, .title-area-news {
       background-image: url("../images/page-title-sp.webp");
       height: 120px; } }
+  @media screen and (max-width: 480px) {
+    .title-area, .title-area-news {
+      height: 70px; } }
   .title-area h2, .title-area-news h2 {
     font-weight: 400;
     font-size: 3.0rem;
@@ -115,40 +118,48 @@ h3 {
 .mg-top {
   margin-top: 1em; }
 
-#movie .fv {
-  position: relative;
-  width: 100%;
-  height: 600px;
-  overflow: hidden; }
-  @media screen and (max-width: 768px) {
-    #movie .fv {
-      height: auto; } }
-  #movie .fv video {
+#movie {
+  margin-bottom: 8px; }
+  #movie .fv {
+    position: relative;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* トリミングしても中央を表示 */ }
+    height: 600px;
+    overflow: hidden; }
     @media screen and (max-width: 768px) {
-      #movie .fv video {
+      #movie .fv {
         height: auto; } }
-  #movie .fv .text-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-    font-weight: 900;
-    font-size: 6.0rem;
-    line-height: 1.4em;
-    text-shadow: 0 2px 6px #002B31; }
-    @media screen and (max-width: 768px) {
-      #movie .fv .text-overlay {
-        font-size: 5.0rem;
-        width: 100%; } }
-    @media screen and (max-width: 480px) {
-      #movie .fv .text-overlay {
-        font-size: 4.0rem; } }
+    #movie .fv video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* トリミングしても中央を表示 */ }
+      @media screen and (max-width: 768px) {
+        #movie .fv video {
+          height: auto; } }
+    #movie .fv .text-overlay {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: left;
+      color: #fff;
+      font-weight: 600;
+      font-size: 6.0rem;
+      line-height: 1.4em;
+      text-shadow: 0 2px 6px #002B31; }
+      @media screen and (max-width: 768px) {
+        #movie .fv .text-overlay {
+          font-size: 5.0rem;
+          width: 90%;
+          text-align: center; } }
+      @media screen and (max-width: 480px) {
+        #movie .fv .text-overlay {
+          font-size: 4.0rem; } }
 
 .index-text-area {
   width: 100%;
@@ -164,7 +175,8 @@ h3 {
     .index-text-area {
       background-image: url("../images/page-title-sp.webp"); } }
   .index-text-area h2 {
-    font-size: 2.6rem; }
+    font-size: 2.6rem;
+    font-weight: 500; }
     @media screen and (max-width: 768px) {
       .index-text-area h2 {
         font-size: 2.2rem; } }
@@ -247,29 +259,20 @@ h3 {
       margin-left: 5px; }
   #index-news .news-btn, #index-menu .news-btn, #news-list .news-btn {
     text-align: right;
-    /* 右寄せ */
-    margin-top: 15px; }
-    #index-news .news-btn a, #index-menu .news-btn a, #news-list .news-btn a {
-      display: inline-flex;
-      align-items: center;
-      color: #111;
-      /* 緑色 */
-      text-decoration: none;
-      position: relative;
-      padding-right: 1.2em;
-      /* 矢印分の余白 */
-      transition: all 0.3s ease; }
-      #index-news .news-btn a::after, #index-menu .news-btn a::after, #news-list .news-btn a::after {
-        content: "→";
-        /* 右側に矢印 */
-        margin-left: 0.4em;
-        font-size: 1.2em;
-        transition: transform 0.3s ease;
-        color: #008db7;
-        font-weight: 700; }
-      #index-news .news-btn a:hover::after, #index-menu .news-btn a:hover::after, #news-list .news-btn a:hover::after {
-        transform: translateX(4px);
-        /* ホバー時に矢印を右に動かす */ }
+    margin-top: 10px; }
+    #index-news .news-btn p, #index-menu .news-btn p, #news-list .news-btn p {
+      display: inline-block; }
+      #index-news .news-btn p a, #index-menu .news-btn p a, #news-list .news-btn p a {
+        display: flex;
+        align-items: center;
+        color: #111;
+        text-decoration: none;
+        position: relative;
+        padding-right: 1.2em;
+        transition: all 0.3s ease; }
+        #index-news .news-btn p a img, #index-menu .news-btn p a img, #news-list .news-btn p a img {
+          width: 24px;
+          margin-left: 6px; }
 
 #news-list {
   padding-top: 0; }
@@ -303,14 +306,21 @@ h3 {
     #index-menu .index-menu-box .index-menu-box-info {
       font-size: 2.0rem;
       width: 30%;
-      text-align: center; }
-      @media screen and (max-width: 480px) {
+      text-align: center;
+      position: relative; }
+      @media screen and (max-width: 768px) {
         #index-menu .index-menu-box .index-menu-box-info {
           width: 100%;
-          margin-bottom: 30px;
-          font-size: 1.6rem; } }
+          margin-bottom: 60px;
+          font-size: 1.6rem; }
+          #index-menu .index-menu-box .index-menu-box-info:last-child {
+            margin-bottom: 30px; } }
       #index-menu .index-menu-box .index-menu-box-info figure {
         margin-bottom: -20px; }
+      #index-menu .index-menu-box .index-menu-box-info p {
+        position: absolute;
+        z-index: 1;
+        width: 100%; }
 
 #registration {
   margin: 100px auto 100px;
@@ -319,7 +329,8 @@ h3 {
   text-align: center; }
   @media screen and (max-width: 768px) {
     #registration {
-      margin: 80px auto 80px; } }
+      margin: 80px auto 80px;
+      text-align: left; } }
   @media screen and (max-width: 480px) {
     #registration {
       margin: 60px auto 60px; } }
@@ -329,57 +340,33 @@ h3 {
     margin: 0 auto 10px; }
 
 .menu-nav {
+  position: static;
   width: 80%;
+  margin: 0 auto 10px;
   box-sizing: border-box;
-  text-align: center;
-  display: inline-flex;
-  /* ボタン全体がリンク判定になる */
-  margin-bottom: 10px; }
+  font-family: "Poppins", sans-serif;
+  font-size: 1.0em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  color: #008DB7;
+  padding: 0.2em 1.0em;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-shadow: none; }
+  @media screen and (max-width: 768px) {
+    .menu-nav {
+      width: 260px;
+      font-size: 1.8rem; } }
   @media screen and (max-width: 480px) {
     .menu-nav {
-      font-size: 1.0em; } }
-  .menu-nav a {
-    width: 100%;
-    box-sizing: border-box;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    /* 背景は白 */
-    color: #008db7;
-    /* テキストはグリーン */
-    padding: 0.4em 0.5em;
-    /* リンク領域を広げる */
-    border-radius: 30px;
-    /* 四つ角を丸く */
-    font-weight: bold;
-    text-decoration: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* ボタンの影 */
-    transition: all 0.3s ease;
-    cursor: pointer;
-    /* カーソルをポインタに */
-    text-shadow: none;
-    /* ← テキストの影をなくす */ }
-    .menu-nav a::after {
-      content: "→";
-      /* 矢印 */
-      margin-left: 0.6em;
-      /* テキストとの余白 */
-      font-size: 1.1em;
-      transition: transform 0.3s ease; }
-    .menu-nav a:hover {
-      background-color: #008db7;
-      /* ホバー時に背景をグリーン */
-      color: #fff;
-      /* テキストは白に */
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-      transform: translateY(-2px);
-      /* 少し浮かせる */
-      opacity: 1.0; }
-      .menu-nav a:hover::after {
-        transform: translateX(4px);
-        /* 矢印を右に動かす */ }
+      width: 220px; } }
+  .menu-nav img {
+    width: 32px; }
 
 #company, #privacy, #error, #service, #service2, #service3, #works, #works2, #news-detail, #re-mant, #greetings, #re-mant-sp {
   margin-bottom: 100px; }
@@ -408,204 +395,254 @@ h3 {
     margin-top: 1em; }
 
 /*事業内容*/
-#service h3 {
-  font-family: "Poppins", sans-serif;
-  color: #008db7;
-  font-size: 2.2rem;
-  display: flex;
-  align-items: center;
-  margin-bottom: 1em;
-  font-weight: normal; }
-  #service h3::before {
-    content: "▷";
-    /* 三角矢印 */
-    margin-right: 0.5em;
-    /* テキストとの余白 */
-    font-size: 0.9em;
-    /* 矢印のサイズ調整 */
+#service {
+  width: 90%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media screen and (max-width: 768px) {
+    #service {
+      width: 100%; } }
+  #service h3 {
+    font-family: "Poppins", sans-serif;
     color: #008db7;
-    /* テキストと同じ色 */ }
-  @media screen and (max-width: 480px) {
-    #service h3 {
-      font-size: 2.0rem; } }
-#service .service-box1 {
-  margin-bottom: 50px;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-direction: row-reverse; }
-  @media screen and (max-width: 768px) {
-    #service .service-box1 {
-      margin-bottom: 40px; } }
-  @media screen and (max-width: 480px) {
-    #service .service-box1 {
-      margin-bottom: 30px; } }
-  #service .service-box1 .box1-left {
-    width: 45%;
-    z-index: 1; }
-    @media screen and (max-width: 768px) {
-      #service .service-box1 .box1-left {
-        width: 100%; } }
-    #service .service-box1 .box1-left .subTitle {
-      font-weight: 700;
-      font-size: 2.0rem;
-      margin-bottom: 1em; }
-      @media screen and (max-width: 480px) {
-        #service .service-box1 .box1-left .subTitle {
-          font-size: 1.8rem; } }
-  #service .service-box1 figure {
-    width: 50%; }
-    @media screen and (max-width: 768px) {
-      #service .service-box1 figure {
-        width: 90%;
-        padding-top: 40px;
-        margin-bottom: 20px; } }
+    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    font-weight: normal; }
+    #service h3::before {
+      content: "▷";
+      /* 三角矢印 */
+      margin-right: 0.5em;
+      /* テキストとの余白 */
+      font-size: 0.9em;
+      /* 矢印のサイズ調整 */
+      color: #008db7;
+      /* テキストと同じ色 */ }
     @media screen and (max-width: 480px) {
-      #service .service-box1 figure {
-        padding-top: 30px; } }
-    #service .service-box1 figure img {
-      filter: drop-shadow(-100px -50px 0px #e5f3f8); }
-      @media screen and (max-width: 768px) {
-        #service .service-box1 figure img {
-          filter: drop-shadow(-5% -5% 0px #e5f3f8); } }
-#service .btnArea {
-  width: 100%;
-  max-width: 760px;
-  margin: 0 auto 50px;
-  margin-bottom: 50px; }
-  @media screen and (max-width: 768px) {
-    #service .btnArea {
-      margin-bottom: 40px; } }
-  @media screen and (max-width: 480px) {
-    #service .btnArea {
-      margin-bottom: 30px; } }
-  #service .btnArea .btn {
-    width: 48%;
-    margin-bottom: 2%;
-    text-align: left; }
+      #service h3 {
+        font-size: 2.0rem; } }
+  #service .service-box1 {
+    margin-bottom: 50px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row-reverse; }
     @media screen and (max-width: 768px) {
-      #service .btnArea .btn {
-        width: 100%;
-        text-align: left; } }
-    #service .btnArea .btn a {
-      width: 100%;
-      display: inline-flex;
-      align-items: center;
-      justify-content: flex-start;
-      padding: 10px 20px;
-      background: #FFF;
-      font-weight: 700;
-      text-decoration: none;
-      border-radius: 30px;
-      transition: background 0.3s ease;
-      box-sizing: border-box;
-      border: 1px solid #008db7; }
-      #service .btnArea .btn a:hover {
-        background: rgba(0, 141, 183, 0.2); }
-      #service .btnArea .btn a::before {
-        content: "";
-        display: inline-block;
-        margin-right: 8px;
-        width: 0;
-        height: 0;
-        border-left: 6px solid transparent;
-        border-right: 6px solid transparent;
-        border-top: 8px solid #008db7;
-        /* ← 矢印の色（白） */ }
+      #service .service-box1 {
+        margin-bottom: 40px; } }
+    @media screen and (max-width: 480px) {
+      #service .service-box1 {
+        margin-bottom: 30px; } }
+    #service .service-box1 .box1-left {
+      width: 45%;
+      z-index: 1; }
       @media screen and (max-width: 768px) {
-        #service .btnArea .btn a {
-          justify-content: flex-start; } }
-#service .service-box2 .box2-container {
-  counter-reset: box2-counter;
-  /* カウンター初期化 */ }
-  #service .service-box2 .box2-container .box2-in {
-    margin: 50px auto; }
-    #service .service-box2 .box2-container .box2-in:first-of-type {
-      margin-top: 0; }
-    #service .service-box2 .box2-container .box2-in:last-of-type {
-      margin-bottom: 0; }
-    #service .service-box2 .box2-container .box2-in .box2-in-left {
-      position: relative;
-      width: 280px;
-      height: auto;
-      max-height: 200px;
-      background: linear-gradient(to bottom, #008DB7, #18BBEB);
-      background-repeat: no-repeat;
-      background-size: 95% 200px;
-      background-position: top left;
-      box-sizing: border-box;
-      padding: 20px 0 0 20px;
-      overflow: hidden;
-      margin-bottom: 20px;
-      counter-increment: box2-counter;
-      /* カウンターをインクリメント */ }
-      @media screen and (max-width: 768px) {
-        #service .service-box2 .box2-container .box2-in .box2-in-left {
-          width: 80%;
-          padding-bottom: 15vw; } }
-      #service .service-box2 .box2-container .box2-in .box2-in-left::before {
-        font-family: "Poppins", sans-serif;
-        content: counter(box2-counter);
-        /* 自動で番号を表示 */
-        position: absolute;
-        top: 0;
-        left: 10px;
-        font-weight: 500;
-        font-size: 14rem;
-        line-height: 1.0em;
-        color: rgba(255, 255, 255, 0.15);
-        z-index: 0;
-        pointer-events: none;
-        font-style: italic; }
-      #service .service-box2 .box2-container .box2-in .box2-in-left .textArea {
-        width: 13em;
-        color: #fff;
-        position: relative;
-        z-index: 1; }
-        @media screen and (max-width: 768px) {
-          #service .service-box2 .box2-container .box2-in .box2-in-left .textArea {
-            width: 80%; } }
-      #service .service-box2 .box2-container .box2-in .box2-in-left figure {
-        position: absolute;
-        top: 70px;
-        right: 0;
-        width: 70%;
-        padding-left: 10%;
-        box-sizing: border-box;
-        margin-top: 10px; }
-        @media screen and (max-width: 768px) {
-          #service .service-box2 .box2-container .box2-in .box2-in-left figure {
-            width: 50%;
-            top: 40px; } }
-    #service .service-box2 .box2-container .box2-in .box2-in-right {
-      width: calc(100% - 330px); }
-      @media screen and (max-width: 768px) {
-        #service .service-box2 .box2-container .box2-in .box2-in-right {
+        #service .service-box1 .box1-left {
           width: 100%; } }
-      #service .service-box2 .box2-container .box2-in .box2-in-right .title {
-        color: #008db7;
-        display: flex;
+      #service .service-box1 .box1-left .subTitle {
+        font-weight: 500;
+        font-size: 2.0rem;
+        margin-bottom: 1em; }
+        @media screen and (max-width: 768px) {
+          #service .service-box1 .box1-left .subTitle {
+            font-size: 2.2rem;
+            line-height: 1.3em; } }
+    #service .service-box1 figure {
+      width: 50%; }
+      @media screen and (max-width: 768px) {
+        #service .service-box1 figure {
+          width: 95%;
+          padding-top: 40px;
+          margin-bottom: 20px; } }
+      @media screen and (max-width: 480px) {
+        #service .service-box1 figure {
+          padding-top: 30px; } }
+      #service .service-box1 figure img {
+        filter: drop-shadow(-100px -50px 0px #e5f3f8); }
+        @media screen and (max-width: 768px) {
+          #service .service-box1 figure img {
+            filter: drop-shadow(-5% -5% 0px #e5f3f8); } }
+  #service .btnArea {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto 50px;
+    margin-bottom: 50px; }
+    @media screen and (max-width: 768px) {
+      #service .btnArea {
+        margin-bottom: 40px; } }
+    @media screen and (max-width: 480px) {
+      #service .btnArea {
+        margin-bottom: 30px; } }
+    #service .btnArea .btn {
+      width: 48%;
+      margin-bottom: 2%;
+      text-align: left; }
+      @media screen and (max-width: 768px) {
+        #service .btnArea .btn {
+          width: 100%;
+          text-align: left; } }
+      #service .btnArea .btn a {
+        width: 100%;
+        display: inline-flex;
         align-items: center;
-        font-weight: 700;
-        font-size: 1.8rem;
-        margin-bottom: 5px; }
-        #service .service-box2 .box2-container .box2-in .box2-in-right .title::before {
-          content: "▷";
-          /* 三角矢印 */
-          margin-right: 0.5em;
-          /* テキストとの余白 */
-          font-size: 0.9em;
-          /* 矢印のサイズ調整 */
+        justify-content: flex-start;
+        padding: 5px 20px;
+        background: #FFF;
+        text-decoration: none;
+        border-radius: 30px;
+        transition: background 0.3s ease;
+        box-sizing: border-box;
+        border: 1px solid #008db7; }
+        #service .btnArea .btn a:hover {
+          background: rgba(0, 141, 183, 0.2); }
+        #service .btnArea .btn a::before {
+          content: "";
+          display: inline-block;
+          margin-right: 8px;
+          width: 0;
+          height: 0;
+          border-left: 6px solid transparent;
+          border-right: 6px solid transparent;
+          border-top: 8px solid #008db7;
+          /* ← 矢印の色（白） */ }
+        @media screen and (max-width: 768px) {
+          #service .btnArea .btn a {
+            justify-content: flex-start; } }
+  #service .service-box2 .box2-container {
+    counter-reset: box2-counter;
+    /* カウンター初期化 */ }
+    #service .service-box2 .box2-container .box2-in {
+      margin: 50px auto; }
+      #service .service-box2 .box2-container .box2-in:first-of-type {
+        margin-top: 0; }
+      #service .service-box2 .box2-container .box2-in:last-of-type {
+        margin-bottom: 0; }
+      #service .service-box2 .box2-container .box2-in .box2-in-left {
+        position: relative;
+        width: 360px;
+        height: 280px;
+        background: linear-gradient(to bottom, #008DB7, #18BBEB);
+        background-repeat: no-repeat;
+        background-size: 100% 280px;
+        background-position: top left;
+        box-sizing: border-box;
+        padding: 30px 0 0 30px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        font-size: 2.2rem;
+        line-height: 1.4em;
+        counter-increment: box2-counter;
+        /* カウンターをインクリメント */ }
+        @media screen and (max-width: 768px) {
+          #service .service-box2 .box2-container .box2-in .box2-in-left {
+            width: 70%;
+            height: 180px;
+            font-size: 2.5rem;
+            line-height: 1.3em;
+            background-size: 100% 100%;
+            padding: 50px 0 0 30px; } }
+        @media screen and (max-width: 480px) {
+          #service .service-box2 .box2-container .box2-in .box2-in-left {
+            width: 75%;
+            height: 130px;
+            font-size: 2.2rem;
+            line-height: 1.3em;
+            background-size: 100% 100%;
+            padding: 8vw 0 0 5%; } }
+        #service .service-box2 .box2-container .box2-in .box2-in-left::before {
+          font-family: "Poppins", sans-serif;
+          content: counter(box2-counter);
+          /* 自動で番号を表示 */
+          position: absolute;
+          top: 0;
+          left: 5px;
+          font-weight: 500;
+          font-size: 14rem;
+          line-height: 0.9em;
+          color: rgba(255, 255, 255, 0.15);
+          z-index: 0;
+          pointer-events: none;
+          font-style: italic; }
+          @media screen and (max-width: 768px) {
+            #service .service-box2 .box2-container .box2-in .box2-in-left::before {
+              font-size: 15rem; } }
+          @media screen and (max-width: 768px) {
+            #service .service-box2 .box2-container .box2-in .box2-in-left::before {
+              font-size: 13rem; } }
+        #service .service-box2 .box2-container .box2-in .box2-in-left .textArea {
+          width: 13em;
+          color: #fff;
+          position: relative;
+          z-index: 1; }
+          @media screen and (max-width: 768px) {
+            #service .service-box2 .box2-container .box2-in .box2-in-left .textArea {
+              width: 95%; } }
+        #service .service-box2 .box2-container .box2-in .box2-in-left figure {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          box-sizing: border-box;
+          margin-top: 10px; }
+          @media screen and (max-width: 768px) {
+            #service .service-box2 .box2-container .box2-in .box2-in-left figure {
+              width: 50%; } }
+          #service .service-box2 .box2-container .box2-in .box2-in-left figure.img-1 {
+            width: 60%; }
+            @media screen and (max-width: 768px) {
+              #service .service-box2 .box2-container .box2-in .box2-in-left figure.img-1 {
+                width: 30vw;
+                right: 20px;
+                bottom: -7vw; } }
+          #service .service-box2 .box2-container .box2-in .box2-in-left figure.img-2 {
+            width: 70%; }
+            @media screen and (max-width: 768px) {
+              #service .service-box2 .box2-container .box2-in .box2-in-left figure.img-2 {
+                width: 34vw;
+                right: 20px;
+                bottom: -6vw; } }
+          #service .service-box2 .box2-container .box2-in .box2-in-left figure.img-3 {
+            width: 40%; }
+            @media screen and (max-width: 768px) {
+              #service .service-box2 .box2-container .box2-in .box2-in-left figure.img-3 {
+                width: 20vw;
+                right: 20px;
+                bottom: -6vw; } }
+          #service .service-box2 .box2-container .box2-in .box2-in-left figure.img-4 {
+            width: 60%; }
+            @media screen and (max-width: 768px) {
+              #service .service-box2 .box2-container .box2-in .box2-in-left figure.img-4 {
+                width: 32vw;
+                right: 20px;
+                bottom: -6vw; } }
+      #service .service-box2 .box2-container .box2-in .box2-in-right {
+        width: calc(100% - 420px);
+        line-height: 1.5em; }
+        @media screen and (max-width: 768px) {
+          #service .service-box2 .box2-container .box2-in .box2-in-right {
+            width: 100%; } }
+        #service .service-box2 .box2-container .box2-in .box2-in-right .title {
           color: #008db7;
-          /* テキストと同じ色 */ }
-      #service .service-box2 .box2-container .box2-in .box2-in-right .text {
-        margin-bottom: 15px;
-        padding-bottom: 15px;
-        border-bottom: 1px dotted #999; }
-      #service .service-box2 .box2-container .box2-in .box2-in-right ul {
-        font-size: 0.8em;
-        line-height: 1.6em; }
+          display: flex;
+          align-items: center;
+          font-weight: 700;
+          font-size: 1.8rem;
+          margin-bottom: 5px; }
+          #service .service-box2 .box2-container .box2-in .box2-in-right .title::before {
+            content: "▷";
+            /* 三角矢印 */
+            margin-right: 0.5em;
+            /* テキストとの余白 */
+            font-size: 0.9em;
+            /* 矢印のサイズ調整 */
+            color: #008db7;
+            /* テキストと同じ色 */ }
+        #service .service-box2 .box2-container .box2-in .box2-in-right .text {
+          margin-bottom: 15px;
+          padding-bottom: 15px;
+          border-bottom: 1px dotted #999; }
         #service .service-box2 .box2-container .box2-in .box2-in-right ul li {
           list-style: disc;
           margin-left: 2em; }
@@ -645,7 +682,7 @@ h3 {
         #service2 .service2-box .textArea h3 {
           font-size: 2.0rem; } }
     #service2 .service2-box .textArea .subTitle {
-      font-weight: 700;
+      font-weight: 500;
       font-size: 2.0rem;
       margin-bottom: 1em; }
       @media screen and (max-width: 480px) {
@@ -762,16 +799,17 @@ h3 {
     #service3 .service3-box {
       margin-bottom: 30px; } }
   #service3 .service3-box h3 {
-    font-weight: 700;
-    font-size: 1.8rem;
+    font-weight: 400;
+    font-size: 2.2rem;
     color: #008db7;
-    border-bottom: 1px solid #008db7; }
+    border-bottom: 2px solid #008db7;
+    margin-bottom: 0; }
   #service3 .service3-box p {
     border-bottom: 1px dotted #999;
-    padding: 10px 0; }
+    padding: 6px 0; }
     @media screen and (max-width: 768px) {
       #service3 .service3-box p {
-        padding: 10px 5%; } }
+        padding: 6px 1em; } }
 
 .flex-box {
   display: flex;
@@ -814,16 +852,20 @@ h3 {
     flex: 1 1 calc(25% - 20px);
     box-sizing: border-box;
     border: 1px solid #008db7;
-    padding: 15px;
+    padding: 25px 28px;
     display: flex;
     flex-direction: column;
+    line-height: 1.5em;
     /* 説明文は単純に上から積む */ }
     @media screen and (max-width: 768px) {
       #works .works-box1 .box {
-        flex: 1 1 calc(50% - 15px); } }
+        flex: 1 1 calc(50% - 15px);
+        padding: 22px 25px; } }
     @media screen and (max-width: 480px) {
       #works .works-box1 .box {
-        flex: 1 1 calc(50% - 10px); } }
+        flex: 1 1 calc(50% - 10px);
+        padding: 20px 12px;
+        line-height: 1.4em; } }
     #works .works-box1 .box .icon {
       width: 50px;
       margin: 0 auto 15px; }
@@ -831,7 +873,7 @@ h3 {
       text-align: center;
       font-weight: 700;
       color: #008db7;
-      font-size: 1.8rem;
+      font-size: 2.0rem;
       margin-bottom: 0.5em;
       /* 縦中央に揃える */
       display: flex;
@@ -842,7 +884,8 @@ h3 {
     #works .works-box1 .box p:not(.subText) {
       margin-top: 0; }
 #works .works-box2 {
-  align-items: flex-start; }
+  align-items: flex-start;
+  justify-content: space-between; }
   #works .works-box2 h4 {
     font-size: 2.0rem;
     width: 280px;
@@ -862,8 +905,8 @@ h3 {
         width: 260px;
         margin-bottom: 10px; } }
   #works .works-box2 p {
-    width: calc(100% - 170px); }
-    @media screen and (max-width: 480px) {
+    width: calc(100% - 310px); }
+    @media screen and (max-width: 768px) {
       #works .works-box2 p {
         width: 100%; } }
 
@@ -944,6 +987,11 @@ h3 {
         margin: 0 auto; } }
 
 /*会社概要*/
+#company h3 {
+  font-size: 2.0rem;
+  color: #008DB7;
+  font-weight: normal;
+  margin-bottom: 0.3em; }
 #company dl {
   display: flex;
   flex-wrap: wrap;
@@ -959,7 +1007,7 @@ h3 {
   #company dl dt {
     font-weight: normal;
     width: 12em;
-    padding: 12px 0;
+    padding: 10px 0;
     border-top: 1px dotted #CCC;
     background-color: #e5f3f8;
     text-align: center; }
@@ -967,25 +1015,28 @@ h3 {
       border-top: none; }
     @media screen and (max-width: 768px) {
       #company dl dt {
-        width: 10em; } }
+        width: 10em;
+        padding: 6px 0; } }
     @media screen and (max-width: 480px) {
       #company dl dt {
         width: 7em; } }
   #company dl dd {
     width: calc(100% - 12em);
-    padding: 12px 0 12px 1em;
+    padding: 10px 0 10px 1em;
     border-top: 1px dotted #CCC;
     box-sizing: border-box; }
     #company dl dd:nth-child(2) {
       border-top: none; }
     @media screen and (max-width: 768px) {
       #company dl dd {
+        padding: 6px 0 6px 1em;
         width: calc(100% - 10em); } }
     @media screen and (max-width: 480px) {
       #company dl dd {
         width: calc(100% - 7em);
         padding-right: 1em; } }
 #company #access h3 {
+  padding-bottom: 5px;
   border-bottom: 1px solid #008db7; }
 #company #access .map {
   width: 100%;
@@ -1058,7 +1109,7 @@ h3 {
       #news-cate-nav p a.bg-or {
         background-color: #ff9300; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .space {
-    padding-left: 5%;
-    padding-right: 5%; } }
+    padding-left: 1em;
+    padding-right: 1em; } }

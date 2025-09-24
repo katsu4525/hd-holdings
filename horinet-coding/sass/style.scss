@@ -46,7 +46,7 @@ $breakpoint-sp: 480px;
   background-position: center center;
   margin-bottom: 10px;
   text-align: center;
-  height: 240px;
+  height: 160px;
   display: grid;
   place-items: center; /* 縦横中央をまとめて指定 */
   box-sizing: border-box;
@@ -55,6 +55,7 @@ $breakpoint-sp: 480px;
     height: 120px;
   }
   @include sp {
+    height: 70px;
   }
   h2{
     font-weight: 400;
@@ -144,6 +145,7 @@ h3{
   margin-top: 1em;
 }
 #movie{
+  margin-bottom: 8px;
   .fv {
     position: relative;
     width: 100%;
@@ -161,19 +163,25 @@ h3{
       }
     }
     .text-overlay {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      text-align: center;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: left;
       color: #fff;
-      font-weight: 900;
+      font-weight: 600;
       font-size: 6.0rem;
       line-height: 1.4em;
       text-shadow: 0 2px 6px #002B31;
       @include tbt {
         font-size: 5.0rem;
-        width: 100%;
+        width: 90%;
+        text-align: center;
       }
       @include sp {
         font-size: 4.0rem;
@@ -196,6 +204,7 @@ h3{
   }
   h2{
     font-size: 2.6rem;
+    font-weight: 500;
     @include tbt {
       font-size: 2.2rem;
     }
@@ -288,26 +297,22 @@ h3{
     }
   }
   .news-btn {
-    text-align: right; /* 右寄せ */
-    margin-top: 15px;
-    a {
-      display: inline-flex;
-      align-items: center;
-      color: #111;            /* 緑色 */
-      text-decoration: none;
-      position: relative;
-      padding-right: 1.2em;      /* 矢印分の余白 */
-      transition: all 0.3s ease;
-      &::after {
-        content: "→";               /* 右側に矢印 */
-        margin-left: 0.4em;
-        font-size: 1.2em;
-        transition: transform 0.3s ease;
-        color: #008db7;
-        font-weight: 700;
-      }
-      &:hover::after {
-        transform: translateX(4px); /* ホバー時に矢印を右に動かす */
+    text-align: right;
+    margin-top: 10px;
+    p{
+      display: inline-block;
+      a {
+        display: flex;
+        align-items: center;
+        color: #111;
+        text-decoration: none;
+        position: relative;
+        padding-right: 1.2em;
+        transition: all 0.3s ease;
+        img{
+          width: 24px;
+          margin-left: 6px;
+        }
       }
     }
   }
@@ -338,7 +343,7 @@ h3{
     }
   }
 }
-#index-menu,{
+#index-menu{
   background-color: rgba(0,141,183,0.10);
   .index-menu-box{
     display: flex;
@@ -348,13 +353,22 @@ h3{
       font-size: 2.0rem;
       width: 30%;
       text-align: center;
-      @include sp {
+      position: relative;
+      @include tbt {
         width: 100%;
-        margin-bottom: 30px;
+        margin-bottom: 60px;
         font-size: 1.6rem;
+        &:last-child{
+          margin-bottom: 30px;
+        }
       }
       figure{
         margin-bottom: -20px;
+      }
+      p{
+        position: absolute;
+        z-index: 1;
+        width: 100%;
       }
     }
   }
@@ -366,6 +380,7 @@ h3{
   text-align: center;
   @include tbt {
     margin: 80px auto 80px;
+    text-align: left;
   }
   @include sp {
     margin: 60px auto 60px;
@@ -377,46 +392,33 @@ h3{
   }
 }
 .menu-nav {
+  position: static;
   width: 80%;
+  margin: 0 auto 10px;
   box-sizing: border-box;
-  text-align: center;
-  display: inline-flex;             /* ボタン全体がリンク判定になる */
-  margin-bottom: 10px;
-  @include sp {
-    font-size: 1.0em;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.0em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  color: #008DB7;
+  padding: 0.2em 1.0em;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-shadow: none;
+  @include tbt {
+    width: 260px;
+    font-size: 1.8rem;
   }
-  a{
-    width: 100%;
-    box-sizing: border-box;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;           /* 背景は白 */
-    color: #008db7;                   /* テキストはグリーン */
-    padding: 0.4em 0.5em;             /* リンク領域を広げる */
-    border-radius: 30px;              /* 四つ角を丸く */
-    font-weight: bold;
-    text-decoration: none;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* ボタンの影 */
-    transition: all 0.3s ease;
-    cursor: pointer;                  /* カーソルをポインタに */
-    text-shadow: none;                /* ← テキストの影をなくす */
-    &::after {
-      content: "→";                     /* 矢印 */
-      margin-left: 0.6em;               /* テキストとの余白 */
-      font-size: 1.1em;
-      transition: transform 0.3s ease;
-    }
-    &:hover {
-      background-color: #008db7;        /* ホバー時に背景をグリーン */
-      color: #fff;                      /* テキストは白に */
-      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
-      transform: translateY(-2px);      /* 少し浮かせる */
-      opacity: 1.0;
-      &::after {
-        transform: translateX(4px);       /* 矢印を右に動かす */
-      }
-    }
+  @include sp {
+    width: 220px;
+  }
+  img{
+    width: 32px;
   }
 }
 
@@ -450,6 +452,13 @@ h3{
 }
 /*事業内容*/
 #service{
+  width: 90%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  @include tbt {
+    width: 100%;
+  }
   h3{
     font-family: "Poppins", sans-serif;
     color: #008db7;
@@ -488,18 +497,19 @@ h3{
         width: 100%;
       }
       .subTitle{
-        font-weight: 700;
+        font-weight: 500;
         font-size: 2.0rem;
         margin-bottom: 1em;
-        @include sp {
-          font-size: 1.8rem;
+        @include tbt {
+          font-size: 2.2rem;
+          line-height: 1.3em;
         }
       }
     }
     figure{
       width: 50%;
       @include tbt {
-        width: 90%;
+        width: 95%;
         padding-top: 40px;
         margin-bottom: 20px;
       }
@@ -538,9 +548,8 @@ h3{
         display: inline-flex;
         align-items: center;
         justify-content: flex-start;
-        padding: 10px 20px;
+        padding: 5px 20px;
         background: #FFF;
-        font-weight: 700;
         text-decoration: none;
         border-radius: 30px;
         transition: background 0.3s ease;
@@ -578,20 +587,33 @@ h3{
         }
         .box2-in-left{
           position: relative;
-          width: 280px;
-          height: auto;
-          max-height: 200px;
+          width: 360px;
+          height: 280px;
           background: linear-gradient(to bottom, #008DB7, #18BBEB);
           background-repeat: no-repeat;
-          background-size: 95% 200px;
+          background-size: 100% 280px;
           background-position: top left;
           box-sizing: border-box;
-          padding: 20px 0 0 20px;
+          padding: 30px 0 0 30px;
           overflow: hidden;
           margin-bottom: 20px;
+          font-size: 2.2rem;
+          line-height: 1.4em;
           @include tbt {
-            width: 80%;
-            padding-bottom: 15vw;
+            width: 70%;
+            height: 180px;
+            font-size: 2.5rem;
+            line-height: 1.3em;
+            background-size: 100% 100%;
+            padding: 50px 0 0 30px;
+          }
+          @include sp {
+            width: 75%;
+            height: 130px;
+            font-size: 2.2rem;
+            line-height: 1.3em;
+            background-size: 100% 100%;
+            padding: 8vw 0 0 5%;
           }
           counter-increment: box2-counter; /* カウンターをインクリメント */
           &::before {
@@ -599,14 +621,20 @@ h3{
             content: counter(box2-counter); /* 自動で番号を表示 */
             position: absolute;
             top: 0;
-            left: 10px;
+            left: 5px;
             font-weight: 500;
             font-size: 14rem;
-            line-height: 1.0em;
+            line-height: 0.9em;
             color: rgba(255,255,255,0.15);
             z-index: 0;
             pointer-events: none;
             font-style: italic;
+            @include tbt {
+              font-size: 15rem;
+            }
+            @include tbt {
+              font-size: 13rem;
+            }
           }
           .textArea{
             width: 13em;
@@ -614,25 +642,55 @@ h3{
             position: relative;
             z-index: 1;
             @include tbt {
-              width: 80%;
+              width: 95%;
             }
           }
           figure{
             position: absolute;
-            top: 70px;
+            bottom: 0;
             right: 0;
-            width: 70%;
-            padding-left: 10%;
             box-sizing: border-box;
             margin-top: 10px;
             @include tbt {
               width: 50%;
-              top: 40px;
+            }
+            &.img-1{
+              width: 60%;
+              @include tbt {
+                width: 30vw;
+                right: 20px;
+                bottom: -7vw;
+              }
+            }
+            &.img-2{
+              width: 70%;
+              @include tbt {
+                width: 34vw;
+                right: 20px;
+                bottom: -6vw;
+              }
+            }
+            &.img-3{
+              width: 40%;
+              @include tbt {
+                width: 20vw;
+                right: 20px;
+                bottom: -6vw;
+              }
+            }
+            &.img-4{
+              width: 60%;
+              @include tbt {
+                width: 32vw;
+                right: 20px;
+                bottom: -6vw;
+             }
             }
           }
         }
         .box2-in-right{
-          width: calc(100% - 330px);
+          width: calc(100% - 420px);
+          line-height: 1.5em;
           @include tbt {
             width: 100%;
           }
@@ -656,8 +714,6 @@ h3{
             border-bottom: 1px dotted #999;
           }
           ul{
-            font-size: 0.8em;
-            line-height: 1.6em;
             li{
               list-style: disc;
               margin-left: 2em;
@@ -702,7 +758,7 @@ h3{
         }
       }
       .subTitle{
-        font-weight: 700;
+        font-weight: 500;
         font-size: 2.0rem;
         margin-bottom: 1em;
         @include sp {
@@ -820,16 +876,17 @@ h3{
       margin-bottom: 30px;
     }
     h3{
-      font-weight: 700;
-      font-size: 1.8rem;
+      font-weight: 400;
+      font-size: 2.2rem;
       color: #008db7;
-      border-bottom: 1px solid #008db7;
+      border-bottom: 2px solid #008db7;
+      margin-bottom: 0;
     }
     p{
       border-bottom: 1px dotted #999;
-      padding: 10px 0;
+      padding: 6px 0;
       @include tbt {
-        padding: 10px 5%;
+        padding: 6px 1em;
       }
     }
   }
@@ -875,15 +932,19 @@ h3{
       flex: 1 1 calc(25% - 20px);
       box-sizing: border-box;
       border: 1px solid #008db7;
-      padding: 15px;
+      padding: 25px 28px;
       display: flex;
       flex-direction: column;
+      line-height: 1.5em;
 
       @include tbt {
         flex: 1 1 calc(50% - 15px);
+        padding: 22px 25px;
       }
       @include sp {
         flex: 1 1 calc(50% - 10px);
+        padding: 20px 12px;
+        line-height: 1.4em;
       }
 
       .icon {
@@ -895,7 +956,7 @@ h3{
         text-align: center;
         font-weight: 700;
         color: #008db7;
-        font-size: 1.8rem;
+        font-size: 2.0rem;
         margin-bottom: 0.5em;
 
         /* 縦中央に揃える */
@@ -914,6 +975,7 @@ h3{
 
   .works-box2{
     align-items: flex-start;
+    justify-content: space-between;
     h4{
       font-size: 2.0rem;
       width: 280px;
@@ -934,8 +996,8 @@ h3{
       }
     }
     p{
-      width: calc(100% - 170px);
-      @include sp {
+      width: calc(100% - 310px);
+      @include tbt {
         width: 100%;
       }
     }
@@ -1023,6 +1085,12 @@ h3{
 }
 /*会社概要*/
 #company{
+  h3{
+    font-size: 2.0rem;
+    color: #008DB7;
+    font-weight: normal;
+    margin-bottom: 0.3em;
+  }
   dl{
     display: flex;
     flex-wrap: wrap;
@@ -1038,7 +1106,7 @@ h3{
     dt{
       font-weight: normal;
       width: 12em;
-      padding: 12px 0;
+      padding: 10px 0;
       border-top:1px dotted #CCC;
       background-color: #e5f3f8;
       text-align: center;
@@ -1047,6 +1115,7 @@ h3{
       }
       @include tbt {
         width: 10em;
+        padding: 6px 0;
       }
       @include sp {
         width: 7em;
@@ -1054,13 +1123,14 @@ h3{
     }
     dd{
       width: calc(100% - 12em);
-      padding: 12px 0 12px 1em;
+      padding: 10px 0 10px 1em;
       border-top: 1px dotted #CCC;
       box-sizing: border-box;
       &:nth-child(2){
         border-top: none;
       }
       @include tbt {
+        padding: 6px 0 6px 1em;
         width: calc(100% - 10em);
       }
       @include sp {
@@ -1071,6 +1141,7 @@ h3{
   }
   #access{
     h3{
+      padding-bottom: 5px;
       border-bottom: 1px solid #008db7;
     }
     .map{
@@ -1164,8 +1235,8 @@ h3{
   }
 }
 .space{
-  @include tbt {
-    padding-left: 5%;
-    padding-right: 5%;
+  @include tby {
+    padding-left: 1em;
+    padding-right: 1em;
   }
 }

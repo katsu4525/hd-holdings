@@ -1,5 +1,5 @@
 #form {
-  width: 1200px;
+  width: 900px;
   margin: 30px auto 0;
 }
 #form dl {
@@ -12,7 +12,7 @@
   /*text-justify: inter-ideograph;*/
 }
 #form dt {
-  width: 15em;
+  width: 11em;
   padding: 25px 0;
   /*border-top: solid 1px #DDD;*/
   box-sizing: border-box;
@@ -20,7 +20,7 @@
 }
 #form dd {
   padding: 25px 0 25px 20px;
-  width: calc(100% - 15em);
+  width: calc(100% - 11em);
   /*border-top: solid 1px #DDD;*/
   box-sizing: border-box;
   height: 100%;
@@ -162,7 +162,7 @@
 }
 @media all and (max-width: 768px) {
   #form dl{
-    padding: 15px 15px 25px;
+    padding: 0 15px 25px;
   }
   #form center {
     margin: 0 auto;
@@ -222,6 +222,9 @@
   #form dt {
     width: 100%;
     padding: 20px 0 7px;
+  }
+  #form dt:first-child {
+    padding: 10px 0 7px;
   }
   #form dd {
     padding: 0 0 20px;

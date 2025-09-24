@@ -35,18 +35,22 @@ $breakpoint-sp: 480px;
   margin: 0 auto;
 }
 .inner3{
-  width: 100%;
+  width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+  box-sizing: border-box;
+  @include tbt {
+    width: 100%;
+  }
 }
-.title-area,.title-area-news{
+.title-area,.title-area-news,.title-area-contact{
   background-image: url("../images/page-title.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   margin-bottom: 10px;
   text-align: center;
-  height: 240px;
+  height: 160px;
   display: grid;
   place-items: center; /* 縦横中央をまとめて指定 */
   box-sizing: border-box;
@@ -55,6 +59,7 @@ $breakpoint-sp: 480px;
     height: 120px;
   }
   @include sp {
+    height: 70px;
   }
   h2{
     font-weight: 400;
@@ -67,12 +72,25 @@ $breakpoint-sp: 480px;
       font-size: 2.6rem;
     }
     @include sp {
-      font-size: 2.4rem;
+      font-size: 2.6rem;
     }
   }
 }
 .title-area-news{
   background-image: none;
+  h2{
+    color: #111;
+    text-shadow:none;
+  }
+}
+.title-area-contact{
+  background-image: none;
+  height: auto;
+  padding-top: 30px;
+  @include tbt {
+    padding-top: 15px;
+    margin-bottom: 0;
+  }
   h2{
     color: #111;
     text-shadow:none;
@@ -85,6 +103,9 @@ $breakpoint-sp: 480px;
     line-height: 1.5em;
   }
 }
+.en-font{
+  font-family: "Poppins", sans-serif;
+}
 .pan{
   width: 1200px;
   margin: 0 auto 40px;
@@ -92,7 +113,7 @@ $breakpoint-sp: 480px;
   align-items: center;
   font-size: 1.4rem;
   @include tby {
-    width: 94%;
+    width: 90%;
   }
   @include tbt {
     margin: 0 auto 30px;
@@ -143,6 +164,7 @@ h3{
   margin-top: 1em;
 }
 #movie{
+  margin-bottom: 8px;
   .fv {
     position: relative;
     width: 100%;
@@ -189,7 +211,7 @@ h3{
   background-repeat: no-repeat;
   background-position: center center;
   text-align: center;
-  padding: 20px 0 20px;
+  padding: 40px 0 40px;
   @include tbt {
     background-image: url("../images/top01sp.webp");
     background-size: cover;
@@ -197,45 +219,35 @@ h3{
     background-position: center center;
   }
   h2{
-    font-size: 2.0rem;
+    font-weight: 500;
+    font-size: 2.4rem;
     @include tbt {
-      font-size: 2.0rem;
+      font-size: 2.2rem;
     }
     @include sp {
-      font-size: 1.8rem;
+      font-size: 2.0rem;
     }
   }
   .main-btn {
+    width: 300px;
+    margin: 15px auto 0;
+    box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    font-size: 1.8rem;
-    margin-top: 15px;
-    display: inline-flex;             /* ボタン全体がリンク判定になる */
+    font-size: 2.2rem;
+    display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: #fff;           /* 背景は白 */
-    color: #51A9EA;                   /* テキストはグリーン */
-    padding: 0.4em 2.0em;             /* リンク領域を広げる */
-    border-radius: 30px;              /* 四つ角を丸く */
+    justify-content: space-between;
+    background-color: #fff;
+    color: #51A9EA;
+    padding: 0.2em 1.0em;
+    border-radius: 30px;
     text-decoration: none;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* ボタンの影 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     transition: all 0.3s ease;
-    cursor: pointer;                  /* カーソルをポインタに */
-    text-shadow: none;                /* ← テキストの影をなくす */
-
-    &::after {
-      content: "→";                     /* 矢印 */
-      margin-left: 0.6em;               /* テキストとの余白 */
-      transition: transform 0.3s ease;
-    }
-    &:hover {
-      background-color: #51A9EA;        /* ホバー時に背景をグリーン */
-      color: #fff;                      /* テキストは白に */
-      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
-      transform: translateY(-2px);      /* 少し浮かせる */
-      opacity: 1.0;
-      &::after {
-        transform: translateX(4px);       /* 矢印を右に動かす */
-      }
+    cursor: pointer;
+    text-shadow: none;
+    img{
+      width: 32px;
     }
   }
 }
@@ -256,7 +268,7 @@ h3{
   .news-title{
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    font-size: 3.2rem;
+    font-size: 3.6rem;
     color: #51A9EA;
     display: flex;
     align-items: baseline;
@@ -265,11 +277,26 @@ h3{
       display: inline-block;
       text-align: center;
       line-height: 1.2em;
+      font-size: 3.0rem;
+    }
+    @include tbt {
+      display: inline-block;
+      text-align: center;
+      line-height: 1.2em;
+      font-size: 2.6rem;
     }
     span{
       font-family: "Zen Kaku Gothic New", sans-serif;
-      font-size: 0.5em;          /* フォントを小さくする */
+      font-size: 16px;          /* フォントを小さくする */
       color: #000;
+      @include tbt {
+        font-size: 2.2rem;
+        font-weight: normal;
+      }
+      @include sp {
+        font-size: 2.0rem;
+        font-weight: normal;
+      }
     }
   }
   .index-news-list{
@@ -336,28 +363,28 @@ h3{
     }
   }
   .news-btn {
-    text-align: right; /* 右寄せ */
-    margin-top: 15px;
-    a {
-      display: inline-flex;
-      align-items: center;
-      color: #111;            /* 緑色 */
-      text-decoration: none;
-      position: relative;
-      padding-right: 1.2em;      /* 矢印分の余白 */
-      transition: all 0.3s ease;
-      &::after {
-        content: "→";               /* 右側に矢印 */
-        margin-left: 0.4em;
-        font-size: 1.2em;
-        transition: transform 0.3s ease;
-        color: #008db7;
-      }
-      &:hover::after {
-        transform: translateX(4px); /* ホバー時に矢印を右に動かす */
+    text-align: right;
+    margin-top: 10px;
+    p{
+      display: inline-block;
+      a {
+        display: flex;
+        align-items: center;
+        color: #111;
+        text-decoration: none;
+        position: relative;
+        padding-right: 1.2em;
+        transition: all 0.3s ease;
+        img{
+          width: 24px;
+          margin-left: 6px;
+        }
       }
     }
   }
+}
+#index-news{
+  padding-bottom: 0;
 }
 #news-list{
   padding-top: 0;
@@ -386,15 +413,15 @@ h3{
   }
 }
 #index-menu,{
-  background-image: url("../images/index-bg.webp");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center top;
+  background-image: url("../images/index-bg.webp"),url("../images/index-bg2.webp");
+  background-size: 70%,50%;
+  background-repeat: no-repeat,no-repeat;
+  background-position: right 0 top 0,left 0 bottom 0;
   @include tbt {
-    background-image: url("../images/index-bg-sp2.webp"),url("../images/index-bg-sp1.webp");
-    background-size: 100%,100%;
+    background-image: url("../images/index-bg-sp1.webp"),url("../images/index-bg-sp2.webp");
+    background-size: 85%,100%;
     background-repeat: no-repeat,no-repeat;
-    background-position: right 0 top 0,left 0 bottom 0;
+    background-position: left 0 top 0,left 0 bottom 0;
   }
   .index-menu-box{
     display: flex;
@@ -406,12 +433,16 @@ h3{
       text-align: center;
       @include tbt {
         width: 100%;
-        margin-bottom: 30px;
+        margin-bottom: 60px;
+        &:last-of-type{
+          margin-bottom: 30px;
+        }
       }
       figure{
         margin-bottom: 15px;
         img{
-          height: 40px;
+          height: 12vw;
+          max-height: 64px;
         }
       }
       .horinet,.horitech{
@@ -421,15 +452,19 @@ h3{
         background-position: center top;
         color: #FFF;
         div{
+          max-height: 400px;
+          height: 36vw;
           border: 1px solid #FFF;
-          padding: 30px 40px 150px 40px;
+          padding: 30px 40px 0 40px;
           text-align: justify;
           @include tbt {
-            padding: 20px 30px 90px 30px;
+            padding: 20px 30px 0 30px;
+            height: 70vw;
           }
           h3{
             text-align: center;
-            font-weight: 700;
+            font-weight: 500;
+            font-size: 2.4rem;
           }
         }
       }
@@ -459,44 +494,7 @@ h3{
     margin: 0 auto 10px;
   }
 }
-.menu-nav {
-  width: 80%;
-  box-sizing: border-box;
-  text-align: center;
-  display: inline-flex;             /* ボタン全体がリンク判定になる */
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;           /* 背景は白 */
-  color: #008db7;                   /* テキストはグリーン */
-  padding: 0.4em 0.5em;             /* リンク領域を広げる */
-  border-radius: 30px;              /* 四つ角を丸く */
-  font-size: 0.9em;
-  font-weight: bold;
-  text-decoration: none;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* ボタンの影 */
-  transition: all 0.3s ease;
-  cursor: pointer;                  /* カーソルをポインタに */
-  text-shadow: none;                /* ← テキストの影をなくす */
-  margin-bottom: 10px;
-  @include sp {
-    font-size: 1.0em;
-  }
-  &::after {
-    content: "→";                     /* 矢印 */
-    margin-left: 0.6em;               /* テキストとの余白 */
-    font-size: 1.1em;
-    transition: transform 0.3s ease;
-  }
-  &:hover {
-    background-color: #008db7;        /* ホバー時に背景をグリーン */
-    color: #fff;                      /* テキストは白に */
-    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
-    transform: translateY(-2px);      /* 少し浮かせる */
-    &::after {
-      transform: translateX(4px);       /* 矢印を右に動かす */
-    }
-  }
-}
+
 
 #company,#greetings,#history,#contact,#privacy,#error,#philosophy,#group,#facility{
   margin-bottom: 100px;
@@ -566,11 +564,12 @@ h3{
         margin-bottom: 10px;
         font-style: italic;
         color: #335B8B;
+        font-weight: 200;
         @include tbt {
-          font-size: 2.4rem;
+          font-size: 2.6rem;
         }
         @include sp {
-          font-size: 2.2rem;
+          font-size: 2.6rem;
         }
         span{
           font-family: "Zen Kaku Gothic New", sans-serif;
@@ -585,14 +584,14 @@ h3{
         }
       }
       h4{
-        font-size: 2.4rem;
+        font-size: 2.0rem;
         color: #335B8B;
         margin-top: 1em;
         @include tbt {
-          font-size: 2.2rem;
+          font-size: 2.0rem;
         }
         @include sp {
-          font-size: 2.0rem;
+          font-size: 1.8rem;
         }
       }
     }
@@ -604,15 +603,15 @@ h3{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   @include tbt {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   @include sp {
     margin-bottom: 20px;
   }
   .nav{
-    width: 23%;
+    width: 23.3333%;
     text-align: center;
     font-size: 1.8rem;
     font-weight: 700;
@@ -631,37 +630,49 @@ h3{
       box-sizing: border-box;
       color: #335B8B;
       border: 1px solid #335B8B;
-      padding: 5px 1em;
+      padding: 1px 1em;
       background-image: url("../images/arrow1.svg");
       background-size: 12px;
       background-repeat: no-repeat;
-      background-position: left 15px center;
+      background-position: left 25px center;
       border-radius: 30px;
+      @include sp {
+        background-position: left 10px center;
+      }
+    }
+  }
+}
+.company-nav-area{
+  .nav{
+    a{
+      color: #008DB7;
+      border: 1px solid #008DB7;
+      background-image: url("../images/arrow.svg");
     }
   }
 }
 .facility-nav-area{
   justify-content: center;
   .nav{
-    width: 31%;
+    width: 300px;
     @include tbt {
-      width: 48%;
+      width: 60%;
       font-size: 1.6rem;
     }
     @include sp {
-      width: 80%;
+      width: 90%;
       font-size: 1.5rem;
     }
   }
 }
 #greetings{
-  padding: 80px 0;
+  padding: 40px 0;
   background-image: linear-gradient(90deg, rgba(24,148,59,0.10), rgba(0,179,236,0.10));
   @include tbt {
-    padding: 60px 0;
+    padding: 40px 0;
   }
   @include sp {
-    padding: 40px 0 ;
+    padding: 30px 0 ;
   }
   h3{
     color: #335B8B;
@@ -675,9 +686,10 @@ h3{
 }
 #company{
   h3{
+    font-size: 2.0rem;
     color: #335B8B;
-    font-weight: 700;
-    margin-bottom: 1em;
+    font-weight: normal;
+    margin-bottom: 0.3em;
   }
   dl{
     display: flex;
@@ -693,7 +705,7 @@ h3{
     }
     dt{
       width: 12em;
-      padding: 12px 0;
+      padding: 10px 0;
       border-top:1px dotted #CCC;
       background-color: rgba(51,91,139,0.10);
       text-align: center;
@@ -703,6 +715,7 @@ h3{
       }
       @include tbt {
         width: 10em;
+        padding: 6px 0;
       }
       @include sp {
         width: 7em;
@@ -710,7 +723,7 @@ h3{
     }
     dd{
       width: calc(100% - 12em);
-      padding: 12px 0 12px 1em;
+      padding: 10px 0 10px 1em;
       border-top: 1px dotted #CCC;
       box-sizing: border-box;
       &:nth-child(2){
@@ -718,6 +731,7 @@ h3{
       }
       @include tbt {
         width: calc(100% - 10em);
+        padding: 6px 0 6px 1em;
       }
       @include sp {
         width: calc(100% - 7em);
@@ -727,6 +741,7 @@ h3{
   }
   #access{
     h3{
+      padding-bottom: 5px;
       color: #335B8B;
       border-bottom: 1px solid #335B8B;
     }
@@ -801,12 +816,16 @@ h3{
     }
     img{
       display: inline-block;
-      height: 40px;
+      height: 50px;
       width: auto;
+      @include tbt {
+        height: 40px;
+      }
     }
   }
   .gp-box{
     display: flex;
+    align-items: stretch; /* 子要素の高さを揃える */
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 35px;
@@ -823,36 +842,70 @@ h3{
         margin-bottom: 40px;
       }
       .menu-nav {
+        width: 300px;
+        box-sizing: border-box;
         font-family: "Poppins", sans-serif;
         font-size: 1.0em;
-        font-weight: normal;
-        &:hover {
-          opacity: 1.0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff;
+        color: #008DB7;
+        padding: 0.2em 1.0em;
+        border-radius: 30px;
+        text-decoration: none;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        transition: all 0.3s ease;
+        cursor: pointer;
+        text-shadow: none;
+        @include sp {
+          margin: 0 auto;
+          font-size: 1.8rem;
+          width: 240px;
+        }
+        img{
+          width: 32px;
         }
       }
     }
     &.bg-gr{
       background-color: #E9F7ED;
       .menu-nav {
+        width: 300px;
+        box-sizing: border-box;
         font-family: "Poppins", sans-serif;
         font-size: 1.0em;
-        color: #18943B;                   /* テキストはグリーン */
-        font-weight: normal;
-        &:hover {
-          background-color: #18943B;        /* ホバー時に背景をグリーン */
-          color: #fff;                      /* テキストは白に */
-          opacity: 1.0;
-          &::after {
-            transform: translateX(4px);       /* 矢印を右に動かす */
-          }
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff;
+        color: #18943B;
+        padding: 0.2em 1.0em;
+        border-radius: 30px;
+        text-decoration: none;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        transition: all 0.3s ease;
+        cursor: pointer;
+        text-shadow: none;
+        @include sp {
+          margin: 0 auto;
+          font-size: 1.8rem;
+          width: 240px;
+        }
+        img{
+          width: 32px;
         }
       }
     }
+    .sp_btn{
+      margin: 0 auto;
+    }
     .info-box{
-      width: 50%;
+      width: calc(100% - 460px);
       font-size: 2.0rem;
       display: flex;
-      flex-direction: column;  /* 縦並び */
+      flex-direction: column;   /* 縦並び */
+      justify-content: space-between; /* 上下に分布 */
       @include tbt {
         width: 100%;
         font-size: 1.8rem;
@@ -865,7 +918,7 @@ h3{
       margin-top: 0; /* 念のため上に固定 */
     }
     figure{
-      width: 45%;
+      width: 430px;
       @include tbt {
         width: 100%;
         margin-top: 20px;
@@ -874,26 +927,27 @@ h3{
     }
     .menu-nav{
       margin-top: auto;
-      width: 240px;
+      width: 300px;
       @include tbt {
         margin: 20px auto 0;
-        width: 85%;
       }
     }
   }
 }
 #facility{
   background-image: url("../images/solarpanel-pc.webp");
-  background-size: 48%;
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: right top 80px;
   @include tbt {
     background-image: none;
   }
   .facility-box{
-    width: 48%;
+    width: 46%;
+    max-width: 480px;
     @include tbt {
       width: 100%;
+      max-width: 100%;
     }
     h3{
       font-family: "Poppins", sans-serif;
@@ -916,15 +970,15 @@ h3{
       margin-bottom: 1em;
     }
     .subTitle{
-      font-weight: 700;
+      font-weight: 500;
       font-size: 2.0rem;
       margin-bottom: 1em;
-      @include sp {
-        font-size: 1.8rem;
+      @include tbt {
+        font-size: 2.2rem;
       }
     }
     h4{
-      margin: 1em 0 20px;
+      margin: 2em 0 5px;
       padding: 6px 1em;
       background-image: linear-gradient(90deg, #18943B, #00B3EC);
       color: #FFF;
@@ -1011,31 +1065,72 @@ h3{
   }
 }
 /*お知らせ一覧*/
-#news-cate-nav{
+
+#news-cate-nav {
   display: flex;
-  flex-wrap:wrap;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 50px;
-  p{
-    margin: 5px;
-    a{
-      padding: 5px 1em;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  @include tbt {
+    flex-wrap: wrap;
+    &::before {
+      content: "";
+      flex: 0 0 75%;
+      order: 1;
+    }
+  }
+  p {
+    width: 19%;
+    margin: 0 0 5px;
+    text-align: center;
+    /*flex: 1 ;*/
+    @include tbt {
+      flex: 0 0 24.5%;
+      max-width: 24.5%;
+      &:first-child{
+        order: 0;
+        flex: 0 0 24.5%;
+      }
+      &:not(:first-child) {
+        order: 2;
+        flex: 0 0 24.5%;
+      }
+    }
+    a {
+      display: inline-block;
+      width: 100%;
+      height: 34px;
+      box-sizing: border-box;
+      padding: 5px 0.5em;
       font-size: 0.9em;
       border-radius: 30px;
       color: #FFF;
-      &.bg-bk{
+      @include tbt {
+        height: 26px;
+        line-height: 1.1em;
+      }
+      &.bg-bk { 
         background-color: #000;
       }
-      &.bg-pl{
-        background-color: #273e7b;
+      &.bg-pl {
+        background-color: #273e7b; 
+        font-size: 0.7em; 
+        line-height: 2.0em;
+        @include tbt {
+          font-size: 0.5em; 
+          line-height: 2.0em;
+        }
       }
-      &.bg-bl{
+      &.bg-bl {
         background-color: #008db7;
       }
-      &.bg-gr{
+      &.bg-gr {
         background-color: #18943b;
       }
-      &.bg-or{
+      &.bg-or {
         background-color: #ff9300;
       }
     }
@@ -1074,7 +1169,7 @@ h3{
   text-align: center;
   padding-top: 80px;
   padding-bottom: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   border-bottom: 1px solid #707070;
   display: flex;
   flex-wrap: wrap;

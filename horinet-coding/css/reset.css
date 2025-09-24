@@ -41,6 +41,7 @@ body {
   margin: 0;
   /* ルートのフォントサイズを1.6em（16pxと同等のサイズ）に設定 */
 	font-size: 1.6em;
+  line-height: 1.6em;
 }
 
 /**

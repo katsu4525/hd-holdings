@@ -47,6 +47,7 @@
         <div class="global-nav-item"><a href="company.html">企業情報</a></div>
         <div class="global-nav-item"><a href="group.html">グループ企業</a>
           <div class="global-nav-sub-item-list">
+            <div class="global-nav-sub-item"><a href="group.html">グループ企業一覧</a></div>
             <div class="global-nav-sub-item"><a href="#">株式会社堀通信</a></div>
             <div class="global-nav-sub-item"><a href="#">株式会社 HoriTech</a></div>
           </div>
@@ -103,7 +104,7 @@
   <section class="f-contact">
     <div class="inner">
       <div class="logo-nav">
-        <figure class="f-log"><img src="images/f-logo.svg" width="271" height="53" alt="HRホールディングス"/></figure>
+        <figure class="f-log"><a href="index.php"><img src="images/f-logo.svg" width="271" height="53" alt="HRホールディングス"/></a></figure>
         <ul>
           <li class="f-nav"><a href="philosophy.html"><span class="circle-icon">
           <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
@@ -125,7 +126,7 @@
             <path d="M3 2L7 5L3 8" stroke="#333" stroke-width="1" fill="none"/>
           </svg>
           </span>関連施設</a></li>
-          <li class="f-pv"><a href="news-list.html">お知らせ</a></li>
+          <li class="f-pv"><a href="news-list.php">お知らせ</a></li>
           <li class="f-pv"><a href="privacy.html">プライバシーポリシー</a></li>
         </ul>
       </div>
@@ -137,12 +138,12 @@
     <div class="bnr-area">
       <p>グループ<br class="spOnly">会社</p>
       <div>
-        <figure><a href="" target="_blank"><img src="images/group-1.svg" width="560" height="160" alt="HRホールディングス"/></a></figure>
-        <figure><a href="" target="_blank"><img src="images/group-2.svg" width="560" height="160" alt="株式会社 HoriTech"/></a></figure>
+        <figure><a href="https://www.horinet.co.jp/hori-tsushin/" target="_blank"><img src="images/group-1.svg" width="560" height="160" alt="株式会社堀通信"/></a></figure>
+        <figure><a href="https://www.horinet.co.jp/hori-tech/" target="_blank"><img src="images/group-2.svg" width="560" height="160" alt="株式会社 HoriTech"/></a></figure>
       </div>
     </div>
   </section>
-  <p class="copy-r text-center">&copy; 2017 Hori Communication Corp All Rights Reserved.</p>
+  <p class="copy-r text-center">Copyright &copy; HR Holdings All Rights Reserved.</p>
 </footer>
 <!-- jQuery --> 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script> 
@@ -168,6 +169,20 @@
     });
   });
 </script>
+  
+<style>
+  @media screen and (max-width: 1024px) {
+    .global-nav-sub-item-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0 20px;
+    }
+    .global-nav-sub-item a {
+      padding-left: 0;
+    }
+  }
+</style>
 <!-- InstanceBeginEditable name="foot" -->
 <!-- jQuery（SlickはjQuery依存） -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

@@ -27,7 +27,7 @@
 
 .scroll-hint-icon {
   position: absolute;
-  top: calc(50% - 40px);
+  top: 100px;
   left: calc(50% - 60px);
   box-sizing: border-box;
   width: 120px;

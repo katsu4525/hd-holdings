@@ -104,6 +104,7 @@ try {
         <div class="global-nav-item"><a href="company.html">企業情報</a></div>
         <div class="global-nav-item"><a href="group.html">グループ企業</a>
           <div class="global-nav-sub-item-list">
+            <div class="global-nav-sub-item"><a href="group.html">グループ企業一覧</a></div>
             <div class="global-nav-sub-item"><a href="#">株式会社堀通信</a></div>
             <div class="global-nav-sub-item"><a href="#">株式会社 HoriTech</a></div>
           </div>
@@ -128,14 +129,14 @@ try {
         お使いのブラウザは動画に対応していません。
       </video>
       <div class="text-overlay">
-        <p>つながる力、広がる価値</p>
+        <p>つながる力、<br>広がる価値</p>
       </div>
     </div>
   </section>
   
   <section class="index-text-area">
-    <h2>未来の可能性は<br>人と人が「つながる」瞬間から生まれます</h2>
-    <p><a href="philosophy.html" class="main-btn">Our Philosophy</a></p>
+    <h2>未来の可能性は<br>人と人が「つながる」瞬間から<br class="spOnly">生まれます</h2>
+    <p><a href="philosophy.html" class="main-btn">Our Philosophy<img src="images/arrow2.svg" alt=""/></a></p>
   </section>
   
   <section id="index-news" class="inner">
@@ -156,7 +157,7 @@ try {
       <p class="text"><a href="#">日本電通株式会社様のホームページにて弊社の「抗ウイルス・除菌用紫外線照射装置」の導入事例が紹介されました<img src="images/link-icon.svg" alt=""/></a></p>
     </div> -->
     <?= $news_list ?>
-    <p class="news-btn"><a href="news-list.php">一覧へ</a></p>
+    <div class="news-btn"><p><a href="news-list.php">一覧へ<img src="images/arrow2.svg" alt=""/></a></p></div>
   </section>
   <section id="index-menu">
     <div class="inner text-center">
@@ -177,7 +178,7 @@ try {
         <div class="horitech">
           <div>
             <h3>電気・通信事業</h3>
-            <p>事業内容端的に（50文字程度）事業内容端的に（50文字程度）事業内容端的に（50文字程度）事業内容端的に（50文字程度）</p>
+            <p>公共・民間施設から道路や大規模ネットワークまで幅広い電気・通信設備工事を担う事業</p>
           </div>
         </div>
       </div>
@@ -189,7 +190,7 @@ try {
   <section class="f-contact">
     <div class="inner">
       <div class="logo-nav">
-        <figure class="f-log"><img src="images/f-logo.svg" width="271" height="53" alt="HRホールディングス"/></figure>
+        <figure class="f-log"><a href="index.php"><img src="images/f-logo.svg" width="271" height="53" alt="HRホールディングス"/></a></figure>
         <ul>
           <li class="f-nav"><a href="philosophy.html"><span class="circle-icon">
           <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
@@ -211,7 +212,7 @@ try {
             <path d="M3 2L7 5L3 8" stroke="#333" stroke-width="1" fill="none"/>
           </svg>
           </span>関連施設</a></li>
-          <li class="f-pv"><a href="news-list.html">お知らせ</a></li>
+          <li class="f-pv"><a href="news-list.php">お知らせ</a></li>
           <li class="f-pv"><a href="privacy.html">プライバシーポリシー</a></li>
         </ul>
       </div>
@@ -223,12 +224,12 @@ try {
     <div class="bnr-area">
       <p>グループ<br class="spOnly">会社</p>
       <div>
-        <figure><a href="" target="_blank"><img src="images/group-1.svg" width="560" height="160" alt="HRホールディングス"/></a></figure>
-        <figure><a href="" target="_blank"><img src="images/group-2.svg" width="560" height="160" alt="株式会社 HoriTech"/></a></figure>
+        <figure><a href="https://www.horinet.co.jp/hori-tsushin/" target="_blank"><img src="images/group-1.svg" width="560" height="160" alt="株式会社堀通信"/></a></figure>
+        <figure><a href="https://www.horinet.co.jp/hori-tech/" target="_blank"><img src="images/group-2.svg" width="560" height="160" alt="株式会社 HoriTech"/></a></figure>
       </div>
     </div>
   </section>
-  <p class="copy-r text-center">&copy; 2017 Hori Communication Corp All Rights Reserved.</p>
+  <p class="copy-r text-center">Copyright &copy; HR Holdings All Rights Reserved.</p>
 </footer>
 <!-- jQuery --> 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script> 
@@ -254,6 +255,20 @@ try {
     });
   });
 </script>
+  
+<style>
+  @media screen and (max-width: 1024px) {
+    .global-nav-sub-item-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0 20px;
+    }
+    .global-nav-sub-item a {
+      padding-left: 0;
+    }
+  }
+</style>
 <!-- InstanceBeginEditable name="foot" -->
 <!-- InstanceEndEditable -->
 </body>
