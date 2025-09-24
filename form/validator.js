@@ -131,7 +131,7 @@ Validator.baloon.element.prototype = {
       this.toTop();
 
       if (field.type != 'radio' && field.type != 'checkbox') {
-         var colors = new Array('#FF6666', '#FFAAAA', '#FF6666', '#FFAAAA');
+         var colors = new Array('#E2E2E2', '#E2E2E2', '#E2E2E2', '#E2E2E2');
          window.setTimeout(function () {
             if (colors.length > 0) {
                field.style.backgroundColor = colors.shift();

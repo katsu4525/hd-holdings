@@ -218,7 +218,7 @@ try {
       </div>
       <div class="tel-form">
         <p class="f-form"><a href="contact.php">お問い合わせ</a></p>
-        <figure class="f-tel"><a href="tel:00-0000-0000"><img src="images/tel1.svg" alt="お問い合わせ電話番号"/></a></figure>
+        <figure class="f-tel"><a href="tel:0773-45-7222"><img src="images/tel1.svg" alt="お問い合わせ電話番号"/></a></figure>
       </div>
     </div>
     <div class="bnr-area">
