@@ -306,7 +306,7 @@ h3{
     flex-wrap: wrap;
     align-items: center;
     gap: 1.0em;
-    &:last-of-type{
+    &:last-child{
       border-bottom: 1px solid #AAA;
     }
     .date{
@@ -387,7 +387,7 @@ h3{
   padding-bottom: 0;
 }
 #news-list{
-  padding-top: 0;
+  margin-top: 30px;
   .pagination {
     display: flex;
     justify-content: center;
@@ -409,6 +409,14 @@ h3{
     .current a {
       border-bottom: 2px solid #008db7;
       pointer-events: none;
+    }
+  }
+  .index-news-list{
+    &:first-child{
+      border-top: 8px solid #EBEBEB;
+    }
+    &:last-child{
+      border-bottom: 8px solid #EBEBEB;
     }
   }
 }

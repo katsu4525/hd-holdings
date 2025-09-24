@@ -272,7 +272,7 @@ h3 {
     flex-wrap: wrap;
     align-items: center;
     gap: 1.0em; }
-    #index-news .index-news-list:last-of-type, #index-menu .index-news-list:last-of-type, #news-list .index-news-list:last-of-type {
+    #index-news .index-news-list:last-child, #index-menu .index-news-list:last-child, #news-list .index-news-list:last-child {
       border-bottom: 1px solid #AAA; }
     #index-news .index-news-list .date, #index-menu .index-news-list .date, #news-list .index-news-list .date {
       font-size: 1.8rem; }
@@ -337,7 +337,7 @@ h3 {
   padding-bottom: 0; }
 
 #news-list {
-  padding-top: 0; }
+  margin-top: 30px; }
   #news-list .pagination {
     display: flex;
     justify-content: center;
@@ -358,6 +358,10 @@ h3 {
     #news-list .pagination .current a {
       border-bottom: 2px solid #008db7;
       pointer-events: none; }
+  #news-list .index-news-list:first-child {
+    border-top: 8px solid #EBEBEB; }
+  #news-list .index-news-list:last-child {
+    border-bottom: 8px solid #EBEBEB; }
 
 #index-menu {
   background-image: url("../images/index-bg.webp"), url("../images/index-bg2.webp");
