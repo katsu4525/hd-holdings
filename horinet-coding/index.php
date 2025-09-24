@@ -38,14 +38,25 @@ try {
         break;
     }
 
-    $title = (empty($val['ne_url'])) ? $val['ne_title'] : "<a href='{$val['ne_url']}'>{$val['ne_title']}<img src='images/link-icon.svg' alt=''/></a>";
+    // $title = (empty($val['ne_url'])) ? $val['ne_title'] : "<a href='{$val['ne_url']}'>{$val['ne_title']}<img src='images/link-icon.svg' alt=''/></a>";
+
+    // $news_list .= <<< "HTML"
+    // <div class="index-news-list">
+    //   <p class="date">{$val['ne_created']}</p>
+    //   <p class="cate">{$cate}</p>
+    //   <p class="text">{$title}</p>
+    // </div> 
+    // HTML;
+
+    $val['ne_content'] = nl2br($val['ne_content']);
+    $content = (empty($val['ne_url'])) ? $val['ne_content'] : "<a href='{$val['ne_url']}'>{$val['ne_content']}<img src='images/link-icon.svg' alt=''/></a>";
 
     $news_list .= <<< "HTML"
-    <div class="index-news-list">
-      <p class="date">{$val['ne_created']}</p>
-      <p class="cate">{$cate}</p>
-      <p class="text">{$title}</p>
-    </div> 
+      <div class="index-news-list">
+        <p class="date">{$val['ne_created']}</p>
+        <p class="cate">{$cate}</p>
+        <p class="text">{$content}</p>
+      </div> 
     HTML;
   }
 } catch (Exception $e) {

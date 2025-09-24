@@ -21,19 +21,20 @@ $input_name = [];
 $input_name[] = 'created';    // 作成日
 $input_name[] = 'is_public';  // 公開設定
 $input_name[] = 'cate';       // カテゴリー
-$input_name[] = 'title';      // タイトル
+// $input_name[] = 'title';      // タイトル
+$input_name[] = 'content';      // 内容
 $input_name[] = 'url';        // リンクURL
 $input_name[] = 'ne';   // 記事キー
 
 $post = $stlib->getPost($input_name);
 
 try {
-  $sql = 'UPDATE news_tb SET ne_created = ?, ne_is_public = ?, ne_cate = ?, ne_title = ?, ne_url = ? WHERE ne_key = ?';
+  $sql = 'UPDATE news_tb SET ne_created = ?, ne_is_public = ?, ne_cate = ?, ne_content = ?, ne_url = ? WHERE ne_key = ?';
   $bind = [];
   $bind[] = $post['created'];
   $bind[] = $post['is_public'];
   $bind[] = $post['cate'];
-  $bind[] = $post['title'];
+  $bind[] = $post['content'];
   $bind[] = $post['url'];
   $bind[] = $post['ne'];
   $db->setSql($sql, $bind);

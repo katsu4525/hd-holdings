@@ -64,7 +64,8 @@ $list = <<< "HTML"
             <div class="row">
               <div class="title">タイトル</div>
               <div class="content">
-                <input type="text" class="w70" name="title">
+                <!-- <input type="text" class="w70" name="title"> -->
+                 <textarea name="content" class="w70" id=""></textarea>
               </div>
             </div>
             <div class="row">

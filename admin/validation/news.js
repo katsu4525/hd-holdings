@@ -47,9 +47,12 @@ $(function(){
       created: {
         required: true,
       },
-      title: {
+      // title: {
+      //   required: true,
+      //   maxlength: 255,
+      // },
+      content: {
         required: true,
-        maxlength: 255,
       },
       url: {
         url: true,

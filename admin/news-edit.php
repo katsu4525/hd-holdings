@@ -86,7 +86,8 @@ $list = <<< "HTML"
             <div class="row">
               <div class="title">タイトル</div>
               <div class="content">
-                <input type="text" class="w70" name="title" value="{$news_data['ne_title']}">
+                <!-- <input type="text" class="w70" name="title" value="{$news_data['ne_title']}"> -->
+                 <textarea name="content"  class="w70" id="">{$news_data['ne_content']}</textarea>
               </div>
             </div>
             <div class="row">

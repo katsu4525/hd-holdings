@@ -2621,6 +2621,9 @@ dd .detail .row {
 .content select.error {
   background-color: #FDD9D6;
 }
+.content textarea.error {
+  background-color: #FDD9D6;
+}
 /* メニュー */
 .fixed {
   position: fixed;

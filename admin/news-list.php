@@ -23,12 +23,14 @@ try {
 
   foreach ((array)$news_data as $val){
     $is_public = ((int)$val['ne_is_public'] === 1) ? '公開' : '非公開';
-    $title = (empty($val['ne_url'])) ? $val['ne_title'] : "<a href='{$val['ne_url']}' target='_blank' rel='noopener noreferrer'>{$val['ne_title']}</a>";
+    // $title = (empty($val['ne_url'])) ? $val['ne_title'] : "<a href='{$val['ne_url']}' target='_blank' rel='noopener noreferrer'>{$val['ne_title']}</a>";
+    $val['ne_content'] = nl2br($val['ne_content']);
+    $content = (empty($val['ne_url'])) ? $val['ne_content'] : "<a href='{$val['ne_url']}' target='_blank' rel='noopener noreferrer'>{$val['ne_content']}</a>";
 
     $news_list .= <<< "HTML"
       <tr>
         <td>{$val['ne_created']}</td>
-        <td>{$title}</td>
+        <td>{$content}</td>
         <td>{$is_public}</td>
         <td>{$val['ne_cate']}</td>
         <td>
