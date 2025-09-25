@@ -128,7 +128,7 @@ try {
       // HTML;
 
       $val['ne_content'] = nl2br($val['ne_content']);
-      $content = (empty($val['ne_url'])) ? $val['ne_content'] : "<a href='{$val['ne_url']}'>{$val['ne_content']}<img src='images/link-icon.svg' alt=''/></a>";
+      $content = (empty($val['ne_url'])) ? $val['ne_content'] : "<a href='{$val['ne_url']}' target='_blank' rel='noopener noreferrer'>{$val['ne_content']}<img src='images/link-icon.svg' alt=''/></a>";
 
       $news_list .= <<< "HTML"
         <div class="index-news-list">
