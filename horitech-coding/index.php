@@ -80,12 +80,12 @@ try {
 <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
 <meta name="format-detection" content="telephone=no">
 <!-- InstanceBeginEditable name="head" -->
-<meta property="og:url" content="https://HoriTech.com/" />
+<meta property="og:url" content="https://www.horinet.co.jp/horitech/" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="人と社会をつなぐ通信インフラの総合サポートと照明から消防設備まで電気工事をトータル対応｜【株式会社 HoriTech】" />
 <meta property="og:description" content="人と社会をつなぐ通信インフラの総合サポートと照明から消防設備まで電気工事をトータル対応。【株式会社 HoriTech】" />
 <meta property="og:site_name" content="株式会社 HoriTech" />
-<meta property="og:image" content="https://HoriTech.com/images/ogp.jpg" />
+<meta property="og:image" content="https://www.horinet.co.jp/horitech/images/ogp.jpg" />
 <!-- InstanceEndEditable -->
 <!--CSS-->
 <link href="css/reset.css" rel="stylesheet" type="text/css">
@@ -98,6 +98,8 @@ try {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<!--ファビコン-->
+<link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -231,7 +233,7 @@ try {
       <p>グループ<br class="spOnly">会社</p>
       <div>
         <figure><a href="https://www.horinet.co.jp/" target="_blank"><img src="images/group-1.svg" width="560" height="160" alt="HRホールディングス"/></a></figure>
-        <figure><a href="https://www.horinet.co.jp/hori-tsushin/" target="_blank"><img src="images/group-2.svg" width="560" height="160" alt="株式会社堀通信"/></a></figure>
+        <figure><a href="https://www.horinet.co.jp/horitech" target="_blank"><img src="images/group-2.svg" width="560" height="160" alt="株式会社堀通信"/></a></figure>
       </div>
     </div>
   </section>

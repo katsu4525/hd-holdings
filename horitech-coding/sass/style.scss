@@ -239,15 +239,16 @@ h3{
     flex-wrap: wrap;
     align-items: center;
     gap: 1.0em;
-    &:last-of-type{
+    &:last-child{
       border-bottom: 1px solid #AAA;
     }
     .date{
       font-size: 1.8rem;
+      width: 90px;
     }
     .cate{
       font-size: 1.4rem;
-      width: 8em;
+      width: 130px;
       text-align: center;
       color: #FFF;
       .bg-or{
@@ -265,9 +266,12 @@ h3{
     }
     .text{
       font-size: 1.6rem;
+      width: calc(100% - 260px);
       a{
+/*
         display: flex;
         flex-wrap: wrap;
+*/
         &:hover{
           color: #18943b;
           border-bottom: 1px solid #18943b;
@@ -281,11 +285,15 @@ h3{
     img{
       width: 15px;
       margin-left: 5px;
+      padding-bottom: 5px;
+      display: inline-block;
     }
   }
   .news-btn {
     text-align: right;
     margin-top: 10px;
+    border-top: 1px solid #AAA;
+    padding-top: 10px;
     p{
       display: inline-block;
       a {
@@ -313,6 +321,7 @@ h3{
     gap: 0 8px;
     list-style-type: none;
     padding: 30px 0 0;
+    border-top: 8px solid #EBEBEB;
     a {
       box-sizing: border-box;
       display: flex;
@@ -328,6 +337,14 @@ h3{
       border-bottom: 2px solid #228b22;
       pointer-events: none;
     }
+  }
+  .index-news-list{
+    &:first-child{
+      border-top: 8px solid #EBEBEB;
+    }
+    /*&:last-child{
+      border-bottom: 8px solid #EBEBEB;
+    }*/
   }
 }
 #index-menu,{
@@ -1017,12 +1034,20 @@ h3{
   justify-content: center;
   margin-bottom: 50px;
   p{
-    margin: 5px 5px;
+    margin: 5px;
+    width: 16%;
+    @include tbt {
+      width: 25%;
+    }
     a{
+      display: inline-block;
+      width: 100%;
+      box-sizing: border-box;
       padding: 5px 1em;
-      font-size: 0.9em;
+      font-size: 1.0em;
       border-radius: 30px;
       color: #FFF;
+      text-align: center;
       &.bg-bk{
         background-color: #000;
       }
