@@ -457,7 +457,15 @@ h3{
   @include sp {
     padding: 60px 0;
   }
+/*
+  .inner2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+*/
   h3{
+    width: 100%;
     color: #008DB7;
     border-bottom: 1px solid #008DB7;
     margin-bottom: 1em;
@@ -466,6 +474,17 @@ h3{
     text-align: right;
     margin-top: 1em;
   }
+/*
+  .message{
+    width: calc(100% - 240px);
+  }
+  .photo{
+    width: 200px;
+    @include tbt {
+      width: 100%;
+    }
+  }
+*/
 }
 /*事業内容*/
 #service{

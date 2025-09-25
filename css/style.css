@@ -290,7 +290,7 @@ h3 {
       #index-news .index-news-list .cate .bg-gr, #index-menu .index-news-list .cate .bg-gr, #news-list .index-news-list .cate .bg-gr {
         display: inline-block;
         width: 100%;
-        background-color: #18943b;
+        background-color: #11A9ED;
         border-radius: 30px; }
       #index-news .index-news-list .cate .bg-bl, #index-menu .index-news-list .cate .bg-bl, #news-list .index-news-list .cate .bg-bl {
         display: inline-block;
@@ -778,7 +778,7 @@ h3 {
         #group .gp-box.bg-bl .menu-nav img {
           width: 32px; }
     #group .gp-box.bg-gr {
-      background-color: #E9F7ED; }
+      background-color: #EAFCFF; }
       #group .gp-box.bg-gr .menu-nav {
         width: 300px;
         box-sizing: border-box;
@@ -788,7 +788,7 @@ h3 {
         align-items: center;
         justify-content: space-between;
         background-color: #fff;
-        color: #18943B;
+        color: #11A9ED;
         padding: 0.2em 1.0em;
         border-radius: 30px;
         text-decoration: none;
@@ -1005,7 +1005,7 @@ h3 {
       #news-cate-nav p a.bg-bl {
         background-color: #008db7; }
       #news-cate-nav p a.bg-gr {
-        background-color: #18943b; }
+        background-color: #11A9ED; }
       #news-cate-nav p a.bg-or {
         background-color: #ff9300; }
 

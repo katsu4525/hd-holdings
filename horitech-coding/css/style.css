@@ -94,12 +94,12 @@ h3 {
   font-weight: normal;
   font-size: 2.0rem;
   margin-bottom: 0.5em;
-  color: #18943b; }
+  color: #11A9ED; }
   h3.des {
     font-size: 2.4rem;
     margin-top: 50px;
     position: relative;
-    border-bottom: 1px solid #18943b; }
+    border-bottom: 1px solid #11A9ED; }
     @media screen and (max-width: 768px) {
       h3.des {
         font-size: 2.2rem; } }
@@ -192,7 +192,7 @@ h3 {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 3.2rem;
-    color: #18943b;
+    color: #11A9ED;
     display: flex;
     align-items: baseline;
     gap: 0.5em;
@@ -227,7 +227,7 @@ h3 {
       #index-news .index-news-list .cate .bg-gr, #index-menu .index-news-list .cate .bg-gr, #news-list .index-news-list .cate .bg-gr {
         display: inline-block;
         width: 100%;
-        background-color: #18943b;
+        background-color: #11A9ED;
         border-radius: 30px; }
     #index-news .index-news-list .text, #index-menu .index-news-list .text, #news-list .index-news-list .text {
       font-size: 1.6rem;
@@ -238,8 +238,8 @@ h3 {
                 flex-wrap: wrap;
         */ }
         #index-news .index-news-list .text a:hover, #index-menu .index-news-list .text a:hover, #news-list .index-news-list .text a:hover {
-          color: #18943b;
-          border-bottom: 1px solid #18943b; }
+          color: #11A9ED;
+          border-bottom: 1px solid #11A9ED; }
       @media screen and (max-width: 768px) {
         #index-news .index-news-list .text, #index-menu .index-news-list .text, #news-list .index-news-list .text {
           width: 100%;
@@ -299,7 +299,7 @@ h3 {
       border-top: 8px solid #EBEBEB; }
 
 #index-menu {
-  background-color: rgba(24, 148, 59, 0.1); }
+  background-color: #EAFCFF; }
   #index-menu .index-menu-box {
     display: flex;
     flex-wrap: wrap;
@@ -334,7 +334,7 @@ h3 {
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
-  color: #18943b;
+  color: #11A9ED;
   padding: 0.2em 1.0em;
   border-radius: 30px;
   text-decoration: none;
@@ -348,19 +348,65 @@ h3 {
   .menu-nav img {
     width: 32px; }
 
-#company, #privacy, #error, #service, #service2, #service3, #works, #works2, #news-detail, #works1 {
+#company, #privacy, #error, #service, #service2, #service3, #works, #works2, #news-detail, #works1, #greetings {
   margin-bottom: 100px; }
   @media screen and (max-width: 768px) {
-    #company, #privacy, #error, #service, #service2, #service3, #works, #works2, #news-detail, #works1 {
+    #company, #privacy, #error, #service, #service2, #service3, #works, #works2, #news-detail, #works1, #greetings {
       margin-bottom: 80px; } }
   @media screen and (max-width: 480px) {
-    #company, #privacy, #error, #service, #service2, #service3, #works, #works2, #news-detail, #works1 {
+    #company, #privacy, #error, #service, #service2, #service3, #works, #works2, #news-detail, #works1, #greetings {
       margin-bottom: 60px; } }
+
+#greetings {
+  background-color: #EAFCFF;
+  padding: 100px 0; }
+  @media screen and (max-width: 768px) {
+    #greetings {
+      padding: 80px 0; } }
+  @media screen and (max-width: 480px) {
+    #greetings {
+      padding: 60px 0; } }
+  #greetings .inner2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  #greetings h3 {
+    width: 100%;
+    color: #11A9ED;
+    border-bottom: 1px solid #11A9ED;
+    margin-bottom: 1em; }
+  #greetings .text-r {
+    text-align: right;
+    margin-top: 1em; }
+  #greetings .message {
+    width: calc(100% - 240px); }
+    @media screen and (max-width: 768px) {
+      #greetings .message {
+        width: 100%; } }
+    #greetings .message figure {
+      display: none; }
+      @media screen and (max-width: 768px) {
+        #greetings .message figure {
+          display: block;
+          width: 300px;
+          margin: 0 auto 20px; } }
+      @media screen and (max-width: 768px) {
+        #greetings .message figure {
+          width: 240px;
+          margin: 0 auto 20px; } }
+  #greetings .photo {
+    width: 200px; }
+    @media screen and (max-width: 768px) {
+      #greetings .photo {
+        width: 100%; } }
+    @media screen and (max-width: 768px) {
+      #greetings .photo figure {
+        display: none; } }
 
 /*事業内容*/
 #service h3 {
   font-family: "Poppins", sans-serif;
-  color: #18943b;
+  color: #11A9ED;
   font-size: 2.2rem;
   display: flex;
   align-items: center;
@@ -372,7 +418,7 @@ h3 {
     /* テキストとの余白 */
     font-size: 0.9em;
     /* 矢印のサイズ調整 */
-    color: #18943b;
+    color: #11A9ED;
     /* テキストと同じ色 */ }
   @media screen and (max-width: 480px) {
     #service h3 {
@@ -414,10 +460,10 @@ h3 {
       #service .service-box1 figure {
         padding-top: 30px; } }
     #service .service-box1 figure img {
-      filter: drop-shadow(-100px -50px 0px #e9f7ed); }
+      filter: drop-shadow(-100px -50px 0px #EAFCFF); }
       @media screen and (max-width: 768px) {
         #service .service-box1 figure img {
-          filter: drop-shadow(-5% -5% 0px #e9f7ed); } }
+          filter: drop-shadow(-5% -5% 0px #EAFCFF); } }
 #service .btnArea, #service .btnArea1 {
   width: 100%;
   max-width: 760px;
@@ -447,12 +493,12 @@ h3 {
       border-radius: 30px;
       transition: background 0.3s ease;
       box-sizing: border-box;
-      border: 1px solid #18943b; }
+      border: 1px solid #11A9ED; }
       @media screen and (max-width: 480px) {
         #service .btnArea .btn a, #service .btnArea1 .btn a {
           padding: 5px 15px; } }
       #service .btnArea .btn a:hover, #service .btnArea1 .btn a:hover {
-        background: rgba(18, 123, 47, 0.2); }
+        background: #EAFCFF; }
       #service .btnArea .btn a::before, #service .btnArea1 .btn a::before {
         content: "";
         display: inline-block;
@@ -461,7 +507,7 @@ h3 {
         height: 0;
         border-left: 6px solid transparent;
         border-right: 6px solid transparent;
-        border-top: 8px solid #18943b;
+        border-top: 8px solid #11A9ED;
         /* ← 矢印の色（白） */ }
 @media screen and (max-width: 768px) {
   #service .btnArea1 {
@@ -486,7 +532,7 @@ h3 {
     #service .service-box2 .box2-container .box2-in .box2-in-left {
       position: relative;
       width: 390px;
-      background: linear-gradient(to bottom, #18943B, #B9F8CB);
+      background: linear-gradient(to bottom, #11A9ED, #B9F8E9);
       background-repeat: no-repeat;
       background-size: 90% 280px;
       background-position: top left;
@@ -519,7 +565,7 @@ h3 {
         #service .service-box2 .box2-container .box2-in .box2-in-right {
           width: 100%; } }
       #service .service-box2 .box2-container .box2-in .box2-in-right .title {
-        color: #18943b;
+        color: #11A9ED;
         display: flex;
         /*align-items: center;*/
         font-weight: 700;
@@ -532,7 +578,7 @@ h3 {
           /* テキストとの余白 */
           font-size: 0.9em;
           /* 矢印のサイズ調整 */
-          color: #18943b;
+          color: #11A9ED;
           /* テキストと同じ色 */
           margin-top: 3px; }
       #service .service-box2 .box2-container .box2-in .box2-in-right .text {
@@ -541,7 +587,7 @@ h3 {
         border-bottom: 1px dotted #999; }
 
 #service2 {
-  background-color: rgba(24, 148, 59, 0.1);
+  background-color: #EAFCFF;
   padding: 100px 0; }
   @media screen and (max-width: 768px) {
     #service2 {
@@ -557,7 +603,7 @@ h3 {
         width: 100%;
         margin-bottom: 30px; } }
     #service2 .service2-box .textArea h3 {
-      color: #18943b;
+      color: #11A9ED;
       font-size: 2.2rem;
       display: flex;
       align-items: center;
@@ -569,7 +615,7 @@ h3 {
         /* テキストとの余白 */
         font-size: 0.9em;
         /* 矢印のサイズ調整 */
-        color: #18943b;
+        color: #11A9ED;
         /* テキストと同じ色 */ }
       @media screen and (max-width: 480px) {
         #service2 .service2-box .textArea h3 {
@@ -594,8 +640,8 @@ h3 {
   #service3 .service3-box h3 {
     font-weight: 700;
     font-size: 1.8rem;
-    color: #18943b;
-    border-bottom: 1px solid #18943b; }
+    color: #11A9ED;
+    border-bottom: 1px solid #11A9ED; }
   #service3 .service3-box p {
     border-bottom: 1px dotted #999;
     padding: 10px 0; }
@@ -608,7 +654,7 @@ h3 {
 /*事例*/
 #works h3, #works2 h3 {
   font-family: "Poppins", sans-serif;
-  color: #18943b;
+  color: #11A9ED;
   font-size: 2.2rem;
   display: flex;
   align-items: center;
@@ -620,13 +666,13 @@ h3 {
     /* テキストとの余白 */
     font-size: 0.9em;
     /* 矢印のサイズ調整 */
-    color: #18943b;
+    color: #11A9ED;
     /* テキストと同じ色 */ }
   @media screen and (max-width: 480px) {
     #works h3, #works2 h3 {
       font-size: 2.0rem; } }
 #works h4, #works2 h4 {
-  background-color: #18943b;
+  background-color: #11A9ED;
   border-radius: 30px;
   text-align: center;
   margin: 0 0 30px;
@@ -649,7 +695,7 @@ h3 {
   font-size: 1.8rem;
   font-weight: 500;
   padding-bottom: 10px;
-  border-bottom: 2px solid #18943b;
+  border-bottom: 2px solid #11A9ED;
   display: flex;
   justify-content: space-between;
   position: relative; }
@@ -664,12 +710,12 @@ h3 {
         display: flex;
         align-items: center;
         font-weight: 500;
-        color: #18943b; }
+        color: #11A9ED; }
         #works .sub-title1 figure.swp2 img, #works2 .sub-title1 figure.swp2 img {
           width: 36px; } }
 #works .table-area, #works2 .table-area {
-  /*border-top: 2px solid #18943b;*/
-  border-bottom: 2px solid #18943b; }
+  /*border-top: 2px solid #11A9ED;*/
+  border-bottom: 2px solid #11A9ED; }
   #works .table-area .souryou, #works2 .table-area .souryou {
     height: auto; }
     #works .table-area .souryou table, #works2 .table-area .souryou table {
@@ -682,16 +728,16 @@ h3 {
         font-weight: normal;
         font-size: 1.8rem;
         line-height: 1.4em;
-        color: #18943b; }
+        color: #11A9ED; }
       #works .table-area .souryou table .title, #works2 .table-area .souryou table .title {
         font-weight: 500;
         font-size: 2.2rem;
         line-height: 1.4em;
-        color: #18943b;
+        color: #11A9ED;
         text-align: left;
         padding-left: 0.6em; }
       #works .table-area .souryou table th, #works2 .table-area .souryou table th {
-        border-bottom: 2px solid #18943b;
+        border-bottom: 2px solid #11A9ED;
         text-align: center;
         padding: 10px 3px;
         box-sizing: border-box;
@@ -725,7 +771,7 @@ h3 {
     width: 240px;
     padding: 5px 10px;
     text-align: center;
-    background-color: #E9F7ED;
+    background-color: #EAFCFF;
     box-sizing: border-box; }
     @media screen and (max-width: 768px) {
       #works .works-box2 h5, #works2 .works-box2 h5 {
@@ -757,26 +803,26 @@ h3 {
         display: flex;
         align-items: center;
         font-weight: 500;
-        color: #18943b; }
+        color: #11A9ED; }
         #works figure.swp1 img {
           width: 36px; } }
 
 #works1 table {
-  border-bottom: 2px solid #18943b;
+  border-bottom: 2px solid #11A9ED;
   width: 40%;
   box-sizing: border-box; }
   @media screen and (max-width: 768px) {
     #works1 table {
       width: 100%; } }
   #works1 table th {
-    border-bottom: 2px solid #18943b;
+    border-bottom: 2px solid #11A9ED;
     text-align: center;
     padding: 10px 3px;
     box-sizing: border-box;
     font-weight: normal;
     font-size: 1.8rem;
     line-height: 1.4em;
-    color: #18943b; }
+    color: #11A9ED; }
     @media screen and (max-width: 768px) {
       #works1 table th {
         padding: 6px 3px; } }
@@ -798,7 +844,7 @@ h3 {
       padding-left: 1em; }
 
 #works2 {
-  background-color: rgba(24, 148, 59, 0.1);
+  background-color: #EAFCFF;
   padding: 100px 0; }
   @media screen and (max-width: 768px) {
     #works2 {
@@ -812,15 +858,15 @@ h3 {
 /*会社概要*/
 #company h3 {
   font-size: 2.0rem;
-  color: #18943b;
+  color: #11A9ED;
   font-weight: normal;
   margin-bottom: 0.3em; }
 #company dl {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 80px;
-  border-top: 1px solid #18943b;
-  border-bottom: 1px solid #18943b; }
+  border-top: 1px solid #11A9ED;
+  border-bottom: 1px solid #11A9ED; }
   @media screen and (max-width: 768px) {
     #company dl {
       margin-bottom: 60px; } }
@@ -832,7 +878,7 @@ h3 {
     width: 12em;
     padding: 10px 0;
     border-top: 1px dotted #CCC;
-    background-color: #e9f7ed;
+    background-color: #EAFCFF;
     text-align: center; }
     #company dl dt:first-child {
       border-top: none; }
@@ -860,7 +906,7 @@ h3 {
         padding-right: 1em; } }
 #company #access h3 {
   padding-bottom: 5px;
-  border-bottom: 1px solid #18943B; }
+  border-bottom: 1px solid #11A9ED; }
 #company #access .map {
   width: 100%;
   box-sizing: border-box;
@@ -927,7 +973,7 @@ h3 {
       #news-cate-nav p a.bg-bl {
         background-color: #008db7; }
       #news-cate-nav p a.bg-gr {
-        background-color: #18943b; }
+        background-color: #11A9ED; }
       #news-cate-nav p a.bg-or {
         background-color: #ff9300; }
 

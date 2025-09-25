@@ -394,7 +394,25 @@ h3 {
 
 #greetings {
   background-color: #e5f3f8;
-  padding: 100px 0; }
+  padding: 100px 0;
+  /*
+    .inner2{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  */
+  /*
+    .message{
+      width: calc(100% - 240px);
+    }
+    .photo{
+      width: 200px;
+      @include tbt {
+        width: 100%;
+      }
+    }
+  */ }
   @media screen and (max-width: 768px) {
     #greetings {
       padding: 80px 0; } }
@@ -402,6 +420,7 @@ h3 {
     #greetings {
       padding: 60px 0; } }
   #greetings h3 {
+    width: 100%;
     color: #008DB7;
     border-bottom: 1px solid #008DB7;
     margin-bottom: 1em; }

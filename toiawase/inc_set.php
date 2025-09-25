@@ -97,10 +97,12 @@ $Mail_fooder = <<<HTML
 HRホールディングス
 ■所在地 京都府福知山市字天田391番地の乙
 ■TEL：0773-45-7222
-■E-mail：hori-info@ascom.horinet.co.jp
+■E-mail：info@ascom.horinet.co.jp
 ☆★━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━☆★
 ┌────────────────────────────────┐
 ｜HRホールディングス  　https://www.horinet.co.jp/
+｜株式会社堀通信　　　　https://www.horinet.co.jp/horicomm
+｜株式会社 HoriTech 　　https://www.horinet.co.jp/horitech
 └────────────────────────────────┘
 HTML;
 

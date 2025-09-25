@@ -2,7 +2,7 @@
 /* Footer */
 footer {
   padding-top: 50px;
-  border-top: 5px solid #18943b;
+  border-top: 5px solid #16B2CE;
   line-height: 1.6em;
   background-color: #FFF; }
   footer .inner {
@@ -73,7 +73,7 @@ footer {
       box-sizing: border-box;
       padding: 15px 1em;
       color: #FFF;
-      background-image: linear-gradient(90deg, #18943b, #94d32f);
+      background-image: linear-gradient(90deg, #11A9ED, #3BF4EC);
       border-radius: 6px;
       text-decoration: none;
       position: relative; }

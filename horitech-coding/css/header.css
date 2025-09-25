@@ -8,7 +8,8 @@ header {
   width: 100%;
   margin: 0 auto;
   box-shadow: 0px 4px 5px -5px rgba(0, 0, 0, 0.3);
-  background-color: #18943b; }
+  background-color: #FFF;
+  border-bottom: 4px solid #188A94; }
   @media screen and (max-width: 768px) {
     header {
       margin: 0 auto; } }
@@ -16,13 +17,14 @@ header {
     width: 94%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 15px 0;
+    padding: 8px 0 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center; }
     @media screen and (max-width: 768px) {
       header #h-box {
-        padding: 15px 0 10px; } }
+        padding: 8px 0 10px; } }
     header #h-box h1 {
       /*width: 300px;*/ }
       @media screen and (max-width: 768px) {

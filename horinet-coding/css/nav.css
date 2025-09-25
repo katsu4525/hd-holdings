@@ -167,7 +167,7 @@
     opacity: 1;
     transform: translateY(0);
     border-bottom: 1px solid #FFF;
-    margin: 0 5%;
+    margin: 0 15%;
   }
   .global-nav.open .global-nav-item:nth-last-child(2) {
     border-bottom: none;

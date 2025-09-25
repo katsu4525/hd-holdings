@@ -161,6 +161,13 @@ try {
 <!doctype html>
 <html><!-- InstanceBegin template="/Templates/temp.dwt" codeOutsideHTMLIsLocked="false" -->
 <head prefix="og: https://ogp.me/ns#">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TKK2MLLX');</script>
+<!-- End Google Tag Manager -->
 <meta charset="utf-8">
 <!-- InstanceBeginEditable name="doctitle" -->
 <title>お知らせ一覧｜京都・福知山の電気・通信・ITインフラ構築 【株式会社堀通信】</title>
@@ -194,6 +201,10 @@ try {
 </head>
 
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKK2MLLX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <!--ヘッドナビ-->
 <header id="header">
   <div id="h-box">
