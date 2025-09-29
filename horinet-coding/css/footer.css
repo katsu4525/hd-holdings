@@ -82,6 +82,14 @@ footer {
         /* 半角スペース + 三角 */
         font-size: 1.4rem;
         /* 矢印だけ少し調整しても良い */ }
+      @media screen and (max-width: 768px) {
+        footer .f-contact .tel-form .f-form a {
+          padding: 6vw 1em;
+          font-size: 2.2rem; } }
+      @media screen and (max-width: 480px) {
+        footer .f-contact .tel-form .f-form a {
+          padding: 5vw 1em;
+          font-size: 2.0rem; } }
   footer .f-contact .tel-form .f-tel {
     width: 100%;
     margin-top: 10px; }

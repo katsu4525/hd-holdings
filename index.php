@@ -80,18 +80,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 <meta charset="utf-8">
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>京都・福知山の電気・通信・ITインフラ構築｜【HRホールディングス】</title>
+<title>HRホールディングス</title>
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="descdata" -->
-<meta name="description" content="京都・福知山の電気・通信・ITインフラ構築。【HRホールディングス】" />
+<meta name="description" content="HRホールディングス" />
 <!-- InstanceEndEditable -->
 <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
 <meta name="format-detection" content="telephone=no">
 <!-- InstanceBeginEditable name="head" -->
 <meta property="og:url" content="https://horinet.co.jp/" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="京都・福知山の電気・通信・ITインフラ構築｜【HRホールディングス】" />
-<meta property="og:description" content="京都・福知山のHRホールディングスは、電気工事・通信工事・ITサポートを行う専門会社。パソコン販売やネットワーク構築もお任せください。" />
+<meta property="og:title" content="HRホールディングス" />
+<meta property="og:description" content="HRホールディングス" />
 <meta property="og:site_name" content="HRホールディングス" />
 <meta property="og:image" content="https://horinet.co.jp/images/ogp.jpg" />
 <!-- InstanceEndEditable -->
@@ -187,20 +187,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <div class="index-menu-box inner">
       <div class="index-menu-box-info">
-        <figure><a href="https://www.horinet.co.jp/horicomm" target="_blank"><img src="images/group-1.svg" width="800" height="800" alt="企業情報"/></a></figure>
+        <figure><a href="https://www.horinet.co.jp/horicomm" target="_blank"><img src="images/horicomm.svg" width="800" height="800" alt="企業情報"/></a></figure>
         <div class="horinet">
           <div>
             <h3>ICT事業</h3>
-            <p>事業内容端的に（50文字程度）事業内容端的に（50文字程度）事業内容端的に（50文字程度）事業内容端的に（50文字程度）</p>
+            <p>システム、サーバ、パソコン、プリンタ等の情報技術を融合させたソリューションを提供しています。</p>
           </div>
         </div>
       </div>
       <div class="index-menu-box-info">
-        <figure><a href="https://www.horinet.co.jp/horitech" target="_blank"><img src="images/group-2.svg" width="800" height="800" alt="ICT事業"/></a></figure>
+        <figure><a href="https://www.horinet.co.jp/horitech" target="_blank"><img src="images/horitech.svg" width="800" height="800" alt="ICT事業"/></a></figure>
         <div class="horitech">
           <div>
             <h3>電気・通信事業</h3>
-            <p>公共・民間施設から道路や大規模ネットワークまで幅広い電気・通信設備工事を担う事業</p>
+            <p>公共・民間施設から道路や大規模ネットワークまで幅広い電気・通信設備工事を担う事業です。</p>
           </div>
         </div>
       </div>
@@ -246,8 +246,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="bnr-area">
       <p>グループ<br class="spOnly">会社</p>
       <div>
-        <figure><a href="https://www.horinet.co.jp/horicomm" target="_blank"><img src="images/group-1.svg" width="560" height="160" alt="株式会社堀通信"/></a></figure>
-        <figure><a href="https://www.horinet.co.jp/horitech" target="_blank"><img src="images/group-2.svg" width="560" height="160" alt="株式会社 HoriTech"/></a></figure>
+        <figure><a href="https://www.horinet.co.jp/horicomm" target="_blank"><img src="images/horicomm.svg" width="560" height="160" alt="株式会社堀通信"/></a></figure>
+        <figure><a href="https://www.horinet.co.jp/horitech" target="_blank"><img src="images/horitech.svg" width="560" height="160" alt="株式会社 HoriTech"/></a></figure>
       </div>
     </div>
   </section>

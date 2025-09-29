@@ -79,18 +79,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 <meta charset="utf-8">
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>人と社会をつなぐ通信インフラの総合サポートと照明から消防設備まで電気工事をトータル対応｜【株式会社 HoriTech】</title>
+<title>株式会社 HoriTech</title>
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="descdata" -->
-<meta name="description" content="人と社会をつなぐ通信インフラの総合サポートと照明から消防設備まで電気工事をトータル対応。【株式会社 HoriTech】" />
+<meta name="description" content="株式会社 HoriTech" />
 <!-- InstanceEndEditable -->
 <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
 <meta name="format-detection" content="telephone=no">
 <!-- InstanceBeginEditable name="head" -->
 <meta property="og:url" content="https://www.horinet.co.jp/horitech/" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="人と社会をつなぐ通信インフラの総合サポートと照明から消防設備まで電気工事をトータル対応｜【株式会社 HoriTech】" />
-<meta property="og:description" content="人と社会をつなぐ通信インフラの総合サポートと照明から消防設備まで電気工事をトータル対応。【株式会社 HoriTech】" />
+<meta property="og:title" content="株式会社 HoriTech" />
+<meta property="og:description" content="株式会社 HoriTech" />
 <meta property="og:site_name" content="株式会社 HoriTech" />
 <meta property="og:image" content="https://www.horinet.co.jp/horitech/images/ogp.jpg" />
 <!-- InstanceEndEditable -->
@@ -209,27 +209,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <ul>
           <li class="f-nav"><a href="company.html"><span class="circle-icon">
           <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-            <path d="M3 2L7 5L3 8" stroke="#333" stroke-width="1" fill="none"/>
+            <path d="M3 2L7 5L3 8" stroke="#11A9ED" stroke-width="1" fill="none"/>
           </svg>
           </span>企業情報</a></li>
           <li class="f-nav"><a href="communication-service.html"><span class="circle-icon">
           <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-            <path d="M3 2L7 5L3 8" stroke="#333" stroke-width="1" fill="none"/>
+            <path d="M3 2L7 5L3 8" stroke="#11A9ED" stroke-width="1" fill="none"/>
           </svg>
           </span>通信工事部</a></li>
           <li class="f-nav"><a href="electrical-service.html"><span class="circle-icon">
           <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-            <path d="M3 2L7 5L3 8" stroke="#333" stroke-width="1" fill="none"/>
+            <path d="M3 2L7 5L3 8" stroke="#11A9ED" stroke-width="1" fill="none"/>
           </svg>
           </span>電気工事部</a></li>
           <li class="f-nav"><a href="works.html"><span class="circle-icon">
           <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-            <path d="M3 2L7 5L3 8" stroke="#333" stroke-width="1" fill="none"/>
+            <path d="M3 2L7 5L3 8" stroke="#11A9ED" stroke-width="1" fill="none"/>
           </svg>
           </span>導入事例</a></li>
           <li class="f-nav"><a href="qualification.html"><span class="circle-icon">
           <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-            <path d="M3 2L7 5L3 8" stroke="#333" stroke-width="1" fill="none"/>
+            <path d="M3 2L7 5L3 8" stroke="#11A9ED" stroke-width="1" fill="none"/>
           </svg>
           </span>保有資格</a></li>
           <li class="f-pv"><a href="https://www.horinet.co.jp/privacy.html" target="_blank">プライバシーポリシー</a></li>
@@ -237,14 +237,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="tel-form">
         <p class="f-form"><a href="https://www.horinet.co.jp/contact.php">お問い合わせ</a></p>
-        <figure class="f-tel"><a href="tel:0773-22-1120"><img src="images/tel1.svg" alt="通信工事部電話番号"/></a></figure>
+        <figure class="f-tel"><a href="tel:0773-22-1395"><img src="images/tel1.svg" alt="通信工事部電話番号"/></a></figure>
       </div>
     </div>
     <div class="bnr-area">
       <p>グループ<br class="spOnly">会社</p>
       <div>
-        <figure><a href="https://www.horinet.co.jp/" target="_blank"><img src="images/group-1.svg" width="560" height="160" alt="HRホールディングス"/></a></figure>
-        <figure><a href="https://www.horinet.co.jp/horitech" target="_blank"><img src="images/group-2.svg" width="560" height="160" alt="株式会社堀通信"/></a></figure>
+        <figure><a href="https://www.horinet.co.jp/" target="_blank"><img src="images/hr_holdings.svg" width="560" height="160" alt="HRホールディングス"/></a></figure>
+        <figure><a href="https://www.horinet.co.jp/horitech" target="_blank"><img src="images/horicomm.svg" width="560" height="160" alt="株式会社堀通信"/></a></figure>
       </div>
     </div>
   </section>

@@ -23,7 +23,7 @@
     padding: 8px 20px;
     text-align: center;
     text-decoration: none;
-    /*color: #FFF;*/
+    color: #11A9ED;
   }
   .global-nav-item > a:hover {
     opacity: 0.55;
@@ -36,7 +36,7 @@
     transform: translateY(-50%);
     width: 1px;
     height: 1em;
-    background-color: #111;
+    background-color: #11A9ED;;
   }
 
   .global-nav-item:first-child > a::before {

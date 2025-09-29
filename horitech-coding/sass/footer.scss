@@ -69,7 +69,7 @@ footer {
     .f-nav a {
       display: flex;
       align-items: center;
-      color: #333;
+      color: #11A9ED;
       text-decoration: none;
       font-size: 2.0rem;
       line-height: 1.2em;
@@ -78,7 +78,7 @@ footer {
     .circle-icon {
       width: 21px;
       height: 21px;
-      border: 1px solid #333;
+      border: 1px solid #11A9ED;
       border-radius: 50%;
       background-color: #fff;
       display: flex;
@@ -88,6 +88,9 @@ footer {
     }
     .f-pv{
       font-size: 1.4rem;
+      a{
+        color: #11A9ED;
+      }
     }
     .tel-form{
       @include tbt {
@@ -114,6 +117,14 @@ footer {
           &::after {
             content: "　▶"; /* 半角スペース + 三角 */
             font-size: 1.4rem; /* 矢印だけ少し調整しても良い */
+          }
+          @include tbt {
+            padding: 6vw 1em;
+            font-size: 2.2rem;
+          }
+          @include sp {
+            padding: 5vw 1em;
+            font-size: 2.0rem;
           }
         }
       }

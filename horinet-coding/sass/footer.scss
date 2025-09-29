@@ -115,6 +115,14 @@ footer {
             content: "　▶"; /* 半角スペース + 三角 */
             font-size: 1.4rem; /* 矢印だけ少し調整しても良い */
           }
+          @include tbt {
+            padding: 6vw 1em;
+            font-size: 2.2rem;
+          }
+          @include sp {
+            padding: 5vw 1em;
+            font-size: 2.0rem;
+          }
         }
       }
       .f-tel{

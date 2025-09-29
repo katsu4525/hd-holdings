@@ -39,7 +39,7 @@ footer {
   footer .f-contact .f-nav a {
     display: flex;
     align-items: center;
-    color: #333;
+    color: #11A9ED;
     text-decoration: none;
     font-size: 2.0rem;
     line-height: 1.2em;
@@ -47,7 +47,7 @@ footer {
   footer .f-contact .circle-icon {
     width: 21px;
     height: 21px;
-    border: 1px solid #333;
+    border: 1px solid #11A9ED;
     border-radius: 50%;
     background-color: #fff;
     display: flex;
@@ -56,6 +56,8 @@ footer {
     margin-right: 5px; }
   footer .f-contact .f-pv {
     font-size: 1.4rem; }
+    footer .f-contact .f-pv a {
+      color: #11A9ED; }
   @media screen and (max-width: 768px) {
     footer .f-contact .tel-form {
       width: 100%;
@@ -82,6 +84,14 @@ footer {
         /* 半角スペース + 三角 */
         font-size: 1.4rem;
         /* 矢印だけ少し調整しても良い */ }
+      @media screen and (max-width: 768px) {
+        footer .f-contact .tel-form .f-form a {
+          padding: 6vw 1em;
+          font-size: 2.2rem; } }
+      @media screen and (max-width: 480px) {
+        footer .f-contact .tel-form .f-form a {
+          padding: 5vw 1em;
+          font-size: 2.0rem; } }
   footer .f-contact .tel-form .f-tel {
     width: 100%;
     margin-top: 10px; }
