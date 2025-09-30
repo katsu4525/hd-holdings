@@ -25,7 +25,7 @@ SMTPおよびmb_send_mail双方設定可能
   メール送信の方式
 ---------------------------------------------------------------*/
 global $Method;
-$Method = 1;  //SMTPがデフォルトになりました
+$Method = 0;  //SMTPがデフォルトになりました
 /*
 0：mb_send_mail
 1：SMTP
@@ -36,10 +36,10 @@ SMTPの場合は下部で指定が必要
   SMTP設定(設定例 SMTPを利用しない場合はこのまま)
 ---------------------------------------------------------------*/
 define("CHARSET", "utf-8");
-define("HOST", "smtp.kagoya.net");
-define("USER", "isissys.carttest");
-define("PWD", "D2nC59FA");
-define("SMTP_MAIL", "carttest@wins-lb.org");
+define("HOST", "");
+define("USER", "");
+define("PWD", "");
+define("SMTP_MAIL", "");
 //これ以下はだいたいこの値でいけます
 define("PORT", 587);
 define("SECURE", "TLS");	//LOGINやSSLなど
@@ -55,13 +55,13 @@ $Submit = "submit1";
 /*---------------------------------------------------------------
   アドレスの指定
 ---------------------------------------------------------------*/
-define("OWNER_MAIL","carttest@wins-lb.org"); //オーナーへの送信アドレス（先方指定のアドレス）
-define("FROM_MAIL", "noreply@wins-lb.org"); //必ず送信するドメイン名を使用
+define("OWNER_MAIL","info@ascom.horinet.co.jp"); //オーナーへの送信アドレス（先方指定のアドレス）
+define("FROM_MAIL", "noreply@horinet.co.jp"); //必ず送信するドメイン名を使用
 define("FROM_NAME","　お問い合わせ"); //日本語表記
 define("BCC",""); //オーナーメールがドメインと異なる場合はこちらへ記入
 define("CC","");  //指定があるときのみ　,区切りで追加可能
 
-define("IYAN_MAIL","kitano@wins-lb.org");  //拒否アドレスがあるときのみ　,区切りで追加可能
+define("IYAN_MAIL","");  //拒否アドレスがあるときのみ　,区切りで追加可能
 
 /*---------------------------------------------------------------
   メール内容の指定
