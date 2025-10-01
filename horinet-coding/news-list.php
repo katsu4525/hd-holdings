@@ -9,9 +9,9 @@
  */
 use Stlib\Stlib\Stlib;
 
-require_once(__DIR__ . "/../admin/common/common_setting.php");
-require_once(__DIR__ . "/../admin/lib/Stlib.php");
-require_once(__DIR__ . '/../admin/lib/Pager.php');
+require_once(__DIR__ . "/admin/common/common_setting.php");
+require_once(__DIR__ . "/admin/lib/Stlib.php");
+require_once(__DIR__ . '/admin/lib/Pager.php');
 
 $stlib = new Stlib();
 $news_list = '';

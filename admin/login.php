@@ -126,7 +126,7 @@ if (isset($err_code)) {
           <label>
             <input type="submit" value="LOGIN" id="image-btn" />
           </label>
-          <p>パスワードを忘れた方は<a href="re_pass.php">こちら</a></p>
+          <!-- <p>パスワードを忘れた方は<a href="re_pass.php">こちら</a></p> -->
         </center>
       </section>
     </form>
