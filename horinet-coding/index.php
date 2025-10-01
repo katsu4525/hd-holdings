@@ -87,12 +87,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
 <meta name="format-detection" content="telephone=no">
 <!-- InstanceBeginEditable name="head" -->
-<meta property="og:url" content="https://www.horinet.co.jp/horicomm/" />
+<meta property="og:url" content="http://www.horinet.co.jp/" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="株式会社堀通信" />
 <meta property="og:description" content="京都・福知山の株式会社堀通信は、電気工事・通信工事・ITサポートを行う専門会社。パソコン販売やネットワーク構築もお任せください。" />
 <meta property="og:site_name" content="株式会社堀通信" />
-<meta property="og:image" content="https://www.horinet.co.jp/horicomm/images/ogp.jpg" />
+<meta property="og:image" content="http://www.horinet.co.jp/images/ogp.jpg" />
 <!-- InstanceEndEditable -->
 <!--CSS-->
 <link href="css/reset.css" rel="stylesheet" type="text/css">
@@ -127,7 +127,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="global-nav-item"><a href="company.html">企業情報</a></div>
         <div class="global-nav-item"><a href="ict-business.html">ICT事業</a></div>
         <div class="global-nav-item"><a href="case.html">導入事例</a></div>
-        <div class="global-nav-item"><a href="../../contact.php">お問い合わせ</a></div>
+        <div class="global-nav-item"><a href="hrholdings/contact.php">お問い合わせ</a></div>
         <figure class="remote-img"><a href="remote-maintenance.html"><img src="images/remote-h.svg" alt="リモートメンテナンス"/></a></figure>
       </div>
     </div>
@@ -227,19 +227,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </svg>
           </span>リモートメンテナンス</a></li>
           <li class="f-pv"><a href="security.html">情報セキュリティ方針</a></li>
-          <li class="f-pv"><a href="../../privacy.html">プライバシーポリシー</a></li>
+          <li class="f-pv"><a href="hrholdings/privacy.html">プライバシーポリシー</a></li>
         </ul>
       </div>
       <div class="tel-form">
-        <p class="f-form"><a href="../../contact.php">お問い合わせ</a></p>
+        <p class="f-form"><a href="hrholdings/contact.php">お問い合わせ</a></p>
         <figure class="f-tel"><a href="tel:0773-22-1220"><img src="images/tel1.svg" alt="お問い合わせ電話番号"/></a></figure>
       </div>
     </div>
     <div class="bnr-area">
       <p>グループ<br class="spOnly">会社</p>
       <div>
-        <figure><a href="../../" target="_blank"><img src="images/hr_holdings.svg" width="560" height="160" alt="HRホールディングス"/></a></figure>
-        <figure><a href="../../horitech" target="_blank"><img src="images/horitech.svg" width="560" height="160" alt="株式会社 HoriTech"/></a></figure>
+        <figure><a href="hrholdings/" target="_blank"><img src="images/hr_holdings.svg" width="560" height="160" alt="HRホールディングス"/></a></figure>
+        <figure><a href="horitech/" target="_blank"><img src="images/horitech.svg" width="560" height="160" alt="株式会社 HoriTech"/></a></figure>
       </div>
     </div>
   </section>

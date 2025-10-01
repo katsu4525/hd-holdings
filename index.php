@@ -118,7 +118,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!--ヘッドナビ-->
 <header id="header">
   <div id="h-box">
-    <h1><a href="../"><img src="images/h-logo.svg" width="271" height="53" alt="HRホールディングス"/></a></h1>
+    <h1><a href="./"><img src="images/h-logo.svg" width="271" height="53" alt="HRホールディングス"/></a></h1>
     <div class="global-nav">
       <div class="global-nav-button">
         <div class="global-nav-button-icon"></div>
