@@ -178,12 +178,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
 <meta name="format-detection" content="telephone=no">
 <!-- InstanceBeginEditable name="head" -->
-<meta property="og:url" content="https://www.horinet.co.jp/horitech/news-list.php" />
+<meta property="og:url" content="http://www.horinet.co.jp/horitech/news-list.php" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="お知らせ一覧｜株式会社 HoriTech" />
 <meta property="og:description" content="お知らせ一覧のページです" />
 <meta property="og:site_name" content="株式会社 HoriTech" />
-<meta property="og:image" content="https://www.horinet.co.jp/horitech/images/ogp.jpg" />
+<meta property="og:image" content="http://www.horinet.co.jp/horitech/images/ogp.jpg" />
 <!-- InstanceEndEditable -->
 <!--CSS-->
 <link href="css/reset.css" rel="stylesheet" type="text/css">

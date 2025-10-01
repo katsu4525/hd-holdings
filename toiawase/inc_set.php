@@ -100,9 +100,12 @@ HRホールディングス
 ■E-mail：info@ascom.horinet.co.jp
 ☆★━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━☆★
 ┌────────────────────────────────┐
-| HRホールディングス    https://www.horinet.co.jp/
-| 株式会社堀通信　　　　 https://www.horinet.co.jp/horicomm
-| 株式会社 HoriTech　  https://www.horinet.co.jp/horitech
+｜■堀通信
+｜　http://www.horinet.co.jp
+｜■HoriTech
+｜　http://www.horinet.co.jp/horitech/
+｜■HRホールディングス
+｜　http://www.horinet.co.jp/hrholdings/
 └────────────────────────────────┘
 HTML;
 
