@@ -128,7 +128,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="global-nav-item"><a href="electrical-service.html">電気工事部</a></div>
         <div class="global-nav-item"><a href="works.html">導入事例</a></div>
         <div class="global-nav-item"><a href="qualification.html">保有資格</a></div>
-        <div class="global-nav-item"><a href="https://www.horinet.co.jp/contact.php">お問い合わせ</a></div>
+        <div class="global-nav-item"><a href="../../contact.php">お問い合わせ</a></div>
       </div>
     </div>
     <!-- .global-nav --> 
@@ -232,19 +232,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <path d="M3 2L7 5L3 8" stroke="#11A9ED" stroke-width="1" fill="none"/>
           </svg>
           </span>保有資格</a></li>
-          <li class="f-pv"><a href="https://www.horinet.co.jp/privacy.html" target="_blank">プライバシーポリシー</a></li>
+          <li class="f-pv"><a href="../../privacy.html" target="_blank">プライバシーポリシー</a></li>
         </ul>
       </div>
       <div class="tel-form">
-        <p class="f-form"><a href="https://www.horinet.co.jp/contact.php">お問い合わせ</a></p>
+        <p class="f-form"><a href="../../contact.php">お問い合わせ</a></p>
         <figure class="f-tel"><a href="tel:0773-22-1395"><img src="images/tel1.svg" alt="通信工事部電話番号"/></a></figure>
       </div>
     </div>
     <div class="bnr-area">
       <p>グループ<br class="spOnly">会社</p>
       <div>
-        <figure><a href="https://www.horinet.co.jp/" target="_blank"><img src="images/hr_holdings.svg" width="560" height="160" alt="HRホールディングス"/></a></figure>
-        <figure><a href="https://www.horinet.co.jp/horitech" target="_blank"><img src="images/horicomm.svg" width="560" height="160" alt="株式会社堀通信"/></a></figure>
+        <figure><a href="../../" target="_blank"><img src="images/hr_holdings.svg" width="560" height="160" alt="HRホールディングス"/></a></figure>
+        <figure><a href="../../horicomm" target="_blank"><img src="images/horicomm.svg" width="560" height="160" alt="株式会社堀通信"/></a></figure>
       </div>
     </div>
   </section>

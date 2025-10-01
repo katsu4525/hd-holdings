@@ -58,7 +58,7 @@ $Submit = "submit1";
 define("OWNER_MAIL","info@ascom.horinet.co.jp"); //オーナーへの送信アドレス（先方指定のアドレス）
 define("FROM_MAIL", "noreply@horinet.co.jp"); //必ず送信するドメイン名を使用
 define("FROM_NAME","　お問い合わせ"); //日本語表記
-define("BCC",""); //オーナーメールがドメインと異なる場合はこちらへ記入
+define("BCC","info@hori-net.net"); //オーナーメールがドメインと異なる場合はこちらへ記入
 define("CC","");  //指定があるときのみ　,区切りで追加可能
 
 define("IYAN_MAIL","");  //拒否アドレスがあるときのみ　,区切りで追加可能

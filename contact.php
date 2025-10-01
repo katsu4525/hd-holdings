@@ -23,12 +23,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
 <meta name="format-detection" content="telephone=no">
 <!-- InstanceBeginEditable name="head" -->
-<meta property="og:url" content="https://horinet.co.jp/contact.php" />
+<meta property="og:url" content="http://www.horinet.co.jp/hrholdings/contact.php" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="お問い合わせ｜HRホールディングス" />
 <meta property="og:description" content="お問い合わせページです" />
 <meta property="og:site_name" content="HRホールディングス" />
-<meta property="og:image" content="https://horinet.co.jp/images/ogp.jpg" />
+<meta property="og:image" content="http://www.horinet.co.jp/hrholdings/images/ogp.jpg" />
+<!--ファビコン-->
+<link rel="icon" href="favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="./css/contact.css">
 <script type="text/javascript" src="./form/util.js"></script>
 <script type="text/javascript" src="./form/validator.js"></script>
@@ -67,8 +69,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="global-nav-item"><a href="group.html">グループ企業</a>
           <div class="global-nav-sub-item-list">
             <div class="global-nav-sub-item"><a href="group.html">グループ企業一覧</a></div>
-            <div class="global-nav-sub-item"><a href="https://www.horinet.co.jp/horicomm" target="_blank">株式会社堀通信</a></div>
-            <div class="global-nav-sub-item"><a href="https://www.horinet.co.jp/horitech" target="_blank">株式会社 HoriTech</a></div>
+            <div class="global-nav-sub-item"><a href="../" target="_blank">株式会社堀通信</a></div>
+            <div class="global-nav-sub-item"><a href="../horitech/" target="_blank">株式会社 HoriTech</a></div>
           </div>
         </div>
         <div class="global-nav-item"><a href="facility.html">関連施設</a></div>
@@ -200,8 +202,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="bnr-area">
       <p>グループ<br class="spOnly">会社</p>
       <div>
-        <figure><a href="https://www.horinet.co.jp/horicomm" target="_blank"><img src="images/horicomm.svg" width="560" height="160" alt="株式会社堀通信"/></a></figure>
-        <figure><a href="https://www.horinet.co.jp/horitech" target="_blank"><img src="images/horitech.svg" width="560" height="160" alt="株式会社 HoriTech"/></a></figure>
+        <figure><a href="../" target="_blank"><img src="images/horicomm.svg" width="560" height="160" alt="株式会社堀通信"/></a></figure>
+        <figure><a href="../horitech/" target="_blank"><img src="images/horitech.svg" width="560" height="160" alt="株式会社 HoriTech"/></a></figure>
       </div>
     </div>
   </section>

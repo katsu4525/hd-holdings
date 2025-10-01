@@ -1,0 +1,19 @@
+RewriteEngine on
+
+#RewriteCond %{HTTPS} off
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+#RewriteCond %{HTTP_HOST} !^www\.(.+)$ [NC]
+#RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+#RewriteCond %{THE_REQUEST} ^.*/index.(html|php)
+#RewriteRule ^(.*)index.(html|php)$ http://%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteCond %{HTTPS} on
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+#エラードキュメントを用意しない場合以下3行削除
+ErrorDocument 403 http://%{HTTP_HOST}/notfound.html
+ErrorDocument 404 http://%{HTTP_HOST}/notfound.html
+ErrorDocument 500 http://%{HTTP_HOST}/notfound.html

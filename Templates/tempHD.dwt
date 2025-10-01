@@ -51,8 +51,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="global-nav-item"><a href="../group.html">グループ企業</a>
           <div class="global-nav-sub-item-list">
             <div class="global-nav-sub-item"><a href="../group.html">グループ企業一覧</a></div>
-            <div class="global-nav-sub-item"><a href="https://www.horinet.co.jp/horicomm" target="_blank">株式会社堀通信</a></div>
-            <div class="global-nav-sub-item"><a href="https://www.horinet.co.jp/horitech" target="_blank">株式会社 HoriTech</a></div>
+            <div class="global-nav-sub-item"><a href="../horicomm/" target="_blank">株式会社堀通信</a></div>
+            <div class="global-nav-sub-item"><a href="../horitech/" target="_blank">株式会社 HoriTech</a></div>
           </div>
         </div>
         <div class="global-nav-item"><a href="../facility.html">関連施設</a></div>
@@ -102,8 +102,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="bnr-area">
       <p>グループ<br class="spOnly">会社</p>
       <div>
-        <figure><a href="https://www.horinet.co.jp/horicomm" target="_blank"><img src="../images/horicomm.svg" width="560" height="160" alt="株式会社堀通信"/></a></figure>
-        <figure><a href="https://www.horinet.co.jp/horitech" target="_blank"><img src="../images/horitech.svg" width="560" height="160" alt="株式会社 HoriTech"/></a></figure>
+        <figure><a href="../horicomm/" target="_blank"><img src="../images/horicomm.svg" width="560" height="160" alt="株式会社堀通信"/></a></figure>
+        <figure><a href="../horitech/" target="_blank"><img src="../images/horitech.svg" width="560" height="160" alt="株式会社 HoriTech"/></a></figure>
       </div>
     </div>
   </section>
