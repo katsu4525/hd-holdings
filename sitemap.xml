@@ -3,40 +3,50 @@
 
 <!--  created with free sitemap generation system www.sitemapxml.jp  --> 
 <url>
-  <loc>http://www.horinet.co.jp/hrholdings/</loc>
+  <loc>http://www.horinet.co.jp/</loc>
   <priority>1.0</priority>
 </url>
 <url>
-  <loc>http://www.horinet.co.jp/hrholdings/philosophy.html</loc>
+  <loc>http://www.horinet.co.jp/index.php</loc>
   <priority>0.8</priority>
-  <lastmod>2025-10-01T12:27:59+09:00</lastmod>
 </url>
 <url>
-  <loc>http://www.horinet.co.jp/hrholdings/company.html</loc>
+  <loc>http://www.horinet.co.jp/company.html</loc>
   <priority>0.8</priority>
-  <lastmod>2025-10-01T12:27:59+09:00</lastmod>
+  <lastmod>2025-10-01T14:08:04+09:00</lastmod>
 </url>
 <url>
-  <loc>http://www.horinet.co.jp/hrholdings/group.html</loc>
+  <loc>http://www.horinet.co.jp/ict-business.html</loc>
   <priority>0.8</priority>
-  <lastmod>2025-10-01T12:27:59+09:00</lastmod>
+  <lastmod>2025-10-01T14:08:04+09:00</lastmod>
 </url>
 <url>
-  <loc>http://www.horinet.co.jp/hrholdings/facility.html</loc>
+  <loc>http://www.horinet.co.jp/case.html</loc>
   <priority>0.8</priority>
-  <lastmod>2025-10-01T12:27:59+09:00</lastmod>
+  <lastmod>2025-10-01T14:08:04+09:00</lastmod>
 </url>
 <url>
   <loc>http://www.horinet.co.jp/hrholdings/contact.php</loc>
   <priority>0.8</priority>
 </url>
 <url>
-  <loc>http://www.horinet.co.jp/hrholdings/news-list.php</loc>
+  <loc>http://www.horinet.co.jp/remote-maintenance.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2025-10-01T14:08:04+09:00</lastmod>
+</url>
+<url>
+  <loc>http://www.horinet.co.jp/horicomm_251001.pdf</loc>
+  <priority>0.8</priority>
+  <lastmod>2025-09-30T14:03:21+09:00</lastmod>
+</url>
+<url>
+  <loc>http://www.horinet.co.jp/news-list.php</loc>
   <priority>0.8</priority>
 </url>
 <url>
-  <loc>http://www.horinet.co.jp/hrholdings/index.php</loc>
+  <loc>http://www.horinet.co.jp/security.html</loc>
   <priority>0.8</priority>
+  <lastmod>2025-10-01T14:08:04+09:00</lastmod>
 </url>
 <url>
   <loc>http://www.horinet.co.jp/hrholdings/privacy.html</loc>
@@ -44,24 +54,118 @@
   <lastmod>2025-10-01T12:27:59+09:00</lastmod>
 </url>
 <url>
-  <loc>http://www.horinet.co.jp/hrholdings/news-list.php?ca=all</loc>
+  <loc>http://www.horinet.co.jp/hrholdings/</loc>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>http://www.horinet.co.jp/horitech/</loc>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>http://www.horinet.co.jp/hrholdings/philosophy.html</loc>
   <priority>0.7</priority>
+  <lastmod>2025-10-01T12:27:59+09:00</lastmod>
+</url>
+<url>
+  <loc>http://www.horinet.co.jp/hrholdings/company.html</loc>
+  <priority>0.7</priority>
+  <lastmod>2025-10-01T12:27:59+09:00</lastmod>
+</url>
+<url>
+  <loc>http://www.horinet.co.jp/hrholdings/group.html</loc>
+  <priority>0.7</priority>
+  <lastmod>2025-10-01T12:27:59+09:00</lastmod>
+</url>
+<url>
+  <loc>http://www.horinet.co.jp/hrholdings/facility.html</loc>
+  <priority>0.7</priority>
+  <lastmod>2025-10-01T12:27:59+09:00</lastmod>
+</url>
+<url>
+  <loc>http://www.horinet.co.jp/hrholdings/index.php</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>http://www.horinet.co.jp/hrholdings/news-list.php</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>http://www.horinet.co.jp/maintenance/NTRsupport.exe</loc>
+  <priority>0.7</priority>
+  <lastmod>2025-10-01T14:09:34+09:00</lastmod>
+</url>
+<url>
+  <loc>http://www.horinet.co.jp/news-list.php?ca=horinet</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>http://www.horinet.co.jp/news-list.php?ca=other</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>http://www.horinet.co.jp/horitech/index.php</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>http://www.horinet.co.jp/horitech/company.html</loc>
+  <priority>0.7</priority>
+  <lastmod>2025-10-01T14:29:50+09:00</lastmod>
+</url>
+<url>
+  <loc>http://www.horinet.co.jp/horitech/communication-service.html</loc>
+  <priority>0.7</priority>
+  <lastmod>2025-10-01T14:29:50+09:00</lastmod>
+</url>
+<url>
+  <loc>http://www.horinet.co.jp/horitech/electrical-service.html</loc>
+  <priority>0.7</priority>
+  <lastmod>2025-10-01T14:29:50+09:00</lastmod>
+</url>
+<url>
+  <loc>http://www.horinet.co.jp/horitech/works.html</loc>
+  <priority>0.7</priority>
+  <lastmod>2025-10-01T14:29:50+09:00</lastmod>
+</url>
+<url>
+  <loc>http://www.horinet.co.jp/horitech/qualification.html</loc>
+  <priority>0.7</priority>
+  <lastmod>2025-10-01T14:29:50+09:00</lastmod>
+</url>
+<url>
+  <loc>http://www.horinet.co.jp/horitech/news-list.php</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>http://www.horinet.co.jp/hrholdings/news-list.php?ca=all</loc>
+  <priority>0.6</priority>
 </url>
 <url>
   <loc>http://www.horinet.co.jp/hrholdings/news-list.php?ca=holdings</loc>
-  <priority>0.7</priority>
+  <priority>0.6</priority>
 </url>
 <url>
   <loc>http://www.horinet.co.jp/hrholdings/news-list.php?ca=horinet</loc>
-  <priority>0.7</priority>
+  <priority>0.6</priority>
 </url>
 <url>
   <loc>http://www.horinet.co.jp/hrholdings/news-list.php?ca=horitech</loc>
-  <priority>0.7</priority>
+  <priority>0.6</priority>
 </url>
 <url>
   <loc>http://www.horinet.co.jp/hrholdings/news-list.php?ca=other</loc>
-  <priority>0.7</priority>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>http://www.horinet.co.jp/hrholdings</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>http://www.horinet.co.jp/horitech/news-list.php?ca=horitech</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>http://www.horinet.co.jp/horitech/news-list.php?ca=other</loc>
+  <priority>0.6</priority>
 </url>
 
 </urlset>
