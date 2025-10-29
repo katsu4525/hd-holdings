@@ -1,0 +1,23 @@
+RewriteEngine On
+# =========================
+# ① HTTPS → HTTP に変換（拡張版）
+# =========================
+RewriteCond %{HTTPS} on [OR]
+RewriteCond %{HTTP:X-Forwarded-Proto} https
+RewriteRule ^(.*)$ http://%{HTTP_HOST}%{REQUEST_URI} [R=302,L]
+# =========================
+# ② 非www → www に統一
+# =========================
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}%{REQUEST_URI} [R=302,L]
+# =========================
+# ③ index.html / index.php 除去
+# =========================
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+(.*/)?index\.(html|php)\s [NC]
+RewriteRule ^(.*)index\.(html|php)$ http://%{HTTP_HOST}/$1 [R=302,L]
+# =========================
+# ④ エラーページ設定
+# =========================
+ErrorDocument 403 /notfound.html
+ErrorDocument 404 /notfound.html
+ErrorDocument 500 /notfound.html

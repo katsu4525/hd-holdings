@@ -25,7 +25,7 @@ SMTPおよびmb_send_mail双方設定可能
   メール送信の方式
 ---------------------------------------------------------------*/
 global $Method;
-$Method = 0;  //SMTPがデフォルトになりました
+$Method = 1;  //SMTPがデフォルトになりました
 /*
 0：mb_send_mail
 1：SMTP
@@ -36,10 +36,10 @@ SMTPの場合は下部で指定が必要
   SMTP設定(設定例 SMTPを利用しない場合はこのまま)
 ---------------------------------------------------------------*/
 define("CHARSET", "utf-8");
-define("HOST", "");
-define("USER", "");
-define("PWD", "");
-define("SMTP_MAIL", "");
+define("HOST", "sv855.xbiz.ne.jp");
+define("USER", "noreply@horinet.co.jp");
+define("PWD", "SF6$4BpbOv1");
+define("SMTP_MAIL", "noreply@horinet.co.jp");
 //これ以下はだいたいこの値でいけます
 define("PORT", 587);
 define("SECURE", "TLS");	//LOGINやSSLなど

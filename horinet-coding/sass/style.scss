@@ -179,12 +179,12 @@ h3{
       line-height: 1.4em;
       text-shadow: 0 2px 6px #002B31;
       @include tbt {
-        font-size: 5.0rem;
+        font-size: 4.5rem;
         width: 90%;
         text-align: center;
       }
       @include sp {
-        font-size: 4.0rem;
+        font-size: 3.3rem;
       }
     }
   }
